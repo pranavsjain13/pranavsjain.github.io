@@ -44,7 +44,7 @@
 			<h1 class="title">Pranav Jain</h1>
 			<p class="section__text__p2">Robotics Engineer</p>
 			<div class="btn-container">
-				<button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">Download CV</button>
+				<button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
 				<button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
 			</div>
 			<div id="socials-container">
@@ -178,12 +178,19 @@
 			<div class="about-containers">
 				<div class="details-container color-container">
 					<div class="article-container">
-						<img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+						<img src="./assets/project-1.png" alt="RBE 3002: Navigation" class="project-img" />
 					</div>
-					<h2 class="experience-sub-title project-title">Project One</h2>
+					<h2 class="experience-sub-title project-title">RBE 3002: Navigation</h2>
 					<div class="btn-container">
+						<button class="btn btn-color-2 project-btn" onclick="togglePopUp(1)">View Details</button>
 						<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button>
-						<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button>
+					</div>
+
+					<div class="details-popup">
+						<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(1)" />
+						<h2>RBE 3002: Navigation</h2>
+						<p>Your information is going to be displayed here.</p>
+						<button class="btn btn-color-1" onclick="togglePopUp(1)">Close</button>
 					</div>
 				</div>
 				<div class="details-container color-container">
@@ -192,8 +199,15 @@
 					</div>
 					<h2 class="experience-sub-title project-title">Project Two</h2>
 					<div class="btn-container">
+						<button class="btn btn-color-2 project-btn" onclick="togglePopUp(2)">View Details</button>
 						<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button>
 						<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button>
+					</div>
+
+					<div class="details-popup">
+						<h2>Thank You Very Much!</h2>
+						<p>Your information is going to be displayed here.</p>
+						<button class="btn btn-color-1" onclick="togglePopUp(2)">Close</button>
 					</div>
 				</div>
 				<div class="details-container color-container">
