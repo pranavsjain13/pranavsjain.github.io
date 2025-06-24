@@ -261,6 +261,19 @@ section {
   gap: 1rem;
 }
 
+/* TAGS */
+
+.tag-container {
+  display: flex;
+  justify-content: center;
+  /* gap: 1rem; */
+  padding-top: 20px;
+}
+
+.tag-container:hover {
+  cursor: default;
+}
+
 /* ABOUT SECTION */
 
 #about {
@@ -359,6 +372,10 @@ article .icon {
   position: relative;
 }
 
+#other-projects {
+  position: relative;
+}
+
 .color-container {
   border-color: rgb(163, 163, 163);
   background: rgb(250, 250, 250);
@@ -383,7 +400,9 @@ article .icon {
 .details-popup {
   width: 400px;
   background: #b2b2b2;
-  border-radius: 6px;
+  border-radius: 10px;
+  border-color: black;
+  border-width: 50px;
   position: fixed;
   top: 50%;
   left: 50%;

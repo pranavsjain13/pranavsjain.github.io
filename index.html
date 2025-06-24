@@ -15,6 +15,7 @@
 				<li><a href="#about">About</a></li>
 				<li><a href="#experience">Experience</a></li>
 				<li><a href="#projects">Projects</a></li>
+				<li><a href="#other-projects">Other Projects</a></li>
 				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</div>
@@ -31,6 +32,7 @@
 				<li><a href="#about" onclick="toggleMenu()">About</a></li>
 				<li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
 				<li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+				<li><a href="#other-projects" onclick="toggleMenu()">Other Projects</a></li>
 				<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
 			</div>
 		</div>
@@ -176,48 +178,363 @@
 		<h1 class="title">Projects</h1>
 		<div class="experience-details-container">
 			<div class="about-containers">
+			<!-- Project 1 - RBE3002 -->
+			<div class="details-container color-container">
+				<div class="article-container">
+					<img src="./assets/project-1.png" alt="RBE 3002 Navigation Project" class="project-img" />
+				</div>
+				<h2 class="experience-sub-title project-title">RBE 3002: Navigation</h2>
+				<div class="btn-container">
+					<button class="btn btn-color-2 project-btn" onclick="togglePopUp(1)">View Details</button>
+					<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button>
+				</div>
+				<div class="tag-container">
+					<h6 style="color: blue;"><bold style="color: brown;">Tags: </bold>Python, GitHub, ROS, SLAM, AMCL</h6>
+				</div>
+				
+				<div class="details-popup">
+					<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(1)" />
+					<h2>RBE 3002: Navigation</h2>
+					<p>Developed a navigation system for a mobile robot using ROS. Integrated SLAM for mapping and localization and implemented autonomous path planning and obstacle avoidance using cost maps.</p>
+					<button class="btn btn-color-1" onclick="togglePopUp(1)">Close</button>
+				</div>
+			</div>
+			<!-- Project 2 - RBE3001 -->
+			<div class="details-container color-container">
+				<div class="article-container">
+					<img src="./assets/project-2.png" alt="RBE 3001 Manipulation Project" class="project-img" />
+				</div>
+				<h2 class="experience-sub-title project-title">RBE 3001: Manipulation</h2>
+				<div class="btn-container">
+					<button class="btn btn-color-2 project-btn" onclick="togglePopUp(2)">View Details</button>
+					<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button>
+					<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button>
+				</div>
+				<div class="tag-container">
+					<h6 style="color: blue;"><bold style="color: brown;">Tags: </bold>Python, GitHub, ROS, DH parameters</h6>
+				</div>
+
+				<div class="details-popup">
+					<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(2)" />
+					<h2>RBE 3001: Manipulation</h2>
+					<p>Programmed a 4-DOF robotic arm to sort colored balls using a camera. Measured Denavit-Hartenberg parameters to compute transformation matrices and used OpenCV to detect and localize objects for pick-and-place operations.</p>
+					<button class="btn btn-color-1" onclick="togglePopUp(2)">Close</button>
+				</div>
+			</div>
+			<!-- Project 3 - RBE2002 -->
+			<div class="details-container color-container">
+				<div class="article-container">
+					<img src="./assets/project-3.png" alt="RBE 2002 Sensing and Perception Project" class="project-img" />
+				</div>
+				<h2 class="experience-sub-title project-title">RBE 2002: Sensing and Perception</h2>
+				<div class="btn-container">
+					<button class="btn btn-color-2 project-btn" onclick="togglePopUp(3)">View Details</button>
+					<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button>
+					<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button>
+				</div>
+				<div class="tag-container">
+					<h6 style="color: blue;"><bold style="color: brown;">Tags: </bold>Python, GitHub, ROS, SLAM, AMCL</h6>
+				</div>
+				
+				<div class="details-popup">
+					<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(3)" />
+					<h2>RBE 2002: Sensing and Perception</h2>
+					<p>Developed a robot capable of following lines, detecting walls and AprilTags, and memorizing paths. Used ambient light sensors, distance sensors, and infrared communication. Enabled coordination between multiple robots using MQTT and remote triggers.</p>
+					<button class="btn btn-color-1" onclick="togglePopUp(3)">Close</button>
+				</div>
+			</div>
+			<!-- Project 4 - RBE2001 -->
+			<div class="details-container color-container">
+				<div class="article-container">
+				<img src="./assets/project-3.png" alt="RBE 2001 Mechanical Applications Project" class="project-img" />
+				</div>
+				<h2 class="experience-sub-title project-title">RBE 2001: Mechanical Applications</h2>
+				<div class="btn-container">
+				<button class="btn btn-color-2 project-btn" onclick="togglePopUp(4)">View Details</button>
+				<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button>
+				<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button>
+				</div>
+				<div class="tag-container">
+					<h6 style="color: blue;"><bold style="color: brown;">Tags: </bold>Python, GitHub, ROS, SLAM, AMCL</h6>
+				</div>
+				
+				<div class="details-popup">
+				<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(4)" />
+				<h2>RBE 2001: Mechanical Applications</h2>
+				<p>Designed and built robots using two types of gripper mechanisms: four-bar and bottom-out linear grippers. Robots could pick and place objects at set angles (0°, 25°, 45°) with mechanical precision.</p>
+				<button class="btn btn-color-1" onclick="togglePopUp(4)">Close</button>
+				</div>
+			</div>
+			<!-- Project 5 - RBE1001 -->
+			<div class="details-container color-container">
+				<div class="article-container">
+				<img src="./assets/project-3.png" alt="RBE 1001 Introduction to Robotics Project" class="project-img" />
+				</div>
+				<h2 class="experience-sub-title project-title">RBE 1001: Introduction to Robotics</h2>
+				<div class="btn-container">
+				<button class="btn btn-color-2 project-btn" onclick="togglePopUp(5)">View Details</button>
+				<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button>
+				<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button>
+				</div>
+				<div class="tag-container">
+					<h6 style="color: blue;"><bold style="color: brown;">Tags: </bold>Python, GitHub, ROS, SLAM, AMCL</h6>
+				</div>
+				
+				<div class="details-popup">
+				<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(5)" />
+				<h2>RBE 1001: Introduction to Robotics</h2>
+				<p>Built a robot using VEX components to detect and sort red and blue balls. Designed with a low center of gravity to climb and remain stable on slopes, even without power.</p>
+				<button class="btn btn-color-1" onclick="togglePopUp(5)">Close</button>
+				</div>
+			</div>
+			<!-- Project 6 - RBE530 -->
+			<div class="details-container color-container">
+				<div class="article-container">
+				<img src="./assets/project-3.png" alt="RBE 530 Soft Robotics Project" class="project-img" />
+				</div>
+				<h2 class="experience-sub-title project-title">RBE 530: Soft Robotics</h2>
+				<div class="btn-container">
+				<button class="btn btn-color-2 project-btn" onclick="togglePopUp(6)">View Details</button>
+				<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button>
+				<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button>
+				</div>
+				<div class="tag-container">
+					<h6 style="color: blue;"><bold style="color: brown;">Tags: </bold>Python, GitHub, ROS, SLAM, AMCL</h6>
+				</div>
+				
+				<div class="details-popup">
+				<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(6)" />
+				<h2>RBE 530: Soft Robotics</h2>
+				<p>Designed and prototyped soft actuators using silicone casting and pneumatic inflation. Developed soft robotic mechanisms capable of adaptive motion for unstructured environments.</p>
+				<button class="btn btn-color-1" onclick="togglePopUp(6)">Close</button>
+				</div>
+			</div>
+			<!-- Project 7 - MQP -->
+			<div class="details-container color-container">
+				<div class="article-container">
+					<img src="./assets/project-3.png" alt="Soft Robotic Eel MQP Project" class="project-img" />
+				</div>
+				<h2 class="experience-sub-title project-title">Major Qualifying Project (MQP): Soft Robotic Eel</h2>
+				<div class="btn-container">
+					<button class="btn btn-color-2 project-btn" onclick="togglePopUp(7)">View Details</button>
+					<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button>
+					<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button>
+				</div>
+				<div class="tag-container">
+					<h6 style="color: blue;"><bold style="color: brown;">Tags: </bold>Arduino, ESP32</h6>
+				</div>
+				
+				<div class="details-popup">
+					<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(7)" />
+					<h2>Major Qualifying Project (MQP): Soft Robotic Eel</h2>
+					<p>Designed and developed a modular, tendon-actuated soft robotic eel that replicates anguilliform swimming. Used a pulley-cable system, accordion-style soft body, and modular segments for flexible, underwater locomotion.</p>
+					<button class="btn btn-color-1" onclick="togglePopUp(7)">Close</button>
+				</div>
+			</div>
+			<!-- Project 8 - 4x4 YasInSchools -->
+			<div class="details-container color-container">
+				<div class="article-container">
+					<img src="./assets/project-3.png" alt="Adnoc 4x4 in Schools Technology Challenge" class="project-img" />
+				</div>
+				<h2 class="experience-sub-title project-title">Adnoc 4x4 in Schools Technology Challenge</h2>
+				<div class="btn-container">
+					<button class="btn btn-color-2 project-btn" onclick="togglePopUp(7)">View Details</button>
+					<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button>
+					<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button>
+				</div>
+				<div class="tag-container">
+					<h6 style="color: blue;"><bold style="color: brown;">Tags: </bold>Python, GitHub, ROS, SLAM, AMCL</h6>
+				</div>
+				
+				<div class="details-popup">
+					<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(7)" />
+					<h2>Adnoc 4x4 in Schools Technology Challenge</h2>
+					<p>This is where the information goes.</p>
+					<button class="btn btn-color-1" onclick="togglePopUp(7)">Close</button>
+				</div>
+			</div>
+			<!-- Project 9 - FTC -->
+			<div class="details-container color-container">
+				<div class="article-container">
+					<img src="./assets/project-3.png" alt="FIRST Tech Challenge (FTC): Skyscraper" class="project-img" />
+				</div>
+				<h2 class="experience-sub-title project-title">FIRST Tech Challenge (FTC): Skyscraper</h2>
+				<div class="btn-container">
+					<button class="btn btn-color-2 project-btn" onclick="togglePopUp(7)">View Details</button>
+					<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button>
+					<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button>
+				</div>
+				<div class="tag-container">
+					<h6 style="color: blue;"><bold style="color: brown;">Tags: </bold>Python, GitHub, ROS, SLAM, AMCL</h6>
+				</div>
+				
+				<div class="details-popup">
+					<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(7)" />
+					<h2>FIRST Tech Challenge (FTC): Skyscraper</h2>
+					<p>This is where the information goes.</p>
+					<button class="btn btn-color-1" onclick="togglePopUp(7)">Close</button>
+				</div>
+			</div>
+			<!-- Project 10 - WRO -->
+			<div class="details-container color-container">
+				<div class="article-container">
+					<img src="./assets/project-3.png" alt="World Robotics Olympiad (WRO): Garbage Truck" class="project-img" />
+				</div>
+				<h2 class="experience-sub-title project-title">World Robotics Olympiad (WRO): Garbage Truck</h2>
+				<div class="btn-container">
+					<button class="btn btn-color-2 project-btn" onclick="togglePopUp(7)">View Details</button>
+					<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button>
+					<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button>
+				</div>
+				<div class="tag-container">
+					<h6 style="color: blue;"><bold style="color: brown;">Tags: </bold>Python, GitHub, ROS, SLAM, AMCL</h6>
+				</div>
+				
+				<div class="details-popup">
+					<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(7)" />
+					<h2>World Robotics Olympiad (WRO): Garbage Truck</h2>
+					<p>This is where the information goes.</p>
+					<button class="btn btn-color-1" onclick="togglePopUp(7)">Close</button>
+				</div>
+			</div>
+		</div>
+		<img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#other-projects'" />
+	</section>
+
+	<section id="other-projects">
+		<p class="section__text__p1">Browse Other</p>
+		<h1 class="title">Projects</h1>
+		<div class="experience-details-container">
+			<div class="about-containers">
+				<!-- Project 8 - 3D Modelling -->
 				<div class="details-container color-container">
 					<div class="article-container">
-						<img src="./assets/project-1.png" alt="RBE 3002: Navigation" class="project-img" />
+						<img src="./assets/project-1.png" alt="AR 3101: 3D Modelling" class="project-img" />
 					</div>
-					<h2 class="experience-sub-title project-title">RBE 3002: Navigation</h2>
+					<h2 class="experience-sub-title project-title">AR 3101: 3D Modelling</h2>
 					<div class="btn-container">
 						<button class="btn btn-color-2 project-btn" onclick="togglePopUp(1)">View Details</button>
 						<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button>
 					</div>
+					<div class="tag-container">
+						<h6 style="color: blue;"><bold style="color: brown;">Tags: </bold>Python, GitHub, ROS, SLAM, AMCL</h6>
+					</div>
 
 					<div class="details-popup">
 						<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(1)" />
-						<h2>RBE 3002: Navigation</h2>
+						<h2>AR 3101: 3D Modelling</h2>
 						<p>Your information is going to be displayed here.</p>
 						<button class="btn btn-color-1" onclick="togglePopUp(1)">Close</button>
 					</div>
 				</div>
+				<!-- Project 9 - Controls -->
 				<div class="details-container color-container">
 					<div class="article-container">
-						<img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+						<img src="./assets/project-2.png" alt="ES 3011: Controls" class="project-img" />
 					</div>
-					<h2 class="experience-sub-title project-title">Project Two</h2>
+					<h2 class="experience-sub-title project-title">ES 3011: Controls</h2>
 					<div class="btn-container">
 						<button class="btn btn-color-2 project-btn" onclick="togglePopUp(2)">View Details</button>
 						<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button>
 						<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button>
 					</div>
+					<div class="tag-container">
+						<h6 style="color: blue;"><bold style="color: brown;">Tags: </bold>Python, GitHub, ROS, SLAM, AMCL</h6>
+					</div>
 
 					<div class="details-popup">
-						<h2>Thank You Very Much!</h2>
+						<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(1)" />
+						<h2>ES 3011: Controls</h2>
 						<p>Your information is going to be displayed here.</p>
 						<button class="btn btn-color-1" onclick="togglePopUp(2)">Close</button>
 					</div>
 				</div>
+				<!-- Project 10 - ECE2049 -->
 				<div class="details-container color-container">
 					<div class="article-container">
-						<img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+						<img src="./assets/project-3.png" alt="ECE 2049" class="project-img" />
 					</div>
-					<h2 class="experience-sub-title project-title">Project Three</h2>
+					<h2 class="experience-sub-title project-title">ECE 2049</h2>
 					<div class="btn-container">
+						<button class="btn btn-color-2 project-btn" onclick="togglePopUp(3)">View Details</button>
 						<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button>
 						<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button>
+					</div>
+					<div class="tag-container">
+						<h6 style="color: blue;"><bold style="color: brown;">Tags: </bold>Python, GitHub, ROS, SLAM, AMCL</h6>
+					</div>
+
+					<div class="details-popup">
+						<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(3)" />
+						<h2>ECE 2049</h2>
+						<p>Your information is going to be displayed here.</p>
+						<button class="btn btn-color-1" onclick="togglePopUp(3)">Close</button>
+					</div>
+				</div>
+				<!-- Project 11 - GPS -->
+				<div class="details-container color-container">
+					<div class="article-container">
+						<img src="./assets/project-3.png" alt="Great Problems Seminar (GPS): A More Walkable Worcester" class="project-img" />
+					</div>
+					<h2 class="experience-sub-title project-title">Great Problems Seminar (GPS): A More Walkable Worcester</h2>
+					<div class="btn-container">
+						<button class="btn btn-color-2 project-btn" onclick="togglePopUp(3)">View Details</button>
+						<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button>
+						<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button>
+					</div>
+					<div class="tag-container">
+						<h6 style="color: blue;"><bold style="color: brown;">Tags: </bold>Python, GitHub, ROS, SLAM, AMCL</h6>
+					</div>
+
+					<div class="details-popup">
+						<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(3)" />
+						<h2>Great Problems Seminar (GPS): A More Walkable Worcester</h2>
+						<p>Your information is going to be displayed here.</p>
+						<button class="btn btn-color-1" onclick="togglePopUp(3)">Close</button>
+					</div>
+				</div>
+				<!-- Project 12 - Hex -->
+				<div class="details-container color-container">
+					<div class="article-container">
+						<img src="./assets/project-3.png" alt="HEX Literary Magazine: Hex Mix" class="project-img" />
+					</div>
+					<h2 class="experience-sub-title project-title">HEX Literary Magazine: Hex Mix</h2>
+					<div class="btn-container">
+						<button class="btn btn-color-2 project-btn" onclick="togglePopUp(3)">View Details</button>
+						<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button>
+						<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button>
+					</div>
+					<div class="tag-container">
+						<h6 style="color: blue;"><bold style="color: brown;">Tags: </bold>Python, GitHub, ROS, SLAM, AMCL</h6>
+					</div>
+
+					<div class="details-popup">
+						<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(3)" />
+						<h2>HEX Literary Magazine: Hex Mix</h2>
+						<p>Your information is going to be displayed here.</p>
+						<button class="btn btn-color-1" onclick="togglePopUp(3)">Close</button>
+					</div>
+				</div>
+				<!-- Project 13 - IQP -->
+				<div class="details-container color-container">
+					<div class="article-container">
+						<img src="./assets/project-3.png" alt="Inter Qualifying Project (IQP): The Impact of AI on the Workforce" class="project-img" />
+					</div>
+					<h2 class="experience-sub-title project-title">Inter Qualifying Project (IQP): The Impact of AI on the Workforce</h2>
+					<div class="btn-container">
+						<button class="btn btn-color-2 project-btn" onclick="togglePopUp(3)">View Details</button>
+						<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button>
+						<button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button>
+					</div>
+					<div class="tag-container">
+						<h6 style="color: blue;"><bold style="color: brown;">Tags: </bold>Python, GitHub, ROS, SLAM, AMCL</h6>
+					</div>
+
+					<div class="details-popup">
+						<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(3)" />
+						<h2>Inter Qualifying Project (IQP): The Impact of AI on the Workforce</h2>
+						<p>Your information is going to be displayed here.</p>
+						<button class="btn btn-color-1" onclick="togglePopUp(3)">Close</button>
 					</div>
 				</div>
 			</div>
