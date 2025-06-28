@@ -1,936 +1,797 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>My Portfolio</title>
-	<link rel="stylesheet" href="style.css">
-	<link rel="stylesheet" href="mediaqueries.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pranav Jain • Robotics Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-	<nav id="desktop-nav">
-		<div class="logo">Pranav Jain</div>
-		<div>
-			<ul class="nav-links">
-				<li><a href="#about">About</a></li>
-				<li><a href="#experience">Experience</a></li>
-				<li><a href="#projects">Projects</a></li>
-				<li><a href="#other-projects">Other Projects</a></li>
-				<li><a href="#contact">Contact</a></li>
-			</ul>
-		</div>
-	</nav>
-	<nav id="hamburger-nav">
-		<div class="logo">Pranav Jain</div>
-		<div class="hamburger-menu">
-			<div class="hamburger-icon" onclick="toggleMenu()">
-				<span></span>
-				<span></span>
-				<span></span>
-			</div>
-			<div class="menu-links">
-				<li><a href="#about" onclick="toggleMenu()">About</a></li>
-				<li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-				<li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-				<li><a href="#other-projects" onclick="toggleMenu()">Other Projects</a></li>
-				<li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-			</div>
-		</div>
-	</nav>
-	<section id="profile">
-		<div class="section__pic-container">
-			<img src="./assets/profile-pic.png" alt="Pranav Jain profile picture" />
-		</div>
-		<div class="section__text">
-			<p class="section__text__p1">Hello, I'm</p>
-			<h1 class="title">Pranav Jain</h1>
-			<p class="section__text__p2">Robotics Engineer</p>
-			<div class="btn-container">
-				<button class="btn btn-color-2" onclick="window.open('./assets/resume.pdf')">Download CV</button>
-				<button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
-			</div>
-			<div id="socials-container">
-				<img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/pranavsjain/'" />
-				<img src="./assets/github.png" alt="My GitHub profile" class="icon" onclick="location.href='https://github.com/pranavsjain13?tab=repositories'" />
-			</div>
-		</div>
-	</section>
-	<section id="about">
-		<p class="section__text__p1">Get To Know More</p>
-		<h1 class="title">About Me</h1>
-		<div class="section-container">
-			<div class="section__pic-container">
-				<img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
-			</div>
-			<div class="about-details-container">
-				<div class="about-containers">
-					<div class="details-container">
-						<img src="./assets/experience.png" alt="experience icon" class="icon" />
-						<h3>Achievements</h3>
-						<!-- <p>Tau Beta Pi<br />Deans List<br />Charles O. Thompson Scholar<br />WPI Presidential Scholarship</p> -->
-						<h6 style="font-weight: 400; text-align: left; font-size: 70%;">
-							Deans List (All Semesters)
-							<br />
-							Charles O. Thompson Scholar
-							<br />
-							<strong>Honor Society:</strong> Tau Beta Pi
-							<br />							
-							WPI Presidential Scholarship
-						</h6>
-					</div>
-					<div class="details-container">
-						<img src="./assets/education.png" alt="education icon" class="icon" />
-						<h3>Education</h3>
-						<h4 style="font-weight: 400;">B.S. Robotics Engineer<p style="font-size: small;">WPI, Worcester, MA, USA</p></h4>
-						<!-- <br /> -->
-						<h4 style="font-weight: 400;">M.S. in Robotics<p style="font-size: small;">UMich, Ann Arbor, MI, USA</p></h4>
-					</div>
-				</div>
-				<div class="text-container">
-					<!-- <p>
-						I’m a robotics engineer with a deep interest in bioinspired design, intelligent systems, and interdisciplinary innovation. I recently earned my B.S. in Robotics Engineering from Worcester Polytechnic Institute (WPI), where I led and contributed to diverse projects—from developing soft underwater robots and autonomous navigation systems to exploring the societal impact of AI.
+  <nav>
+    <div class="nav-left">
+      <img src="./assets/logo/logo-1.png" alt="logo" class="logo-icon"/>
+      <span class="logo">Pranav Jain</span>
+    </div>
+    <div class="nav-right">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#other-projects">Other Projects</a>      
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
 
-						My work combines strong technical foundations in mechanical design, embedded systems, and perception with a drive to build purposeful, human-aware technology. I’ve competed internationally, collaborated with industry partners, and even contributed to creative initiatives like literary publishing and public speaking on AI.
+ <header id="welcome">
+  <div class="hero-content">
+    <div class="section__pic-container">
+		<img src="./assets/profile-pic/profile-pic-1.png" alt="Pranav Jain profile picture" />
+	</div>
+    <h1>Pranav Jain</h1>
+    <p>Robotics Engineer • Innovator • Problem Solver</p>
+    <a class="cta-button" onclick="window.open('./assets/resume.pdf')">Download CV</a>
+    <a href="#projects" class="cta-button">View Projects</a>
+		<a href="#contact" class="cta-button">Contact Info</a>
+  </div>
+</header>
 
-						This fall, I’ll be continuing my academic journey at the University of Michigan, pursuing graduate studies to deepen my expertise in robotics and autonomous systems. I’m especially excited about opportunities to explore modular design, soft robotics, and sustainability-focused engineering.
-					</p> -->
-					<p style="font-size: 85%;">
-						I’m a robotics engineer with a passion for bioinspired design, intelligent systems, and hands-on innovation. I recently graduated from WPI with a B.S. in Robotics Engineering, where I worked on projects ranging from soft underwater robots to autonomous navigation and AI policy research.
-						<br />
-						I've competed internationally, collaborated with industry partners, and contributed to both technical and creative initiatives. This fall, I’ll begin my master’s in robotics at the University of Michigan, where I aim to focus on modular design, soft robotics, and sustainable technologies.
-					</p>
-					<!-- <p style="font-size: 85%;">
-						As a robotics engineer, I specialize in bioinspired design, intelligent systems, and hands-on innovation. I hold a B.S. in Robotics Engineering from WPI, where I developed expertise in soft underwater robotics, autonomous navigation, and AI policy research through cutting-edge projects. My experience includes international competitions, industry collaborations, and contributions to both technical and creative initiatives. This fall, I will pursue my master’s in robotics at the University of Michigan, focusing on modular design, soft robotics, and sustainable technologies to drive impactful advancements in the field.
-					</p> -->
-				</div>
-			</div>
-		</div>
-		<img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
-	</section>
-	<section id="experience">
-		<p class="section__text__p1">Explore My</p>
-		<h1 class="title">Experience</h1>
-		<div class="experience-details-container">
-			<div class="about-containers">
-				<!-- <div class="details-container">
-					<h2 class="experience-sub-title">Frontend Development</h2>
-					<div class="article-container">
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>HTML</h3>
-								<p>Experienced</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>CSS</h3>
-								<p>Experienced</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>SASS</h3>
-								<p>Intermediate</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>Javascript</h3>
-								<p>Basic</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>TypeScript</h3>
-								<p>Basic</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>Material UI</h3>
-								<p>Intermediate</p>
-							</div>
-						</article>
-					</div>
-				</div>
-				<div class="details-container">
-					<h2 class="experience-sub-title">Backend Development</h2>
-					<div class="article-container">
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>PostgreSQL</h3>
-								<p>Basic</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>Node JS</h3>
-								<p>Intermediate</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>Express JS</h3>
-								<p>Intermediate</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>Git</h3>
-								<p>Intermediate</p>
-							</div>
-						</article>
-					</div>
-				</div> -->
-				<div class="details-container">
-					<h2 class="experience-sub-title">Programming Languages</h2>
-					<div class="article-container">
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>HTML</h3>
-								<p>Experienced</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>CSS</h3>
-								<p>Experienced</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>Python</h3>
-								<p>Experienced</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>Javascript</h3>
-								<p>Basic</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>Java</h3>
-								<p>Intermediate</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>C++</h3>
-								<p>Intermediate</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>C</h3>
-								<p>Basic</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>MATLAB</h3>
-								<p>Intermediate</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>SQL</h3>
-								<p>Intermediate</p>
-							</div>
-						</article>
-					</div>
-				</div>
-				<div class="details-container">
-					<h2 class="experience-sub-title">CAD Softwares</h2>
-					<div class="article-container">
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>Fusion 360</h3>
-								<p>Experienced</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>SolidWorks</h3>
-								<p>Intermediate</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>Autodesk 3ds Max</h3>
-								<p>Experienced</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>Altair Inspire</h3>
-								<p>Basic</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>Zbrush</h3>
-								<p>Intermediate</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>Adobe Substance 3D Painter</h3>
-								<p>Intermediate</p>
-							</div>
-						</article>
-					</div>
-				</div>
-				<div class="details-container">
-					<h2 class="experience-sub-title">Fabrication & Machining</h2>
-					<div class="article-container">
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>Laser Cutting</h3>
-								<p>Intermediate</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>CNC Milling</h3>
-								<p>Intermediate</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>3D printing</h3>
-								<p>Experienced</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>Oscilloscope</h3>
-								<p>Intermediate</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>Soldering</h3>
-								<p>Experienced</p>
-							</div>
-						</article>
-					</div>
-				</div>
-				<div class="details-container">
-					<h2 class="experience-sub-title">Computer Skills</h2>
-					<div class="article-container">
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>Microsoft Office 365</h3>
-								<p>Experienced</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>Adobe Photoshop</h3>
-								<p>Intermediate</p>
-							</div>
-						</article>
-					</div>
-				</div>
-				<div class="details-container">
-					<h2 class="experience-sub-title">Others</h2>
-					<div class="article-container">
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>ROS</h3>
-								<p>Basic</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>Gazebo</h3>
-								<p>Basic</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>Rviz</h3>
-								<p>Basic</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>PCB design (KiCad)</h3>
-								<p>Intermediate</p>
-							</div>
-						</article>
-						<article>
-							<img src="./assets/checkmark.png" alt="Experience icon" class="icon" />
-							<div>
-								<h3>Git/ GitHub</h3>
-								<p>Experienced</p>
-							</div>
-						</article>
-					</div>
-				</div>
-			</div>
-		</div>
-		<img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-	</section>
-	<section id="projects">
-		<p class="section__text__p1">Browse My Recent</p>
-		<h1 class="title">Projects</h1>
-		<div class="experience-details-container">
-			<div class="about-containers">
-			<!-- Project 1 - RBE3002 -->
-			<div class="details-container color-container">
-				<div class="article-container">
-					<img src="./assets/no-image.png" alt="RBE 3002 Navigation Project" class="project-img" />
-				</div>
-				<h2 class="experience-sub-title project-title">RBE 3002: Navigation</h2>
-				<div class="btn-container">
-					<button class="btn btn-color-2 project-btn" onclick="togglePopUp(1)">View Details</button>
-					<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button> -->
-				</div>
-				<div class="tag-container">
-					<h6 style="color: blue;"><strong style="color: brown;">Tags: </strong>Python, GitHub, ROS, Rviz, Gazebo, SLAM, GMapping, AMCL, A* Algorithm, Pure Pursuit</h6>
-				</div>
-				
-				<div class="details-popup">
-					<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(1)" />
-					<h2>RBE 3002: Navigation</h2>
-					<!-- <p>Developed a navigation system for a mobile robot using ROS. Integrated SLAM for mapping and localization and implemented autonomous path planning and obstacle avoidance using cost maps.</p> -->
-					<ul>
-						<li>Developed a ROS-based autonomous navigation system using a TurtleBot platform.</li>
-						<li>Implemented SLAM using GMapping, AMCL for localization, A* for global path planning, and Pure Pursuit for local control.</li>
-						<li>Enabled the robot to autonomously explore, map, and navigate a maze environment.</li>
-						<li>Utilized Gazebo for simulation and RViz for real-time visualization of occupancy grids and path planning.</li>
-					</ul>
-					<button class="btn btn-color-1" onclick="togglePopUp(1)">Close</button>
-				</div>
-			</div>
-			<!-- Project 2 - RBE3001 -->
-			<div class="details-container color-container">
-				<div class="article-container">
-					<img src="./assets/no-image.png" alt="RBE 3001 Manipulation Project" class="project-img" />
-				</div>
-				<h2 class="experience-sub-title project-title">RBE 3001: Manipulation</h2>
-				<div class="btn-container">
-					<button class="btn btn-color-2 project-btn" onclick="togglePopUp(2)">View Details</button>
-					<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button> -->
-					<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button> -->
-				</div>
-				<div class="tag-container">
-					<h6 style="color: blue;"><strong style="color: brown;">Tags: </strong>Python, GitHub, ROS, DH parameters</h6>
-				</div>
 
-				<div class="details-popup">
-					<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(2)" />
-					<h2>RBE 3001: Manipulation</h2>
-					<!-- <p>Programmed a 4-DOF robotic arm to sort colored balls using a camera. Measured Denavit-Hartenberg parameters to compute transformation matrices and used OpenCV to detect and localize objects for pick-and-place operations.</p> -->
-					<ul>
-						<li>Developed a ROS-based control system for a 4-DOF robotic arm to autonomously sort colored balls.</li>
-						<li>Computed forward and inverse kinematics using Denavit-Hartenberg parameters for precise motion planning.</li>
-						<li>Integrated an external camera and OpenCV to detect ball color and position for real-time pick-and-place tasks.</li>
-						<li>Implemented basic ROS nodes to coordinate vision processing, kinematics, and actuator control.</li>
-					</ul>
-					<button class="btn btn-color-1" onclick="togglePopUp(2)">Close</button>
-				</div>
-			</div>
-			<!-- Project 3 - RBE2002 -->
-			<div class="details-container color-container">
-				<div class="article-container">
-					<img src="./assets/no-image.png" alt="RBE 2002 Sensing and Perception Project" class="project-img" />
-				</div>
-				<h2 class="experience-sub-title project-title">RBE 2002: Sensing and Perception</h2>
-				<div class="btn-container">
-					<button class="btn btn-color-2 project-btn" onclick="togglePopUp(3)">View Details</button>
-					<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button> -->
-					<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button> -->
-				</div>
-				<div class="tag-container">
-					<h6 style="color: blue;"><strong style="color: brown;">Tags: </strong>C++, GitHub, MQTT, April Tags, Path Memorization</h6>
-				</div>
-				
-				<div class="details-popup">
-					<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(3)" />
-					<h2>RBE 2002: Sensing and Perception</h2>
-					<!-- <p>Developed a robot capable of following lines, detecting walls and AprilTags, and memorizing paths. Used ambient light sensors, distance sensors, and infrared communication. Enabled coordination between multiple robots using MQTT and remote triggers.</p> -->
-					<ul>
-						<li>Designed a sensor-driven robot capable of line-following, wall detection, AprilTag-based navigation, and path memorization.</li>
-						<li>Integrated ambient light sensors, distance sensors, and AprilTag orientation for autonomous decision-making.</li>
-						<li>Enabled the robot to return to a home position and trigger gates using infrared communication.</li>
-						<li>Implemented inter-robot communication using MQTT and remote buttons to coordinate actions with three other robots.</li>
-					</ul>
-					<button class="btn btn-color-1" onclick="togglePopUp(3)">Close</button>
-				</div>
-			</div>
-			<!-- Project 4 - RBE2001 -->
-			<div class="details-container color-container">
-				<div class="article-container">
-					<img src="./assets/no-image.png" alt="RBE 2001 Mechanical Applications Project" class="project-img" />
-				</div>
-				<h2 class="experience-sub-title project-title">RBE 2001: Mechanical Applications</h2>
-				<div class="btn-container">
-					<button class="btn btn-color-2 project-btn" onclick="togglePopUp(4)">View Details</button>
-					<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button> -->
-					<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button> -->
-				</div>
-				<div class="tag-container">
-					<h6 style="color: blue;"><strong style="color: brown;">Tags: </strong>C++, GitHub, 4-bar, CAD, Gear Trains</h6>
-				</div>
-				
-				<div class="details-popup">
-					<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(4)" />
-					<h2>RBE 2001: Mechanical Applications</h2>
-					<!-- <p>Designed and built robots using two types of gripper mechanisms: four-bar and bottom-out linear grippers. Robots could pick and place objects at set angles (0°, 25°, 45°) with mechanical precision.</p> -->
-					<ul>
-						<li>Designed and built two robots featuring four-bar linkage and bottom-out linear gripper mechanisms for precise pick-and-place tasks.</li>
-						<li>Programmed robots to position plates at specific angles (0°, 25°, 45°) with mechanical accuracy.</li>
-						<li>Engineered a custom gear train to increase payload capacity of the four-bar mechanism.</li>
-						<li>Created detailed CAD models in SolidWorks and 3D printed gripper components.</li>
-						<li>Integrated an emergency stop function triggered via remote button for safety compliance.</li>
-					</ul>
-					<button class="btn btn-color-1" onclick="togglePopUp(4)">Close</button>
-				</div>
-			</div>
-			<!-- Project 5 - RBE1001 -->
-			<div class="details-container color-container">
-				<div class="article-container">
-				<img src="./assets/no-image.png" alt="RBE 1001 Introduction to Robotics Project" class="project-img" />
-				</div>
-				<h2 class="experience-sub-title project-title">RBE 1001: Introduction to Robotics</h2>
-				<div class="btn-container">
-				<button class="btn btn-color-2 project-btn" onclick="togglePopUp(5)">View Details</button>
-				<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button> -->
-				<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button> -->
-				</div>
-				<div class="tag-container">
-					<h6 style="color: blue;"><strong style="color: brown;">Tags: </strong>VEX, Java, GitHub</h6>
-				</div>
-				
-				<div class="details-popup">
-				<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(5)" />
-				<h2>RBE 1001: Introduction to Robotics</h2>
-				<!-- <p>Built a robot using VEX components to detect and sort red and blue balls. Designed with a low center of gravity to climb and remain stable on slopes, even without power.</p> -->
-					<ul>
-						<li>Designed and built a mobile robot using VEX components to detect, grab, and sort blue and red balls into designated wall slots.</li>
-						<li>Implemented a low center of mass design enabling the robot to climb and maintain position on slopes, even when powered off.</li>
-						<li>Used a camera for ball detection and ambient light sensors for line following navigation.</li>
-						<li>Developed a linear cascading slide mechanism from scratch initially, then redesigned to a four-bar linkage to optimize weight and stability.</li>
-					</ul>
-				<button class="btn btn-color-1" onclick="togglePopUp(5)">Close</button>
-				</div>
-			</div>
-			<!-- Project 6 - RBE530 -->
-			<div class="details-container color-container">
-				<div class="article-container">
-				<img src="./assets/no-image.png" alt="RBE 530 Soft Robotics Project" class="project-img" />
-				</div>
-				<h2 class="experience-sub-title project-title">RBE 530: Soft Robotics</h2>
-				<div class="btn-container">
-				<button class="btn btn-color-2 project-btn" onclick="togglePopUp(6)">View Details</button>
-				<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button> -->
-				<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button> -->
-				</div>
-				<div class="tag-container">
-					<h6 style="color: blue;"><strong style="color: brown;">Tags: </strong>Arduino, Tele-operation, Soft Robotics, Continuum Robot, In-pipe locomotion</h6>
-				</div>
-				
-				<div class="details-popup">
-				<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(6)" />
-				<h2>RBE 530: Soft Robotics</h2>
-				<!-- <p>Designed and prototyped soft actuators using silicone casting and pneumatic inflation. Developed soft robotic mechanisms capable of adaptive motion for unstructured environments.</p> -->
-					<ul>
-						<li>Designed and developed a semi-rigid continuum robot inspired by octopus arms and elephant trunks for navigating confined pipe environments.</li>
-						<li>Applied soft robotics principles including compliant mechanics and elastic actuation to achieve flexible locomotion.</li>
-						<li>Integrated design and fabrication methodologies focused on adaptability and safety in constrained spaces.</li>
-					</ul>
-				<button class="btn btn-color-1" onclick="togglePopUp(6)">Close</button>
-				</div>
-			</div>
-			<!-- Project 7 - MQP -->
-			<div class="details-container color-container">
-				<div class="article-container">
-					<img src="./assets/no-image.png" alt="Soft Robotic Eel MQP Project" class="project-img" />
-				</div>
-				<h2 class="experience-sub-title project-title">Major Qualifying Project (MQP): Soft Robotic Eel</h2>
-				<div class="btn-container">
-					<button class="btn btn-color-2 project-btn" onclick="togglePopUp(7)">View Details</button>
-					<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button> -->
-					<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button> -->
-				</div>
-				<div class="tag-container">
-					<h6 style="color: blue;"><strong style="color: brown;">Tags: </strong>Arduino, ESP32, Modular, Soft Robotics, Tendon-driven, Underwater</h6>
-				</div>
-				
-				<div class="details-popup">
-					<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(7)" />
-					<h2>Major Qualifying Project (MQP): Soft Robotic Eel</h2>
-					<!-- <p>Designed and developed a modular, tendon-actuated soft robotic eel that replicates anguilliform swimming. Used a pulley-cable system, accordion-style soft body, and modular segments for flexible, underwater locomotion.</p> -->
-					<ul>
-						<li>Designed and developed a tendon-actuated, cable-driven soft robotic eel featuring modular, 3D-printed accordion segments made of thermoplastic elastomer (NinjaTek Chinchilla).</li>
-						<li>Implemented a pulley-cable actuation system powered by servo motors to replicate anguilliform swimming motion for flexible underwater locomotion.</li>
-						<li>Enhanced mechanical performance and modularity for easy repair, extension, and future sensor/depth control integration.</li>
-						<li>Conducted tank and pool testing to evaluate swim speed and durability in chlorinated water.</li>
-						<li>Project contributes to biological understanding of eel locomotion and potential applications in underwater exploration.</li>
-					</ul>
-					<button class="btn btn-color-1" onclick="togglePopUp(7)">Close</button>
-				</div>
-			</div>
-			<!-- Project 8 - 4x4 YasInSchools -->
-			<div class="details-container color-container">
-				<div class="article-container">
-					<img src="./assets/no-image.png" alt="Adnoc 4x4 in Schools Technology Challenge" class="project-img" />
-				</div>
-				<h2 class="experience-sub-title project-title">Adnoc 4x4 in Schools Technology Challenge</h2>
-				<div class="btn-container">
-					<button class="btn btn-color-2 project-btn" onclick="togglePopUp(8)">View Details</button>
-					<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button> -->
-					<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button> -->
-				</div>
-				<div class="tag-container">
-					<h6 style="color: blue;"><strong style="color: brown;">Tags: </strong>Java, Arduino, Bluetooth, AppInventor</h6>
-				</div>
-				
-				<div class="details-popup">
-					<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(8)" />
-					<h2>Adnoc 4x4 in Schools Technology Challenge</h2>
-					<!-- <p>This is where the information goes.</p> -->
-					<ul>
-						<li>Designed and built a remote-controlled 4x4 CyberTruck capable of traversing diverse terrains.</li>
-						<li>Developed a custom app to control the vehicle’s navigation and performance.</li>
-						<li>Competed and won a trophy in the Trailer Tow Challenge category.</li>
-					</ul>
-					<button class="btn btn-color-1" onclick="togglePopUp(8)">Close</button>
-				</div>
-			</div>
-			<!-- Project 9 - FTC -->
-			<div class="details-container color-container">
-				<div class="article-container">
-					<img src="./assets/no-image.png" alt="FIRST Tech Challenge (FTC): Skyscraper" class="project-img" />
-				</div>
-				<h2 class="experience-sub-title project-title">FIRST Tech Challenge (FTC): Skyscraper</h2>
-				<div class="btn-container">
-					<button class="btn btn-color-2 project-btn" onclick="togglePopUp(9)">View Details</button>
-					<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button> -->
-					<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button> -->
-				</div>
-				<div class="tag-container">
-					<h6 style="color: blue;"><strong style="color: brown;">Tags: </strong>Java, Arduino, Bluetooth, AppInventor, Linear Cascading Slide</h6>
-				</div>
-				
-				<div class="details-popup">
-					<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(9)" />
-					<h2>FIRST Tech Challenge (FTC): Skyscraper</h2>
-					<!-- <p>This is where the information goes.</p> -->
-					<ul>
-						<li>Competed as a core member of the White Hat Hackers team in the FTC robotics competition.</li>
-						<li>Contributed across all sub-teams (engineering notebook, mechanical design, and programming) as a flexible team member with prior experience.</li>
-						<li>Helped design, build, and troubleshoot a cascading slide mechanism using VEX components, optimizing for task efficiency and space.</li>
-						<li>Assisted in logic development and debugging of Java-based autonomous and driver-controlled programs.</li>
-						<li>Overcame language barriers and scheduling challenges through visual communication, collaborative coordination, and team leadership.</li>
-						<li>Led integration efforts across teams, streamlining mechanical, software, and documentation workflows.</li>
-						<li>Team placed 5th overall, receiving recognition from peers for the robot’s design and performance.</li>
-					</ul>
-					<button class="btn btn-color-1" onclick="togglePopUp(9)">Close</button>
-				</div>
-			</div>
-			<!-- Project 10 - WRO -->
-			<div class="details-container color-container">
-				<div class="article-container">
-					<img src="./assets/no-image.png" alt="World Robotics Olympiad (WRO): Garbage Truck" class="project-img" />
-				</div>
-				<h2 class="experience-sub-title project-title">World Robotics Olympiad (WRO): Garbage Truck</h2>
-				<div class="btn-container">
-					<button class="btn btn-color-2 project-btn" onclick="togglePopUp(10)">View Details</button>
-					<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button> -->
-					<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button> -->
-				</div>
-				<div class="tag-container">
-					<h6 style="color: blue;"><strong style="color: brown;">Tags: </strong>LEGO Mindstorm, EV3/ NXT, littleBits, Solar Powered</h6>
-				</div>
-				
-				<div class="details-popup">
-					<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(10)" />
-					<h2>World Robotics Olympiad (WRO): Garbage Truck</h2>
-					<!-- <p>This is where the information goes.</p> -->
-					<ul>
-						<li>Co-developed a smart robotic waste management system for the WRO Open Category, earning a top-4 national ranking and qualifying for the international round in Delhi.</li>
-						<li>Designed and built a functional robot featuring a smart bin (using littleBits) that autonomously summoned a line-following garbage truck for collection and real-time sorting.</li>
-						<li>Integrated a solar-powered system with automated panel deployment based on power and lighting conditions.</li>
-						<li>Led robot design, construction, and programming while iterating on multiple design blueprints to overcome real-world implementation challenges.</li>
-						<li>Gained valuable international exposure through collaboration and competition with global teams tackling the shared problem of sustainable waste management.</li>
-					</ul>
-					<button class="btn btn-color-1" onclick="togglePopUp(10)">Close</button>
-				</div>
-			</div>
-		</div>
-		<img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#other-projects'" />
-	</section>
-	<section id="other-projects">
-		<p class="section__text__p1">Browse Other</p>
-		<h1 class="title">Projects</h1>
-		<div class="experience-details-container">
-			<div class="about-containers">
-				<!-- Project 11 - 3D Modelling -->
-				<div class="details-container color-container">
-					<div class="article-container">
-						<img src="./assets/no-image.png" alt="AR 3101: 3D Modelling" class="project-img" />
-					</div>
-					<h2 class="experience-sub-title project-title">AR 3101: 3D Modelling</h2>
-					<div class="btn-container">
-						<button class="btn btn-color-2 project-btn" onclick="togglePopUp(11)">View Details</button>
-						<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button> -->
-					</div>
-					<div class="tag-container">
-						<h6 style="color: blue;"><strong style="color: brown;">Tags: </strong>CAD, ZBrush, 3Ds Max, Adobe Substance, Unreal Engine, Optimization</h6>
-					</div>
+  <section id="about" class="panel about-panel">
+  <h2>About Me</h2>
+  <p>
+    I’m a robotics engineer with a passion for bioinspired design, intelligent systems, and hands-on innovation. I recently graduated from WPI with a B.S. in Robotics Engineering, where I worked on projects ranging from soft underwater robots to autonomous navigation and AI policy research.
+    <br /><br />
+    I've competed internationally, collaborated with industry partners, and contributed to both technical and creative initiatives. This fall, I’ll begin my master’s in robotics at the University of Michigan, where I aim to focus on modular design, soft robotics, and sustainable technologies.
+  </p>
 
-					<div class="details-popup">
-						<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(11)" />
-						<h2>AR 3101: 3D Modelling</h2>
-						<!-- <p>Your information is going to be displayed here.</p> -->
-					<ul>
-						<li>Created high-resolution 3D assets including a treasure chest, a detailed room replica, and a sculpted character model using industry-standard tools.</li>
-						<li>Utilized ZBrush for organic sculpting (Hulk character), 3ds Max for hard-surface modeling (room layout), and Adobe Substance for realistic texturing.</li>
-						<li>Integrated models into Unreal Engine, enabling interactive navigation and animation within a game environment.</li>
-						<li>Applied life drawing and anatomy studies to produce accurate, game-ready assets for real-time applications.</li>
-						<li>Optimized assets for performance and reduced file size.</li>
-					</ul>
-						<button class="btn btn-color-1" onclick="togglePopUp(11)">Close</button>
-					</div>
-				</div>
-				<!-- Project 12 - Controls -->
-				<div class="details-container color-container">
-					<div class="article-container">
-						<img src="./assets/no-image.png" alt="ES 3011: Controls" class="project-img" />
-					</div>
-					<h2 class="experience-sub-title project-title">ES 3011: Controls</h2>
-					<div class="btn-container">
-						<button class="btn btn-color-2 project-btn" onclick="togglePopUp(12)">View Details</button>
-						<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button> -->
-						<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button> -->
-					</div>
-					<div class="tag-container">
-						<h6 style="color: blue;"><strong style="color: brown;">Tags: </strong>Arduino, PID control, Velocity Control</h6>
-					</div>
+  <div class="about-details-wrapper">
+    <div class="about-card">
+        <img src="./assets/icons/experience.png" alt="experience icon" class="icon" />
+        <div class="about-text">
+            <h3>Achievements</h3>
+            <p class="about-subtext">
+            Deans List (All Semesters)<br />
+            Charles O. Thompson Scholar<br />
+            Tau Beta Pi Honor Society<br />
+            WPI Presidential Scholarship
+            </p>
+        </div>
+    </div>
 
-					<div class="details-popup">
-						<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(12)" />
-						<h2>ES 3011: Controls</h2>
-						<!-- <p>Your information is going to be displayed here.</p> -->
-					<ul>
-						<li>Programmed an Arduino-controlled car to travel a specified distance while balancing blocks, applying core control theory concepts.</li>
-						<li>Implemented various control strategies including PID control and velocity control to optimize accuracy and stability.</li>
-						<li>Gained hands-on experience with system modeling, transient response tuning, and real-world application of control engineering principles.</li>
-					</ul>
-						<button class="btn btn-color-1" onclick="togglePopUp(12)">Close</button>
-					</div>
-				</div>
-				<!-- Project 13 - ECE2049 -->
-				<div class="details-container color-container">
-					<div class="article-container">
-						<img src="./assets/no-image.png" alt="ECE 2049: Embedded Systems" class="project-img" />
-					</div>
-					<h2 class="experience-sub-title project-title">ECE 2049: Embedded Systems</h2>
-					<div class="btn-container">
-						<button class="btn btn-color-2 project-btn" onclick="togglePopUp(13)">View Details</button>
-						<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button> -->
-						<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button> -->
-					</div>
-					<div class="tag-container">
-						<h6 style="color: blue;"><strong style="color: brown;">Tags: </strong>C, Waveform Generator, Simon Says memory game, Low-Level Hardware Control</h6>
-					</div>
+    <div class="about-card">
+        <img src="./assets/icons/education.png" alt="education icon" class="icon" />
+        <div class="about-text">
+            <h3>Education</h3>
+            <p class="about-subtext">
+            B.S. Robotics Engineering<br />
+            Worcester Polytechnic Institute, MA, USA<br /><br />
+            M.S. Robotics (Starting Fall 2025)<br />
+            University of Michigan, Ann Arbor, MI, USA
+            </p>
+        </div>
+    </div>
 
-					<div class="details-popup">
-						<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(13)" />
-						<h2>ECE 2049: Embedded Systems</h2>
-						<!-- <p>Your information is going to be displayed here.</p> -->
-					<ul>
-						<li>Designed and programmed multiple interactive applications on WPI’s custom expansion board using C, including a waveform generator, Simon Says memory game, real-time clock with temperature display, and a piano note game.</li>
-						<li>Utilized embedded systems concepts such as state machines, peripheral interfacing (LCDs, sensors), and low-level hardware control.</li>
-						<li>Gained hands-on experience with constrained computing environments and real-time system design.</li>
-					</ul>
-						<button class="btn btn-color-1" onclick="togglePopUp(13)">Close</button>
-					</div>
-				</div>
-				<!-- Project 14 - GPS -->
-				<div class="details-container color-container">
-					<div class="article-container">
-						<img src="./assets/no-image.png" alt="Great Problems Seminar (GPS): A More Walkable Worcester" class="project-img" />
-					</div>
-					<h2 class="experience-sub-title project-title">Great Problems Seminar (GPS): A More Walkable Worcester</h2>
-					<div class="btn-container">
-						<button class="btn btn-color-2 project-btn" onclick="togglePopUp(14)">View Details</button>
-						<button class="btn btn-color-2 project-btn" onclick="location.href='https://sites.google.com/view/sustainability-bikeworcester/final-projects/tri-state-urban?authuser=0'">Website</button>
-						<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button> -->
-					</div>
-					<div class="tag-container">
-						<h6 style="color: blue;"><strong style="color: brown;">Tags: </strong>Sustainability, Urban Planning</h6>
-					</div>
+  </div>
+</section>
 
-					<div class="details-popup">
-						<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(14)" />
-						<h2>Great Problems Seminar (GPS): A More Walkable Worcester</h2>
-						<!-- <p>Your information is going to be displayed here.</p> -->
-					<ul>
-						<li>Conducted in-depth research and data analysis to identify barriers preventing Worcester residents from adopting walking or biking as primary modes of transportation.</li>
-						<li>Identified key challenges such as safety concerns, inadequate city infrastructure, and convenience-related limitations.</li>
-						<li>Proposed actionable solutions including redesigning intersections for pedestrian and cyclist safety, and increasing public access to E-bikes.</li>
-						<li>Highlighted potential large-scale sustainability impacts, such as reducing greenhouse gas emissions and urban air pollution, through improved pedestrian infrastructure.</li>
-					</ul>
-						<button class="btn btn-color-1" onclick="togglePopUp(14)">Close</button>
-					</div>
-				</div>
-				<!-- Project 15 - Hex -->
-				<div class="details-container color-container">
-					<div class="article-container">
-						<img src="./assets/no-image.png" alt="HEX Literary Magazine: Hex Mix" class="project-img" />
-					</div>
-					<h2 class="experience-sub-title project-title">HEX Literary Magazine: Hex Mix</h2>
-					<div class="btn-container">
-						<button class="btn btn-color-2 project-btn" onclick="togglePopUp(15)">View Details</button>
-						<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button> -->
-						<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button> -->
-					</div>
-					<div class="tag-container">
-						<h6 style="color: blue;"><strong style="color: brown;">Tags: </strong>Hex, Literary Magazine</h6>
-					</div>
 
-					<div class="details-popup">
-						<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(15)" />
-						<h2>HEX Literary Magazine: Hex Mix</h2>
-						<!-- <p>Your information is going to be displayed here.</p> -->
-					<ul>
-						<li>Curated and selected literary submissions for publication, ensuring quality and diversity of content.</li>
-						<li>Collaborated on finalizing the “Hex Mix” machine—a modified gumball vending machine dispensing literature and candy to boost magazine engagement.</li>
-						<li>Managed printing and stocking of literature pieces for distribution via the Hex Mix machine.</li>
-						<li>Designed promotional materials, including posters and email campaigns, to increase visibility and website traffic.</li>
-					</ul>
-						<button class="btn btn-color-1" onclick="togglePopUp(15)">Close</button>
-					</div>
-				</div>
-				<!-- Project 16 - IQP -->
-				<div class="details-container color-container">
-					<div class="article-container">
-						<img src="./assets/no-image.png" alt="Inter-Qualifying Project (IQP): The Impact of AI on the Workforce" class="project-img" />
-					</div>
-					<h2 class="experience-sub-title project-title">Inter-Qualifying Project (IQP): The Impact of AI on the Workforce</h2>
-					<div class="btn-container">
-						<button class="btn btn-color-2 project-btn" onclick="togglePopUp(16)">View Details</button>
-						<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button> -->
-						<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button> -->
-					</div>
-					<div class="tag-container">
-						<h6 style="color: blue;"><strong style="color: brown;">Tags: </strong>Artificial Intelligence (AI), ANSI, WorkCred, Workforce, Policy, ChatGPT</h6>
-					</div>
 
-					<div class="details-popup">
-						<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(16)" />
-						<h2>Inter-Qualifying Project (IQP): The Impact of AI on the Workforce</h2>
-						<!-- <p>Your information is going to be displayed here.</p> -->
-						<ul>
-							<li>Conducted archival research and expert interviews to analyze current and near-future effects of AI on employment, ethics, legality, and cybersecurity.</li>
-							<li>Collaborated with ANSI and WorkCred to explore policy responses and public sentiment surrounding AI integration in the workforce.</li>
-							<li>Developed actionable recommendations and a detailed implefmentation roadmap to guide organizations, like ANSI and WorkCred, in adopting AI responsibly and effectively.</li>
-							<li><strong>Guest Speaker at WPI (April 2024): </strong>Presented insights from the IQP at a WPI-hosted seminar on AI and ChatGPT, discussing AI’s challenges, advancements, and its impact on homes and workplaces.</li>
-						</ul>
-						<button class="btn btn-color-1" onclick="togglePopUp(16)">Close</button>
-					</div>
-				</div>
-				<!-- Project 17 - Software Engineering -->
-				<div class="details-container color-container">
-					<div class="article-container">
-						<img src="./assets/no-image.png" alt="CS 2049: Software Engineering" class="project-img" />
-					</div>
-					<h2 class="experience-sub-title project-title">CS 2049: Software Engineering</h2>
-					<div class="btn-container">
-						<button class="btn btn-color-2 project-btn" onclick="togglePopUp(17)">View Details</button>
-						<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">GitHub</button> -->
-						<!-- <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.github.com'">Live Demo</button> -->
-					</div>
-					<div class="tag-container">
-						<h6 style="color: blue;"><strong style="color: brown;">Tags: </strong> Python, Flask, SQL, Docker, GitHub, HTML, CSS, Javascript, OAuth</h6>
-					</div>
+<section id="skills" class="panel">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    
+    <div class="skill-category">
+      <h3>Programming</h3>
+      <div class="skill-tags">
+        <span>Python</span>
+        <span>C++</span>
+        <span>Java</span>
+        <span>MATLAB</span>
+        <span>Javascript</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>C</span>
+        <span>SQL</span>
+      </div>
+    </div>
 
-					<div class="details-popup">
-						<img src="./assets/cancel.png" alt="Close" class="icon closeButton" onclick="togglePopUp(17)" />
-						<h2>CS 2049: Software Engineering</h2>
-						<!-- <p>Your information is going to be displayed here.</p> -->
-						<ul>
-							<li>Developed <strong>Research Wizard</strong>, a full-stack web portal connecting WPI undergraduates with faculty-led research opportunities.</li>
-							<li>Built a Python Flask-based API with OAuth integration for WPI’s login system.</li>
-							<li>Implemented sorting features, SQL database integration, and object-oriented design for modular backend logic.</li>
-							<li>Designed a user-friendly interface to streamline research discovery and matching.</li>
-						</ul>
-						<button class="btn btn-color-1" onclick="togglePopUp(17)">Close</button>
-					</div>
-				</div>
-			</div>
-		</div>
-		<img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
-	</section>
-	<section id="contact">
-		<p class="section__text__p1">Get In Touch</p>
-		<h1 class="title">Contact Me</h1>
-		<div class="contact-info-upper-container">
-			<div class="contact-info-container">
-				<img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
-				<p><a href="mailto:pranavsjain13@gmail.com">pranavsjain13@gmail.com</a></p>
-			</div>
-			<div class="contact-info-container">
-				<img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
-				<p><a href="https://www.linkedin.com/in/pranavsjain/">LinkedIn</a></p>
-			</div>
-		</div>
-	</section>
-	<footer>
-		<nav>
-			<div class="nav-links-container">
-				<ul class="nav-links">
-					<li><a href="#about">About</a></li>
-					<li><a href="#experience">Experience</a></li>
-					<li><a href="#projects">Projects</a></li>
-					<li><a href="#contact">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
-		<p>Copyright &#169; 2025 Pranav Jain. All Rights Reserved.</p>
-	</footer>
-	<script src="script.js"></script>
+    <div class="skill-category">
+      <h3>Design & Simulation</h3>
+      <div class="skill-tags">
+        <span>Fusion 360</span>
+        <span>SolidWorks</span>
+        <span>Autodesk 3Ds Max</span>
+        <span>Altair Inspire</span>
+        <span>Zbrush</span>
+        <span>Adobe Substance Painter</span>
+        <span>KiCad (PCB Design)</span>
+        <span>Adobe Photoshop</span>
+        <span>Microsoft Office 365</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Fabrication & Machining</h3>
+      <div class="skill-tags">
+        <span>Laser Cutting</span>
+        <span>CNC Milling</span>
+        <span>3D Printing</span>
+        <span>Oscilloscope</span>
+        <span>Soldering</span>
+      </div>
+    </div>
+
+    <div class="skill-category">
+      <h3>Tools & Libraries</h3>
+      <div class="skill-tags">
+        <span>ROS</span>
+        <span>Gazebo</span>
+        <span>Rviz</span>
+        <span>OpenCV</span>
+        <span>Flask</span>
+        <span>Git/ GitHub</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="experience" class="panel">
+  <h2>Experience</h2>
+  <div class="timeline">
+
+    <!-- Entry 1 - Left -->
+    <div class="timeline-item left">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>Robotics Teaching Assistant</h3>
+        <p class="company">Fun Robotics, Dubai, UAE • Jun - July 2022</p>
+        <ul>
+          <li>Mentored students in building and programming robots to solve real-world challenges using sensors and logic.</li>
+          <li>Strengthened communication skills by simplifying complex robotics concepts for young learners.</li>
+        </ul>
+        <!-- <div class="experience-media-grid">
+          <a href="./assets/no-image.png" target="_blank" class="media-card">
+            <img src="./assets/no-image.png" alt="Image preview" />
+            <span>Image</span>
+          </a>
+          <a href="./assets/demo-video.mp4" target="_blank" class="media-card">
+            <img src="./assets/video-thumb.png" alt="Video preview" />
+            <span>Video</span>
+          </a>
+          <a href="./docs/assistant-report.pdf" target="_blank" class="media-card">
+            <img src="./assets/pdf-icon.png" alt="PDF icon" />
+            <span>PDF Report</span>
+          </a>
+        </div> -->
+      </div>
+    </div>
+
+    <!-- Entry 2 - Right -->
+    <div class="timeline-item right">
+      <div class="timeline-dot"></div>
+      <div class="timeline-content">
+        <h3>CAD Intern</h3>
+        <p class="company">Infosys Technologies, Dubai, UAE • Dec 2018</p>
+        <ul>
+          <li>Designed a complete CAD model of a single-story residential home using 3Ds Max under the guidance of a senior designer.</li>
+          <li>Gained hands-on experience in architectural modeling, object rendering, and 3D visualization workflows.</li>
+          <li>Developed a strong foundation in CAD software tools and professional design standards.</li>
+        </ul>
+        <!-- <div class="experience-media-grid">
+          <a href="./assets/no-image.png" target="_blank" class="media-card">
+            <img src="./assets/no-image.png" alt="Image preview" />
+            <span>Image</span>
+          </a>
+          <a href="./assets/demo-video.mp4" target="_blank" class="media-card">
+            <img src="./assets/video-thumb.png" alt="Video preview" />
+            <span>Video</span>
+          </a>
+          <a href="./docs/assistant-report.pdf" target="_blank" class="media-card">
+            <img src="./assets/pdf-icon.png" alt="PDF icon" />
+            <span>PDF Report</span>
+          </a>
+        </div> -->
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+<section id="projects" class="panel">
+  <h2>Projects</h2>
+  <div class="projects-grid">
+
+    <!-- Project 1 -->
+    <div class="card" onclick="openModal('modal-rbe3002')">
+      <div class="article-container">
+        <img src="./assets/no-image.png" alt="rbe3002" class="project-img" />
+      </div>
+      <h3>RBE 3002: Navigation</h3>
+      <div class="tags">
+        <span>Python</span>
+        <span>GitHub</span>
+        <span>ROS</span>
+        <span>Rviz</span>
+        <span>Gazebo</span>
+        <span>SLAM</span>
+        <span>GMapping</span>
+        <span>AMCL</span>
+        <span>A* Algorithm</span>
+        <span>Pure Pursuit</span>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="card" onclick="openModal('modal-rbe3001')">
+      <div class="article-container">
+        <img src="./assets/no-image.png" alt="rbe3001" class="project-img" />
+      </div>
+      <h3>RBE 3001: Manipulation</h3>
+      <div class="tags">
+        <span>Python</span>
+        <span>GitHub</span>
+        <span>ROS</span>
+        <span>DH parameters</span>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="card" onclick="openModal('modal-rbe2002')">
+      <div class="article-container">
+        <img src="./assets/no-image.png" alt="rbe2002" class="project-img" />
+      </div>
+      <h3>RBE 2002: Sensing and Perception</h3>
+      <div class="tags">
+        <span>C++</span>
+        <span>GitHub</span>
+        <span>MQTT</span>
+        <span>April Tags</span>
+        <span>Path Memorization</span>
+      </div>
+    </div>
+
+    <!-- Project 4 -->
+    <div class="card" onclick="openModal('modal-rbe2001')">
+      <div class="article-container">
+        <img src="./assets/no-image.png" alt="rbe2001" class="project-img" />
+      </div>
+      <h3>RBE 2001: Mechanical Applications</h3>
+      <div class="tags">
+        <span>C++</span>
+        <span>GitHub</span>
+        <span>4-bar</span>
+        <span>CAD</span>
+        <span>Gear Trains</span>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="card" onclick="openModal('modal-rbe1001')">
+      <div class="article-container">
+        <img src="./assets/no-image.png" alt="rbe1001" class="project-img" />
+      </div>
+      <h3>RBE 1001: Introduction to Robotics</h3>
+      <div class="tags">
+        <span>VEX</span>
+        <span>Java</span>
+        <span>GitHub</span>
+      </div>
+    </div>
+
+    <!-- Project 6 -->
+    <div class="card" onclick="openModal('modal-rbe530')">
+      <div class="article-container">
+        <img src="./assets/no-image.png" alt="rbe530" class="project-img" />
+      </div>
+      <h3>RBE 530: Soft Robotics</h3>
+      <div class="tags">
+        <span>Tele-operation</span>
+        <span>Soft Robotics</span>
+        <span>Continuum Robot</span>
+        <span>In-pipe locomotion</span>
+      </div>
+    </div>
+
+    <!-- Project 7 -->
+    <div class="card" onclick="openModal('modal-mqp')">
+      <div class="article-container">
+        <img src="./assets/no-image.png" alt="mqp" class="project-img" />
+      </div>
+      <h3>Major Qualifying Project (MQP): Soft Robotic Eel</h3>
+      <div class="tags">
+        <span>Arduino</span>
+        <span>ESP32</span>
+        <span>Modular</span>
+        <span>Soft Robotics</span>
+        <span>Tendon-driven</span>
+        <span>Underwater</span>
+      </div>
+    </div>
+
+    <!-- Project 8 -->
+    <div class="card" onclick="openModal('modal-4x4')">
+      <div class="article-container">
+        <img src="./assets/no-image.png" alt="4x4" class="project-img" />
+      </div>
+      <h3>Adnoc 4x4 in Schools Technology Challenge</h3>
+      <div class="tags">
+        <span>Java</span>
+        <span>Arduino</span>
+        <span>Bluetooth</span>
+        <span>AppInventor</span>
+      </div>
+    </div>
+
+    <!-- Project 9 -->
+    <div class="card" onclick="openModal('modal-ftc')">
+      <div class="article-container">
+        <img src="./assets/no-image.png" alt="ftc" class="project-img" />
+      </div>
+      <h3>FIRST Tech Challenge (FTC): Skyscraper</h3>
+      <div class="tags">
+        <span>Java</span>
+        <span>Arduino</span>
+        <span>Bluetooth</span>
+        <span>AppInventor</span>
+        <span>Linear Cascading Slide</span>
+      </div>
+    </div>
+
+    <!-- Project 10 -->
+    <div class="card" onclick="openModal('modal-wro')">
+      <div class="article-container">
+        <img src="./assets/no-image.png" alt="wro" class="project-img" />
+      </div>
+      <h3>World Robotics Olympiad (WRO): Garbage Truck</h3>
+      <div class="tags">
+        <span>LEGO Mindstorm</span>
+        <span>EV3/ NXT</span>
+        <span>littleBits</span>
+        <span>Solar Powered</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Modals (Hidden initially) -->
+<!-- <div id="modal-rbe3002" class="modal">
+  <div class="modal-content fullscreen-modal">
+    <span class="close" onclick="closeModal('modal-rbe3002')">&times;</span>
+    <h3>RBE 3002: Navigation</h3>
+    <p>Modular biomimetic fish with tendon-driven fins, integrated real-time control and vision.</p>
+    <ul>
+        <li>Developed a ROS-based autonomous navigation system using a TurtleBot platform.</li>
+        <li>Implemented SLAM using GMapping, AMCL for localization, A* for global path planning, and Pure Pursuit for local control.</li>
+        <li>Enabled the robot to autonomously explore, map, and navigate a maze environment.</li>
+        <li>Utilized Gazebo for simulation and RViz for real-time visualization of occupancy grids and path planning.</li>
+    </ul>
+
+    <div class="media-grid">
+      <div class="media-item">
+        <h4>Prototype Image 1</h4>
+        <img src="./assets/no-image.png" alt="Fish prototype 1" />
+      </div>
+      <div class="media-item">
+        <h4>Prototype Image 2</h4>
+        <img src="./assets/no-image.png" alt="Fish prototype 2" />
+      </div>
+      <div class="media-item">
+        <h4>GitHub Repository</h4>
+        <a href="https://github.com/pranavsjain13/soft-robotic-fish" target="_blank" class="pdf-link">
+          View Code on GitHub
+        </a>
+      </div>
+      <div class="media-item">
+        <h4>Demo Video</h4>
+        <video controls>
+          <source src="./assets/video-demo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="media-item">
+        <h4>Project Report (PDF)</h4>
+        <a href="./docs/fish-paper.pdf" target="_blank" class="pdf-link">
+          View PDF Report
+        </a>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+<div id="modal-rbe3002" class="modal">
+  <div class="modal-content fullscreen-modal">
+    <span class="close" onclick="closeModal('modal-rbe3002')">&times;</span>
+    <h3>RBE 3002: Navigation</h3>
+    <!-- <p>Modular biomimetic fish with tendon-driven fins, integrated real-time control and vision.</p> -->
+    <ul>
+        <li>Developed a ROS-based autonomous navigation system using a TurtleBot platform.</li>
+        <li>Implemented SLAM using GMapping, AMCL for localization, A* for global path planning, and Pure Pursuit for local control.</li>
+        <li>Enabled the robot to autonomously explore, map, and navigate a maze environment.</li>
+        <li>Utilized Gazebo for simulation and RViz for real-time visualization of occupancy grids and path planning.</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-rbe3001" class="modal">
+  <div class="modal-content fullscreen-modal">
+    <span class="close" onclick="closeModal('modal-rbe3001')">&times;</span>
+    <h3>RBE 3001: Manipulation</h3>
+    <!-- <p>5-DOF pick-and-place robotic arm powered by ROS and camera-based object detection.</p> -->
+    <ul>
+        <li>Developed a ROS-based control system for a 4-DOF robotic arm to autonomously sort colored balls.</li>
+        <li>Computed forward and inverse kinematics using Denavit-Hartenberg parameters for precise motion planning.</li>
+        <li>Integrated an external camera and OpenCV to detect ball color and position for real-time pick-and-place tasks.</li>
+        <li>Implemented basic ROS nodes to coordinate vision processing, kinematics, and actuator control.</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-rbe2002" class="modal">
+  <div class="modal-content fullscreen-modal">
+    <span class="close" onclick="closeModal('modal-rbe2002')">&times;</span>
+    <h3>RBE 2002: Sensing and Perception</h3>
+    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+    <ul>
+      <li>Designed a sensor-driven robot capable of line-following, wall detection, AprilTag-based navigation, and path memorization.</li>
+      <li>Integrated ambient light sensors, distance sensors, and AprilTag orientation for autonomous decision-making.</li>
+      <li>Enabled the robot to return to a home position and trigger gates using infrared communication.</li>
+      <li>Implemented inter-robot communication using MQTT and remote buttons to coordinate actions with three other robots.</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-rbe2001" class="modal">
+  <div class="modal-content fullscreen-modal">
+    <span class="close" onclick="closeModal('modal-rbe2001')">&times;</span>
+    <h3>RBE 2001: Mechanical Applications</h3>
+    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+    <ul>
+      <li>Designed and built two robots featuring four-bar linkage and bottom-out linear gripper mechanisms for precise pick-and-place tasks.</li>
+      <li>Programmed robots to position plates at specific angles (0°, 25°, 45°) with mechanical accuracy.</li>
+      <li>Engineered a custom gear train to increase payload capacity of the four-bar mechanism.</li>
+      <li>Created detailed CAD models in SolidWorks and 3D printed gripper components.</li>
+      <li>Integrated an emergency stop function triggered via remote button for safety compliance.</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-rbe1001" class="modal">
+  <div class="modal-content fullscreen-modal">
+    <span class="close" onclick="closeModal('modal-rbe1001')">&times;</span>
+    <h3>RBE 1001: Introduction to Robotics</h3>
+    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+    <ul>
+      <li>Designed and built a mobile robot using VEX components to detect, grab, and sort blue and red balls into designated wall slots.</li>
+      <li>Implemented a low center of mass design enabling the robot to climb and maintain position on slopes, even when powered off.</li>
+      <li>Used a camera for ball detection and ambient light sensors for line following navigation.</li>
+      <li>Developed a linear cascading slide mechanism from scratch initially, then redesigned to a four-bar linkage to optimize weight and stability.</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-rbe530" class="modal">
+  <div class="modal-content fullscreen-modal">
+    <span class="close" onclick="closeModal('modal-rbe530')">&times;</span>
+    <h3>RBE 530: Soft Robotics</h3>
+    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+    <ul>
+      <li>Designed and developed a semi-rigid continuum robot inspired by octopus arms and elephant trunks for navigating confined pipe environments.</li>
+      <li>Applied soft robotics principles including compliant mechanics and elastic actuation to achieve flexible locomotion.</li>
+      <li>Integrated design and fabrication methodologies focused on adaptability and safety in constrained spaces.</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-mqp" class="modal">
+  <div class="modal-content fullscreen-modal">
+    <span class="close" onclick="closeModal('modal-mqp')">&times;</span>
+    <h3>Major Qualifying Project (MQP): Soft Robotic Eel</h3>
+    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+    <ul>
+      <li>Designed and developed a tendon-actuated, cable-driven soft robotic eel featuring modular, 3D-printed accordion segments made of thermoplastic elastomer (NinjaTek Chinchilla).</li>
+      <li>Implemented a pulley-cable actuation system powered by servo motors to replicate anguilliform swimming motion for flexible underwater locomotion.</li>
+      <li>Enhanced mechanical performance and modularity for easy repair, extension, and future sensor/depth control integration.</li>
+      <li>Conducted tank and pool testing to evaluate swim speed and durability in chlorinated water.</li>
+      <li>Project contributes to biological understanding of eel locomotion and potential applications in underwater exploration.</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-4x4" class="modal">
+  <div class="modal-content fullscreen-modal">
+    <span class="close" onclick="closeModal('modal-4x4')">&times;</span>
+    <h3>Adnoc 4x4 in Schools Technology Challenge</h3>
+    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+    <ul>
+      <li>Designed and built a remote-controlled 4x4 CyberTruck capable of traversing diverse terrains.</li>
+      <li>Developed a custom app to control the vehicle’s navigation and performance.</li>
+      <li>Competed and won a trophy in the Trailer Tow Challenge category.</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-ftc" class="modal">
+  <div class="modal-content fullscreen-modal">
+    <span class="close" onclick="closeModal('modal-ftc')">&times;</span>
+    <h3>FIRST Tech Challenge (FTC): Skyscraper</h3>
+    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+    <ul>
+      <li>Competed as a core member of the White Hat Hackers team in the FTC robotics competition.</li>
+      <li>Contributed across all sub-teams (engineering notebook, mechanical design, and programming) as a flexible team member with prior experience.</li>
+      <li>Helped design, build, and troubleshoot a cascading slide mechanism using VEX components, optimizing for task efficiency and space.</li>
+      <li>Assisted in logic development and debugging of Java-based autonomous and driver-controlled programs.</li>
+      <li>Overcame language barriers and scheduling challenges through visual communication, collaborative coordination, and team leadership.</li>
+      <li>Led integration efforts across teams, streamlining mechanical, software, and documentation workflows.</li>
+      <li>Team placed 5th overall, receiving recognition from peers for the robot’s design and performance.</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-wro" class="modal">
+  <div class="modal-content fullscreen-modal">
+    <span class="close" onclick="closeModal('modal-wro')">&times;</span>
+    <h3>World Robotics Olympiad (WRO): Garbage Truck</h3>
+    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+    <ul>
+      <li>Co-developed a smart robotic waste management system for the WRO Open Category, earning a top-4 national ranking and qualifying for the international round in Delhi.</li>
+      <li>Designed and built a functional robot featuring a smart bin (using littleBits) that autonomously summoned a line-following garbage truck for collection and real-time sorting.</li>
+      <li>Integrated a solar-powered system with automated panel deployment based on power and lighting conditions.</li>
+      <li>Led robot design, construction, and programming while iterating on multiple design blueprints to overcome real-world implementation challenges.</li>
+      <li>Gained valuable international exposure through collaboration and competition with global teams tackling the shared problem of sustainable waste management.</li>
+    </ul>
+  </div>
+</div>
+
+
+
+
+<section id="other-projects" class="panel">
+  <h2>Other Projects</h2>
+  <div class="projects-grid">
+
+    <!-- Other Project 1 -->
+    <div class="card" onclick="openModal('modal-ar3101')">
+      <div class="article-container">
+        <img src="./assets/no-image.png" alt="ar3101" class="project-img" />
+      </div>
+      <h3>AR 3101: 3D Modelling</h3>
+      <div class="tags">
+        <span>CAD</span>
+        <span>ZBrush</span>
+        <span>3Ds Max</span>
+        <span>Adobe Substance</span>
+        <span>Unreal Engine</span>
+        <span>Optimization</span>
+      </div>
+    </div>
+
+    <!-- Other Project 2 -->
+    <div class="card" onclick="openModal('modal-es3011')">
+      <div class="article-container">
+        <img src="./assets/no-image.png" alt="es3011" class="project-img" />
+      </div>
+      <h3>ES 3011: Controls</h3>
+      <div class="tags">
+        <span>Arduino</span>
+        <span>PID control</span>
+        <span>Velocity Control</span>
+      </div>
+    </div>
+
+    <!-- Other Project 3 -->
+    <div class="card" onclick="openModal('modal-ece2049')">
+      <div class="article-container">
+        <img src="./assets/no-image.png" alt="ece2049" class="project-img" />
+      </div>
+      <h3>ECE 2049: Embedded Systems</h3>
+      <div class="tags">
+        <span>C</span>
+        <span>Waveform Generator</span>
+        <span>Simon Says memory game</span>
+        <span>Low-Level Hardware Control</span>
+      </div>
+    </div>
+
+    <!-- Other Project 4 -->
+    <div class="card" onclick="openModal('modal-gps')">
+      <div class="article-container">
+        <img src="./assets/no-image.png" alt="gps" class="project-img" />
+      </div>
+      <h3>Great Problems Seminar (GPS): A More Walkable Worcester</h3>
+      <div class="tags">
+        <span>Sustainability</span>
+        <span>Urban Planning</span>
+      </div>
+    </div>
+
+    <!-- Other Project 5 -->
+    <div class="card" onclick="openModal('modal-hex')">
+      <div class="article-container">
+        <img src="./assets/no-image.png" alt="hex" class="project-img" />
+      </div>
+      <h3>HEX Literary Magazine: Hex Mix</h3>
+      <div class="tags">
+        <span>Internship</span>
+        <span>Hex</span>
+        <span>Literary Magazine</span>
+      </div>
+    </div>
+
+    <!-- Other Project 6 -->
+    <div class="card" onclick="openModal('modal-iqp')">
+      <div class="article-container">
+        <img src="./assets/no-image.png" alt="iqp" class="project-img" />
+      </div>
+      <h3>Inter-Qualifying Project (IQP): The Impact of AI on the Workforce</h3>
+      <div class="tags">
+        <span>Artificial Intelligence (AI)</span>
+        <span>ANSI</span>
+        <span>WorkCred</span>
+        <span>Workforce</span>
+        <span>Policy</span>
+        <span>ChatGPT</span>
+      </div>
+    </div>
+
+    <!-- Other Project 7 -->
+    <div class="card" onclick="openModal('modal-cs2049')">
+      <div class="article-container">
+        <img src="./assets/no-image.png" alt="cs2049" class="project-img" />
+      </div>
+      <h3>CS 2049: Software Engineering</h3>
+      <div class="tags">
+        <span>Python</span>
+        <span>Flask</span>
+        <span>SQL</span>
+        <span>AWS</span>
+        <span>Docker</span>
+        <span>GitHub</span>
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>Javascript</span>
+        <span>OAuth</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- Modals (Hidden initially) -->
+
+<div id="modal-ar3101" class="modal">
+  <div class="modal-content fullscreen-modal">
+    <span class="close" onclick="closeModal('modal-ar3101')">&times;</span>
+    <h3>AR 3101: 3D Modelling</h3>
+    <!-- <p>Modular biomimetic fish with tendon-driven fins, integrated real-time control and vision.</p> -->
+    <ul>
+      <li>Created high-resolution 3D assets including a treasure chest, a detailed room replica, and a sculpted character model using industry-standard tools.</li>
+      <li>Utilized ZBrush for organic sculpting (Hulk character), 3ds Max for hard-surface modeling (room layout), and Adobe Substance for realistic texturing.</li>
+      <li>Integrated models into Unreal Engine, enabling interactive navigation and animation within a game environment.</li>
+      <li>Applied life drawing and anatomy studies to produce accurate, game-ready assets for real-time applications.</li>
+      <li>Optimized assets for performance and reduced file size.</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-es3011" class="modal">
+  <div class="modal-content fullscreen-modal">
+    <span class="close" onclick="closeModal('modal-es3011')">&times;</span>
+    <h3>ES 3011: Controls</h3>
+    <!-- <p>5-DOF pick-and-place robotic arm powered by ROS and camera-based object detection.</p> -->
+    <ul>
+      <li>Programmed an Arduino-controlled car to travel a specified distance while balancing blocks, applying core control theory concepts.</li>
+      <li>Implemented various control strategies including PID control and velocity control to optimize accuracy and stability.</li>
+      <li>Gained hands-on experience with system modeling, transient response tuning, and real-world application of control engineering principles.</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-ece2049" class="modal">
+  <div class="modal-content fullscreen-modal">
+    <span class="close" onclick="closeModal('modal-ece2049')">&times;</span>
+    <h3>ECE 2049: Embedded Systems</h3>
+    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+    <ul>
+      <li>Designed and programmed multiple interactive applications on WPI’s custom expansion board using C, including a waveform generator, Simon Says memory game, real-time clock with temperature display, and a piano note game.</li>
+      <li>Utilized embedded systems concepts such as state machines, peripheral interfacing (LCDs, sensors), and low-level hardware control.</li>
+      <li>Gained hands-on experience with constrained computing environments and real-time system design.</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-gps" class="modal">
+  <div class="modal-content fullscreen-modal">
+    <span class="close" onclick="closeModal('modal-gps')">&times;</span>
+    <h3>Great Problems Seminar (GPS): A More Walkable Worcester</h3>
+    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+    <ul>
+      <li>Conducted in-depth research and data analysis to identify barriers preventing Worcester residents from adopting walking or biking as primary modes of transportation.</li>
+      <li>Identified key challenges such as safety concerns, inadequate city infrastructure, and convenience-related limitations.</li>
+      <li>Proposed actionable solutions including redesigning intersections for pedestrian and cyclist safety, and increasing public access to E-bikes.</li>
+      <li>Highlighted potential large-scale sustainability impacts, such as reducing greenhouse gas emissions and urban air pollution, through improved pedestrian infrastructure.</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-hex" class="modal">
+  <div class="modal-content fullscreen-modal">
+    <span class="close" onclick="closeModal('modal-hex')">&times;</span>
+    <h3>HEX Literary Magazine: Hex Mix</h3>
+    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+    <ul>
+      <li>Curated and selected literary submissions for publication, ensuring quality and diversity of content.</li>
+      <li>Collaborated on finalizing the “Hex Mix” machine—a modified gumball vending machine dispensing literature and candy to boost magazine engagement.</li>
+      <li>Managed printing and stocking of literature pieces for distribution via the Hex Mix machine.</li>
+      <li>Designed promotional materials, including posters and email campaigns, to increase visibility and website traffic.</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-iqp" class="modal">
+  <div class="modal-content fullscreen-modal">
+    <span class="close" onclick="closeModal('modal-iqp')">&times;</span>
+    <h3>Inter-Qualifying Project (IQP): The Impact of AI on the Workforce</h3>
+    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+    <ul>
+      <li>Conducted archival research and expert interviews to analyze current and near-future effects of AI on employment, ethics, legality, and cybersecurity.</li>
+      <li>Collaborated with ANSI and WorkCred to explore policy responses and public sentiment surrounding AI integration in the workforce.</li>
+      <li>Developed actionable recommendations and a detailed implefmentation roadmap to guide organizations, like ANSI and WorkCred, in adopting AI responsibly and effectively.</li>
+      <li><strong>Guest Speaker at WPI (April 2024): </strong>Presented insights from the IQP at a WPI-hosted seminar on AI and ChatGPT, discussing AI’s challenges, advancements, and its impact on homes and workplaces.</li>
+    </ul>
+  </div>
+</div>
+
+<div id="modal-cs2049" class="modal">
+  <div class="modal-content fullscreen-modal">
+    <span class="close" onclick="closeModal('modal-cs2049')">&times;</span>
+    <h3>CS 2049: Software Engineering</h3>
+    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+    <ul>
+      <li>Developed <strong>Research Wizard</strong>, a full-stack web portal connecting WPI undergraduates with faculty-led research opportunities.</li>
+      <li>Built a Python Flask-based API with OAuth integration for WPI’s login system.</li>
+      <li>Implemented sorting features, SQL database integration, and object-oriented design for modular backend logic.</li>
+      <li>Designed a user-friendly interface to streamline research discovery and matching.</li>
+    </ul>
+  </div>
+</div>
+
+
+
+  <section id="contact" class="panel">
+    <h2>Contact</h2>
+    <div class="contact-container">
+
+      <a class="contact-card" href="mailto:pranavsjain13@gmail.com" target="_blank">
+        <img src="./assets/icons/email.png" alt="Email" />
+        <span>Email</span>
+      </a>
+
+      <a class="contact-card" href="https://github.com/pranavsjain13?tab=repositories" target="_blank">
+        <img src="./assets/icons/github.png" alt="GitHub" />
+        <span>GitHub</span>
+      </a>
+
+      <a class="contact-card" href="https://linkedin.com/in/pranavsjain" target="_blank">
+        <img src="./assets/icons/linkedin.png" alt="LinkedIn" />
+        <span>LinkedIn</span>
+      </a>
+
+    </div>
+  </section>
+
+
+
+  <footer>
+    <p>© 2025 Pranav Jain. Built with GitHub Pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
