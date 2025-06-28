@@ -655,7 +655,7 @@ a:hover { opacity: .8; }
 .contact-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1rem;
+  gap: 5rem;
   width: 100%;
   margin-top: 2rem;
 }
@@ -700,7 +700,7 @@ section.full-width {
   max-width: 100%;
   /* padding-left: 0;
   padding-right: 0; */
-  padding: 6rem 2rem;
+  padding: 6rem 6rem;
 }
 
 
