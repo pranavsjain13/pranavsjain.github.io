@@ -654,9 +654,9 @@ a:hover { opacity: .8; }
 /* Contact Panel Styling */
 .contact-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1.5rem;
-  justify-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+  width: 100%;
   margin-top: 2rem;
 }
 
@@ -664,13 +664,15 @@ a:hover { opacity: .8; }
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   background-color: #1a1a1a;
-  padding: 1rem 1.5rem;
-  border-radius: 10px;
+  padding: 1.5rem;
+  border-radius: 12px;
   text-decoration: none;
   color: #eee;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   transition: transform 0.3s ease, background-color 0.3s ease;
+  width: 100%;
+  height: 100%;
 }
 
 .contact-card:hover {
@@ -679,16 +681,26 @@ a:hover { opacity: .8; }
 }
 
 .contact-card img {
-  width: 36px;
-  height: 36px;
-  margin-bottom: 0.6rem;
-  filter: brightness(0) invert(1); /* makes icons white */
+  width: 100%;
+  height: auto;
+  max-height: 80px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  filter: brightness(0) invert(1);
 }
 
 .contact-card span {
-  font-size: 1rem;
-  font-weight: 500;
+  font-size: 1.1rem;
+  font-weight: 600;
   color: #00acee;
+  text-align: center;
+}
+
+section.full-width {
+  max-width: 100%;
+  /* padding-left: 0;
+  padding-right: 0; */
+  padding: 6rem 2rem;
 }
 
 
