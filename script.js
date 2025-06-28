@@ -1,18 +1,16 @@
-function toggleMenu() {
-  const menu = document.querySelector(".menu-links");
-  const icon = document.querySelector(".hamburger-icon");
-  menu.classList.toggle("open");
-  icon.classList.toggle("open");
+function openModal(id) {
+  document.getElementById(id).style.display = "block";
 }
 
-function togglePopUp(projectNum) {
-  let allPopUps = document.querySelectorAll(".details-popup");
+function closeModal(id) {
+  document.getElementById(id).style.display = "none";
+}
 
-  allPopUps.forEach((popup, index) => {
-    if (index === projectNum-1) {
-      popup.classList.toggle("open-popup");
-    } else {
-      popup.classList.remove("open-popup");
+// Optional: Close modal when clicking outside of it
+window.onclick = function (event) {
+  document.querySelectorAll('.modal').forEach(modal => {
+    if (event.target === modal) {
+      modal.style.display = "none";
     }
   });
-}
+};
