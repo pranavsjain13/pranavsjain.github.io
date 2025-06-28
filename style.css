@@ -17,7 +17,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   /* background: rgba(17, 17, 17, 0.85); */
-  background: rgba(54, 54, 54, 0.85);
+  background: rgba(54, 54, 54, 0.95);
   padding: 1rem 2rem;
   z-index: 100;
   gap: 0.5rem;
