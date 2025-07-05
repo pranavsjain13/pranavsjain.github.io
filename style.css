@@ -10,6 +10,14 @@ body {
 }
 
 /* Navigation */
+.nav-toggle {
+  display: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #00acee;
+  user-select: none;
+}
+
 nav {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -19,7 +27,7 @@ nav {
   /* background: rgba(17, 17, 17, 0.85); */
   background: rgba(54, 54, 54, 0.95);
   padding: 1rem 2rem;
-  z-index: 100;
+  z-index: 1000;
   gap: 0.5rem;
 }
 
@@ -30,13 +38,13 @@ nav {
   gap: 0.5rem;
 }
 
-.nav-left .logo-icon {
+.logo-icon {
   width: 50px;
   height: 50px;
   object-fit: contain;
 }
 
-.nav-left .logo {
+.logo {
   font-size: 1.25rem;
   font-weight: 800;
   color: #00acee;
@@ -59,6 +67,46 @@ nav {
 .nav-right a:hover {
   color: #00acee;
 }
+
+/* Responsive Dropdown - Mobile */
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-right {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100vw;                      /* Full screen width */
+    background-color: #222;
+    padding: 1rem 2rem;
+    border-bottom: 2px solid #00acee;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    flex-direction: column;
+    align-items: flex-start;           /* Align text to left */
+    z-index: 999;
+  }
+
+  .nav-right.show {
+    display: flex;
+  }
+
+  .nav-right a {
+    padding: 0.75rem 0;
+    width: 100%;
+    text-align: left;
+    border-bottom: 1px solid #333;
+    color: #eee;
+    font-weight: 600;
+  }
+
+  .nav-right a:last-child {
+    border-bottom: none;
+  }
+}
+
 
 
 /* Header “hero” */
@@ -94,6 +142,14 @@ header#welcome {
   margin-bottom: 2rem;
 }
 
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
 .cta-button {
   display: inline-block;
   background-color: white;
@@ -103,7 +159,9 @@ header#welcome {
   border-radius: 8px;
   text-decoration: none;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
+
 .cta-button:hover {
   background-color: #e0e0e0;
   transform: translateY(-2px);
@@ -111,10 +169,19 @@ header#welcome {
 
 .section__pic-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   height: 200px;
   width: 200px;
-  margin: auto 0;
-  translate: 100px;
+  margin: 0 auto;
+}
+
+.section__pic-container img {
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  width: auto;
+  object-fit: contain;
 }
 
 /* About Section border and layout */

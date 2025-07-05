@@ -10,18 +10,21 @@
 <body>
   <nav>
     <div class="nav-left">
-      <img src="./assets/logo/logo-1.png" alt="logo" class="logo-icon"/>
+      <img src="./assets/logo/logo-1.png" alt="logo" class="logo-icon" />
       <span class="logo">Pranav Jain</span>
     </div>
-    <div class="nav-right">
+
+    <div class="nav-toggle" onclick="toggleMenu()">☰</div>
+
+    <div class="nav-right" id="nav-menu">
       <a href="#about">About</a>
+      <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#experience">Experience</a>
-      <a href="#projects">Projects</a>
-      <a href="#other-projects">Other Projects</a>      
       <a href="#contact">Contact</a>
     </div>
   </nav>
+
 
  <header id="welcome">
   <div class="hero-content">
@@ -30,9 +33,11 @@
 	</div>
     <h1>Pranav Jain</h1>
     <p>Robotics Engineer • Innovator • Problem Solver</p>
-    <a class="cta-button" onclick="window.open('./assets/resume.pdf')">Download CV</a>
-    <a href="#projects" class="cta-button">View Projects</a>
-		<a href="#contact" class="cta-button">Contact Info</a>
+    <div class="hero-buttons">
+      <a class="cta-button" onclick="window.open('./assets/resume.pdf')">Download CV</a>
+      <a href="#projects" class="cta-button">View Projects</a>
+      <a href="#contact" class="cta-button">Contact Info</a>
+    </div>
   </div>
 </header>
 
