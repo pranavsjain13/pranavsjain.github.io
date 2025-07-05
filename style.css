@@ -439,6 +439,10 @@ header p {
   margin-bottom: 0.4rem;
 }
 
+.timeline-content strong {
+  color: #5bb8dd;
+}
+
 /* Media links */
 .experience-media-links {
   margin-top: 0.6rem;
