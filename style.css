@@ -553,6 +553,43 @@ header p {
   background-color: #2a2a2a;
 }
 
+/* Project Search Bar */
+.project-search {
+  margin: 2rem auto;
+  text-align: center;
+}
+
+.project-search input {
+  padding: 0.75rem 1.2rem;
+  width: 90%;
+  max-width: 600px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.project-search input:focus {
+  box-shadow:
+    0 0 15px rgba(0, 172, 238, 0.6),
+    0 0 35px rgba(0, 172, 238, 0.4);
+}
+
+/* Projects Category Styling */
+.category-title {
+  margin: 2rem 0 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00acee;
+  border-bottom: 2px solid #00acee;
+  display: inline-block;
+  padding-bottom: 0.3rem;
+}
+
+.project-category {
+  margin-bottom: 3rem;
+}
+
 
 /* Projects grid */
 .projects-grid {

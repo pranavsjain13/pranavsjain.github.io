@@ -327,160 +327,443 @@
 
 <section id="projects" class="panel">
   <h2>Projects</h2>
-  <div class="projects-grid">
-
-    <!-- Project 1 -->
-    <div class="card" onclick="openModal('modal-rbe3002')">
-      <div class="article-container">
-        <img src="./assets/Projects/RBE3002/RViz_AStar.png" alt="rbe3002" class="project-img" />
-      </div>
-      <h3>RBE 3002: Navigation</h3>
-      <div class="tags">
-        <span>Python</span>
-        <span>GitHub</span>
-        <span>ROS</span>
-        <span>Rviz</span>
-        <span>Gazebo</span>
-        <span>SLAM</span>
-        <span>GMapping</span>
-        <span>AMCL</span>
-        <span>A* Algorithm</span>
-        <span>Pure Pursuit</span>
-      </div>
+  <div class="project-search-bar-wrapper">
+    <div class="project-search">
+      <input
+        type="text"
+        placeholder="Search all projects by title or tag..."
+        onkeyup="filterAllProjects(this.value)"
+      />
     </div>
+  </div>
 
-    <!-- Project 2 -->
-    <div class="card" onclick="openModal('modal-rbe3001')">
-      <div class="article-container">
-        <img src="./assets/Projects/RBE3001/RobotWithTeam.jpg" alt="rbe3001" class="project-img" />
+  <!-- RBE Projects -->
+  <div class="project-category" data-category="RBE Projects">
+    <h3 class="category-title">RBE Projects</h3>
+    <div class="projects-grid">
+      
+      <!-- Project 1 -->
+      <div class="card" onclick="openModal('modal-rbe3002')">
+        <div class="article-container">
+          <img src="./assets/Projects/RBE3002/RViz_AStar.png" alt="rbe3002" class="project-img" />
+        </div>
+        <h3>RBE 3002: Navigation</h3>
+        <div class="tags">
+          <span>Python</span>
+          <span>GitHub</span>
+          <span>ROS</span>
+          <span>Rviz</span>
+          <span>Gazebo</span>
+          <span>SLAM</span>
+          <span>GMapping</span>
+          <span>AMCL</span>
+          <span>A* Algorithm</span>
+          <span>Pure Pursuit</span>
+        </div>
       </div>
-      <h3>RBE 3001: Manipulation</h3>
-      <div class="tags">
-        <span>Python</span>
-        <span>GitHub</span>
-        <span>ROS</span>
-        <span>DH parameters</span>
+
+      <!-- Project 2 -->
+      <div class="card" onclick="openModal('modal-rbe3001')">
+        <div class="article-container">
+          <img src="./assets/Projects/RBE3001/RobotWithTeam.jpg" alt="rbe3001" class="project-img" />
+        </div>
+        <h3>RBE 3001: Manipulation</h3>
+        <div class="tags">
+          <span>Python</span>
+          <span>GitHub</span>
+          <span>ROS</span>
+          <span>DH parameters</span>
+        </div>
       </div>
+
+      <!-- Project 3 -->
+      <div class="card" onclick="openModal('modal-rbe2002')">
+        <div class="article-container">
+          <img src="./assets//Projects/RBE2002/RobotWithTeam.jpeg" alt="rbe2002" class="project-img" />
+        </div>
+        <h3>RBE 2002: Sensing and Perception</h3>
+        <div class="tags">
+          <span>C++</span>
+          <span>GitHub</span>
+          <span>MQTT</span>
+          <span>April Tags</span>
+          <span>Path Memorization</span>
+        </div>
+      </div>
+
+      <!-- Project 4 -->
+      <div class="card" onclick="openModal('modal-rbe2001')">
+        <div class="article-container">
+          <img src="./assets/Projects/RBE2001/2Robots.jpeg" alt="rbe2001" class="project-img" />
+        </div>
+        <h3>RBE 2001: Mechanical Applications</h3>
+        <div class="tags">
+          <span>C++</span>
+          <span>GitHub</span>
+          <span>4-bar</span>
+          <span>CAD</span>
+          <span>Gear Trains</span>
+        </div>
+      </div>
+
+      <!-- Project 5 -->
+      <div class="card" onclick="openModal('modal-rbe1001')">
+        <div class="article-container">
+          <img src="./assets/Projects/RBE1001/FinalRobot.png" alt="rbe1001" class="project-img" />
+        </div>
+        <h3>RBE 1001: Introduction to Robotics</h3>
+        <div class="tags">
+          <span>VEX</span>
+          <span>Java</span>
+          <span>GitHub</span>
+        </div>
+      </div>
+
+      <!-- Project 6 -->
+      <div class="card" onclick="openModal('modal-rbe530')">
+        <div class="article-container">
+          <img src="./assets/Projects/RBE530/Robot.JPG" alt="rbe530" class="project-img" />
+        </div>
+        <h3>RBE 530: Soft Robotics</h3>
+        <div class="tags">
+          <span>Tele-operation</span>
+          <span>Soft Robotics</span>
+          <span>Continuum Robot</span>
+          <span>In-pipe locomotion</span>
+        </div>
+      </div>
+
+      <!-- Project 7 -->
+      <div class="card" onclick="openModal('modal-mqp')">
+        <div class="article-container">
+          <img src="./assets/Projects/MQP/RobotWithTeam.jpg" alt="mqp" class="project-img" />
+        </div>
+        <h3>Major Qualifying Project (MQP): Soft Robotic Eel</h3>
+        <div class="tags">
+          <span>Arduino</span>
+          <span>ESP32</span>
+          <span>Modular</span>
+          <span>Soft Robotics</span>
+          <span>Tendon-driven</span>
+          <span>Underwater</span>
+        </div>
+      </div>
+
+      <!-- Project 8 -->
+      <div class="card" onclick="openModal('modal-4x4')">
+        <div class="article-container">
+          <img src="./assets/Projects/4x4 YasInSchools/RobotWithCertificate.jpeg" alt="4x4" class="project-img" />
+        </div>
+        <h3>Adnoc 4x4 in Schools Technology Challenge</h3>
+        <div class="tags">
+          <span>Java</span>
+          <span>Arduino</span>
+          <span>Bluetooth</span>
+          <span>AppInventor</span>
+        </div>
+      </div>
+
+      <!-- Project 9 -->
+      <div class="card" onclick="openModal('modal-ftc')">
+        <div class="article-container">
+          <img src="./assets/Projects/FTC/RobotWithTeam.png" alt="ftc" class="project-img" />
+        </div>
+        <h3>FIRST Tech Challenge (FTC): Skyscraper</h3>
+        <div class="tags">
+          <span>Java</span>
+          <span>Arduino</span>
+          <span>Bluetooth</span>
+          <span>AppInventor</span>
+          <span>Linear Cascading Slide</span>
+        </div>
+      </div>
+
+      <!-- Project 10 -->
+      <div class="card" onclick="openModal('modal-wro')">
+        <div class="article-container">
+          <img src="./assets/Projects/WRO/TeamWithAdvisor.jpg" alt="wro" class="project-img" />
+        </div>
+        <h3>World Robotics Olympiad (WRO): Garbage Truck</h3>
+        <div class="tags">
+          <span>LEGO Mindstorm</span>
+          <span>EV3/ NXT</span>
+          <span>littleBits</span>
+          <span>Solar Powered</span>
+        </div>
+      </div>
+
     </div>
+  </div>
 
-    <!-- Project 3 -->
-    <div class="card" onclick="openModal('modal-rbe2002')">
-      <div class="article-container">
-        <img src="./assets//Projects/RBE2002/RobotWithTeam.jpeg" alt="rbe2002" class="project-img" />
+  <!-- AI Projects -->
+  <div class="project-category" data-category="AI Projects">
+    <h3 class="category-title">AI Projects</h3>
+    <div class="projects-grid">
+      
+      <!-- Other Project 1 -->
+      <div class="card" onclick="openModal('modal-iqp')">
+        <div class="article-container">
+          <img src="./assets/Projects/IQP/TeamWithSponsors.jpg" alt="iqp" class="project-img" />
+        </div>
+        <h3>Inter-Qualifying Project (IQP): The Impact of AI on the Workforce</h3>
+        <div class="tags">
+          <span>Artificial Intelligence (AI)</span>
+          <span>ANSI</span>
+          <span>WorkCred</span>
+          <span>Workforce</span>
+          <span>Policy</span>
+          <span>ChatGPT</span>
+        </div>
       </div>
-      <h3>RBE 2002: Sensing and Perception</h3>
-      <div class="tags">
-        <span>C++</span>
-        <span>GitHub</span>
-        <span>MQTT</span>
-        <span>April Tags</span>
-        <span>Path Memorization</span>
+
+      <!-- Other Project 2 -->
+      <div class="card" onclick="openModal('modal-ai-stanford-workshop')">
+        <div class="article-container">
+          <img src="./assets/Projects/AI Stanford/EmotionDetectionCompetedWithStanfordAlumni.jpg" alt="cs2049" class="project-img" />
+        </div>
+        <h3>Artificial Intelligence (AI) & Machine Learning Workshop</h3>
+        <div class="tags">
+          <span>Artificial Intelligence (AI)</span>
+          <span>Machine Learning (ML)</span>
+          <span>Linear Regression</span>
+          <span>Logistic Regression</span>
+          <span>CNN</span>
+          <span>KNN</span>
+          <span>MLP</span>
+          <span>Python</span>
+          <span>Emotion Detection</span>
+          <span>Ethics</span>
+        </div>
       </div>
+
     </div>
+  </div>
 
-    <!-- Project 4 -->
-    <div class="card" onclick="openModal('modal-rbe2001')">
-      <div class="article-container">
-        <img src="./assets/Projects/RBE2001/2Robots.jpeg" alt="rbe2001" class="project-img" />
+  <!-- Programming Projects -->
+  <div class="project-category" data-category="Programming Projects">
+    <h3 class="category-title">Programming Projects</h3>
+    <div class="projects-grid">
+      
+      <!-- Other Project 2 -->
+      <div class="card" onclick="openModal('modal-es3011')">
+        <div class="article-container">
+          <img src="./assets/Projects/ES3011/Robot.jpg" alt="es3011" class="project-img" />
+        </div>
+        <h3>ES 3011: Controls</h3>
+        <div class="tags">
+          <span>Arduino</span>
+          <span>PID control</span>
+          <span>Velocity Control</span>
+        </div>
       </div>
-      <h3>RBE 2001: Mechanical Applications</h3>
-      <div class="tags">
-        <span>C++</span>
-        <span>GitHub</span>
-        <span>4-bar</span>
-        <span>CAD</span>
-        <span>Gear Trains</span>
+
+      <!-- Other Project 3 -->
+      <div class="card" onclick="openModal('modal-ece2049')">
+        <div class="article-container">
+          <img src="./assets/Projects/ECE2049/Board.jpg" alt="ece2049" class="project-img" />
+        </div>
+        <h3>ECE 2049: Embedded Systems</h3>
+        <div class="tags">
+          <span>C</span>
+          <span>Waveform Generator</span>
+          <span>Simon Says memory game</span>
+          <span>Low-Level Hardware Control</span>
+        </div>
       </div>
+
+      <!-- Other Project 7 -->
+      <div class="card" onclick="openModal('modal-cs3733')">
+        <div class="article-container">
+          <img src="./assets/Projects/CS3733/LoginPage.png" alt="cs3733" class="project-img" />
+        </div>
+        <h3>CS 3733: Software Engineering</h3>
+        <div class="tags">
+          <span>Python</span>
+          <span>Flask</span>
+          <span>SQL</span>
+          <span>AWS</span>
+          <span>Docker</span>
+          <span>GitHub</span>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>Javascript</span>
+          <span>OAuth</span>
+        </div>
+      </div>
+
+      <!-- Other Project 9 -->
+      <div class="card" onclick="openModal('modal-aus-fixit')">
+        <div class="article-container">
+          <img src="./assets/Projects/AUS FixIt/TeamWithProfessor.jpg" alt="aus-fixit" class="project-img" />
+        </div>
+        <h3>American University of Sharjah (AUS) Competition</h3>
+        <div class="tags">
+          <span>Competition</span>
+          <span>Mobile Application</span>
+          <span>Email Verification</span>
+          <span>AppInventor</span>
+          <span>PHP</span>
+        </div>
+      </div>
+
     </div>
+  </div>
 
-    <!-- Project 5 -->
-    <div class="card" onclick="openModal('modal-rbe1001')">
-      <div class="article-container">
-        <img src="./assets/Projects/RBE1001/FinalRobot.png" alt="rbe1001" class="project-img" />
+  <!-- Design Projects -->
+  <div class="project-category" data-category="Design Projects">
+    <h3 class="category-title">Design Projects</h3>
+    <div class="projects-grid">
+      
+      <!-- Other Project 1 -->
+      <div class="card" onclick="openModal('modal-ar3101')">
+        <div class="article-container">
+          <img src="./assets/Projects/AR3101/Hulk.png" alt="ar3101" class="project-img" />
+        </div>
+        <h3>AR 3101: 3D Modelling</h3>
+        <div class="tags">
+          <span>CAD</span>
+          <span>ZBrush</span>
+          <span>3Ds Max</span>
+          <span>Adobe Substance</span>
+          <span>Unreal Engine</span>
+          <span>Optimization</span>
+        </div>
       </div>
-      <h3>RBE 1001: Introduction to Robotics</h3>
-      <div class="tags">
-        <span>VEX</span>
-        <span>Java</span>
-        <span>GitHub</span>
+      
+      <!-- Other Project 1 -->
+      <div class="card" onclick="openModal('modal-sanjay')">
+        <div class="article-container">
+          <img src="./assets/Projects/AR3101/Hulk.png" alt="ar3101" class="project-img" />
+        </div>
+        <h3>Sanjay Uncle Project</h3>
+        <div class="tags">
+          <span>CAD</span>
+          <span>ZBrush</span>
+          <span>3Ds Max</span>
+          <span>Adobe Substance</span>
+          <span>Unreal Engine</span>
+          <span>Optimization</span>
+        </div>
       </div>
+      
+      <!-- Other Project 1 -->
+      <div class="card" onclick="openModal('modal-sanjay')">
+        <div class="article-container">
+          <img src="./assets/Projects/AR3101/Hulk.png" alt="ar3101" class="project-img" />
+        </div>
+        <h3>Set Square</h3>
+        <div class="tags">
+          <span>CAD</span>
+          <span>ZBrush</span>
+          <span>3Ds Max</span>
+          <span>Adobe Substance</span>
+          <span>Unreal Engine</span>
+          <span>Optimization</span>
+        </div>
+      </div>
+      
+      <!-- Other Project 1 -->
+      <div class="card" onclick="openModal('modal-sanjay')">
+        <div class="article-container">
+          <img src="./assets/Projects/AR3101/Hulk.png" alt="ar3101" class="project-img" />
+        </div>
+        <h3>Table Tennis Racket</h3>
+        <div class="tags">
+          <span>CAD</span>
+          <span>ZBrush</span>
+          <span>3Ds Max</span>
+          <span>Adobe Substance</span>
+          <span>Unreal Engine</span>
+          <span>Optimization</span>
+        </div>
+      </div>
+      
+      <!-- Other Project 1 -->
+      <div class="card" onclick="openModal('modal-sanjay')">
+        <div class="article-container">
+          <img src="./assets/Projects/AR3101/Hulk.png" alt="ar3101" class="project-img" />
+        </div>
+        <h3>G-Wagon Car</h3>
+        <div class="tags">
+          <span>CAD</span>
+          <span>ZBrush</span>
+          <span>3Ds Max</span>
+          <span>Adobe Substance</span>
+          <span>Unreal Engine</span>
+          <span>Optimization</span>
+        </div>
+      </div>
+      
+      <!-- Other Project 1 -->
+      <div class="card" onclick="openModal('modal-sanjay')">
+        <div class="article-container">
+          <img src="./assets/Projects/AR3101/Hulk.png" alt="ar3101" class="project-img" />
+        </div>
+        <h3>Bed-side Organiser</h3>
+        <div class="tags">
+          <span>CAD</span>
+          <span>ZBrush</span>
+          <span>3Ds Max</span>
+          <span>Adobe Substance</span>
+          <span>Unreal Engine</span>
+          <span>Optimization</span>
+        </div>
+      </div>
+      
+      <!-- Other Project 1 -->
+      <div class="card" onclick="openModal('modal-sanjay')">
+        <div class="article-container">
+          <img src="./assets/Projects/AR3101/Hulk.png" alt="ar3101" class="project-img" />
+        </div>
+        <h3>Passive Sound Amplifier</h3>
+        <div class="tags">
+          <span>CAD</span>
+          <span>ZBrush</span>
+          <span>3Ds Max</span>
+          <span>Adobe Substance</span>
+          <span>Unreal Engine</span>
+          <span>Optimization</span>
+        </div>
+      </div>
+
     </div>
+  </div>
 
-    <!-- Project 6 -->
-    <div class="card" onclick="openModal('modal-rbe530')">
-      <div class="article-container">
-        <img src="./assets/Projects/RBE530/Robot.JPG" alt="rbe530" class="project-img" />
+  <!-- Other Projects -->
+  <div class="project-category" data-category="Other Projects">
+    <h3 class="category-title">Other Projects</h3>
+    <div class="projects-grid">
+      
+      <!-- Other Project 4 -->
+      <div class="card" onclick="openModal('modal-gps')">
+        <div class="article-container">
+          <img src="./assets/Projects/GPS/PosterPresentation.jpeg" alt="gps" class="project-img" />
+        </div>
+        <h3>Great Problems Seminar (GPS): A More Walkable Worcester</h3>
+        <div class="tags">
+          <span>Sustainability</span>
+          <span>Urban Planning</span>
+        </div>
       </div>
-      <h3>RBE 530: Soft Robotics</h3>
-      <div class="tags">
-        <span>Tele-operation</span>
-        <span>Soft Robotics</span>
-        <span>Continuum Robot</span>
-        <span>In-pipe locomotion</span>
+
+      <!-- Other Project 5 -->
+      <div class="card" onclick="openModal('modal-hex')">
+        <div class="article-container">
+          <img src="./assets/Projects/Hex/Hex_Mix_Machine.jpg" alt="hex" class="project-img" />
+        </div>
+        <h3>HEX Literary Magazine: Hex Mix</h3>
+        <div class="tags">
+          <span>Internship</span>
+          <span>Hex</span>
+          <span>Literary Magazine</span>
+        </div>
       </div>
+
     </div>
-
-    <!-- Project 7 -->
-    <div class="card" onclick="openModal('modal-mqp')">
-      <div class="article-container">
-        <img src="./assets/Projects/MQP/RobotWithTeam.jpg" alt="mqp" class="project-img" />
-      </div>
-      <h3>Major Qualifying Project (MQP): Soft Robotic Eel</h3>
-      <div class="tags">
-        <span>Arduino</span>
-        <span>ESP32</span>
-        <span>Modular</span>
-        <span>Soft Robotics</span>
-        <span>Tendon-driven</span>
-        <span>Underwater</span>
-      </div>
-    </div>
-
-    <!-- Project 8 -->
-    <div class="card" onclick="openModal('modal-4x4')">
-      <div class="article-container">
-        <img src="./assets/Projects/4x4 YasInSchools/RobotWithCertificate.jpeg" alt="4x4" class="project-img" />
-      </div>
-      <h3>Adnoc 4x4 in Schools Technology Challenge</h3>
-      <div class="tags">
-        <span>Java</span>
-        <span>Arduino</span>
-        <span>Bluetooth</span>
-        <span>AppInventor</span>
-      </div>
-    </div>
-
-    <!-- Project 9 -->
-    <div class="card" onclick="openModal('modal-ftc')">
-      <div class="article-container">
-        <img src="./assets/Projects/FTC/RobotWithTeam.png" alt="ftc" class="project-img" />
-      </div>
-      <h3>FIRST Tech Challenge (FTC): Skyscraper</h3>
-      <div class="tags">
-        <span>Java</span>
-        <span>Arduino</span>
-        <span>Bluetooth</span>
-        <span>AppInventor</span>
-        <span>Linear Cascading Slide</span>
-      </div>
-    </div>
-
-    <!-- Project 10 -->
-    <div class="card" onclick="openModal('modal-wro')">
-      <div class="article-container">
-        <img src="./assets/Projects/WRO/TeamWithAdvisor.jpg" alt="wro" class="project-img" />
-      </div>
-      <h3>World Robotics Olympiad (WRO): Garbage Truck</h3>
-      <div class="tags">
-        <span>LEGO Mindstorm</span>
-        <span>EV3/ NXT</span>
-        <span>littleBits</span>
-        <span>Solar Powered</span>
-      </div>
-    </div>
-
   </div>
 </section>
+
+
 
 <!-- Modals (Hidden initially) -->
 
@@ -1116,157 +1399,6 @@
 
   </div>
 </div>
-
-
-
-
-<section id="other-projects" class="panel">
-  <h2>Other Projects</h2>
-  <div class="projects-grid">
-
-    <!-- Other Project 1 -->
-    <div class="card" onclick="openModal('modal-ar3101')">
-      <div class="article-container">
-        <img src="./assets/Projects/AR3101/Hulk.png" alt="ar3101" class="project-img" />
-      </div>
-      <h3>AR 3101: 3D Modelling</h3>
-      <div class="tags">
-        <span>CAD</span>
-        <span>ZBrush</span>
-        <span>3Ds Max</span>
-        <span>Adobe Substance</span>
-        <span>Unreal Engine</span>
-        <span>Optimization</span>
-      </div>
-    </div>
-
-    <!-- Other Project 2 -->
-    <div class="card" onclick="openModal('modal-es3011')">
-      <div class="article-container">
-        <img src="./assets/Projects/ES3011/Robot.jpg" alt="es3011" class="project-img" />
-      </div>
-      <h3>ES 3011: Controls</h3>
-      <div class="tags">
-        <span>Arduino</span>
-        <span>PID control</span>
-        <span>Velocity Control</span>
-      </div>
-    </div>
-
-    <!-- Other Project 3 -->
-    <div class="card" onclick="openModal('modal-ece2049')">
-      <div class="article-container">
-        <img src="./assets/Projects/ECE2049/Board.jpg" alt="ece2049" class="project-img" />
-      </div>
-      <h3>ECE 2049: Embedded Systems</h3>
-      <div class="tags">
-        <span>C</span>
-        <span>Waveform Generator</span>
-        <span>Simon Says memory game</span>
-        <span>Low-Level Hardware Control</span>
-      </div>
-    </div>
-
-    <!-- Other Project 4 -->
-    <div class="card" onclick="openModal('modal-gps')">
-      <div class="article-container">
-        <img src="./assets/Projects/GPS/PosterPresentation.jpeg" alt="gps" class="project-img" />
-      </div>
-      <h3>Great Problems Seminar (GPS): A More Walkable Worcester</h3>
-      <div class="tags">
-        <span>Sustainability</span>
-        <span>Urban Planning</span>
-      </div>
-    </div>
-
-    <!-- Other Project 5 -->
-    <div class="card" onclick="openModal('modal-hex')">
-      <div class="article-container">
-        <img src="./assets/Projects/Hex/Hex_Mix_Machine.jpg" alt="hex" class="project-img" />
-      </div>
-      <h3>HEX Literary Magazine: Hex Mix</h3>
-      <div class="tags">
-        <span>Internship</span>
-        <span>Hex</span>
-        <span>Literary Magazine</span>
-      </div>
-    </div>
-
-    <!-- Other Project 6 -->
-    <div class="card" onclick="openModal('modal-iqp')">
-      <div class="article-container">
-        <img src="./assets/Projects/IQP/TeamWithSponsors.jpg" alt="iqp" class="project-img" />
-      </div>
-      <h3>Inter-Qualifying Project (IQP): The Impact of AI on the Workforce</h3>
-      <div class="tags">
-        <span>Artificial Intelligence (AI)</span>
-        <span>ANSI</span>
-        <span>WorkCred</span>
-        <span>Workforce</span>
-        <span>Policy</span>
-        <span>ChatGPT</span>
-      </div>
-    </div>
-
-    <!-- Other Project 7 -->
-    <div class="card" onclick="openModal('modal-cs3733')">
-      <div class="article-container">
-        <img src="./assets/Projects/CS3733/LoginPage.png" alt="cs3733" class="project-img" />
-      </div>
-      <h3>CS 3733: Software Engineering</h3>
-      <div class="tags">
-        <span>Python</span>
-        <span>Flask</span>
-        <span>SQL</span>
-        <span>AWS</span>
-        <span>Docker</span>
-        <span>GitHub</span>
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>Javascript</span>
-        <span>OAuth</span>
-      </div>
-    </div>
-
-    <!-- Other Project 8 -->
-    <div class="card" onclick="openModal('modal-ai-stanford-workshop')">
-      <div class="article-container">
-        <img src="./assets/Projects/AI Stanford/EmotionDetectionCompetedWithStanfordAlumni.jpg" alt="cs2049" class="project-img" />
-      </div>
-      <h3>Artificial Intelligence (AI) & Machine Learning Workshop</h3>
-      <div class="tags">
-        <span>Artificial Intelligence (AI)</span>
-        <span>Machine Learning (ML)</span>
-        <span>Linear Regression</span>
-        <span>Logistic Regression</span>
-        <span>CNN</span>
-        <span>KNN</span>
-        <span>MLP</span>
-        <span>Python</span>
-        <span>Emotion Detection</span>
-        <span>Ethics</span>
-      </div>
-    </div>
-
-    <!-- Other Project 9 -->
-    <div class="card" onclick="openModal('modal-aus-fixit')">
-      <div class="article-container">
-        <img src="./assets/Projects/AUS FixIt/TeamWithProfessor.jpg" alt="aus-fixit" class="project-img" />
-      </div>
-      <h3>American University of Sharjah (AUS) Competition</h3>
-      <div class="tags">
-        <span>Competition</span>
-        <span>Mobile Application</span>
-        <span>Email Verification</span>
-        <span>AppInventor</span>
-        <span>PHP</span>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- Modals (Hidden initially) -->
 
 <div id="modal-ar3101" class="modal">
   <div class="modal-content fullscreen-modal">
