@@ -23,13 +23,28 @@ function toggleMenu() {
 
 // Projects Search Bar
 function filterAllProjects(value) {
-  const cards = document.querySelectorAll(".projects-grid .card");
+  const categories = document.querySelectorAll(".project-category");
   value = value.toLowerCase();
-  cards.forEach(card => {
-    const title = card.querySelector("h3").textContent.toLowerCase();
-    const tags = Array.from(card.querySelectorAll(".tags span")).map(tag => tag.textContent.toLowerCase());
-    const match = title.includes(value) || tags.some(tag => tag.includes(value));
-    card.style.display = match ? "block" : "none";
+
+  categories.forEach(category => {
+    const cards = category.querySelectorAll(".card");
+    let hasVisible = false;
+
+    cards.forEach(card => {
+      const title = card.querySelector("h3").textContent.toLowerCase();
+      const tags = Array.from(card.querySelectorAll(".tags span")).map(tag => tag.textContent.toLowerCase());
+      const match = title.includes(value) || tags.some(tag => tag.includes(value));
+
+      card.style.display = match ? "block" : "none";
+      if (match) hasVisible = true;
+    });
+
+    // Hide or show the entire section based on visibility
+    category.style.display = hasVisible ? "block" : "none";
   });
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  filterAllProjects(""); // Apply filter once to hide empty sections
+});
 

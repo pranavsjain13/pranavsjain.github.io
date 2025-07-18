@@ -588,6 +588,13 @@ header p {
 
 .project-category {
   margin-bottom: 3rem;
+  transition: all 0.3s ease;
+}
+
+.project-category[style*="display: none"] {
+  margin: 0;
+  padding: 0;
+  border: none;
 }
 
 
