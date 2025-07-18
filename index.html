@@ -361,6 +361,54 @@
           <span>Pure Pursuit</span>
         </div>
       </div>
+      <div id="modal-rbe3002" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-rbe3002')">&times;</span>
+          <h1>RBE 3002: Navigation</h1>
+          <!-- <p>Modular biomimetic fish with tendon-driven fins, integrated real-time control and vision.</p> -->
+          <ul>
+              <li>Developed a ROS-based autonomous navigation system using a TurtleBot platform.</li>
+              <li>Implemented SLAM using GMapping, AMCL for localization, A* for global path planning, and Pure Pursuit for local control.</li>
+              <li>Enabled the robot to autonomously explore, map, and navigate a maze environment.</li>
+              <li>Utilized Gazebo for simulation and RViz for real-time visualization of occupancy grids and path planning.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>A* Path Planning</h4>
+              <img src="./assets/Projects/RBE3002/RViz_AStar.png" alt="RViz A* Path Planning" />
+            </div>
+            <div class="media-item">
+              <h4>Final Project Report</h4>
+              <a href="./assets/Projects/RBE3002/RBE3002 - Lab 4.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>A* Path Planning Report</h4>
+              <a href="./assets/Projects/RBE3002/RBE3002 - Lab 3.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Preliminary Design Review (PDR)</h4>
+              <a href="./assets/Projects/RBE3002/RBE3002 PDR.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Critical Design Review (CDR)</h4>
+              <a href="./assets/Projects/RBE3002/RBE3002 CDR.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
 
       <!-- Project 2 -->
       <div class="card" onclick="openModal('modal-rbe3001')">
@@ -373,6 +421,87 @@
           <span>GitHub</span>
           <span>ROS</span>
           <span>DH parameters</span>
+        </div>
+      </div>
+      <div id="modal-rbe3001" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-rbe3001')">&times;</span>
+          <h1>RBE 3001: Manipulation</h1>
+          <!-- <p>5-DOF pick-and-place robotic arm powered by ROS and camera-based object detection.</p> -->
+          <ul>
+              <li>Developed a ROS-based control system for a 4-DOF robotic arm to autonomously sort colored balls.</li>
+              <li>Computed forward and inverse kinematics using Denavit-Hartenberg parameters for precise motion planning.</li>
+              <li>Integrated an external camera and OpenCV to detect ball color and position for real-time pick-and-place tasks.</li>
+              <li>Implemented basic ROS nodes to coordinate vision processing, kinematics, and actuator control.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Robot with Team</h4>
+              <img src="./assets/Projects/RBE3001/RobotWithTeam.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>DH Table</h4>
+              <img src="./assets/Projects/RBE3001/DH_Table.jpg" alt="Fish prototype 2" />
+            </div>
+            <div class="media-item">
+              <h4>Forward Kinematics Report</h4>
+              <a href="./assets/Projects/RBE3001/Lab2_ForwardKinematics_Report_RBE3001A24_Team17_Graham_Jain_Prendergast.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Inverse Kinematics and Trajectory Generation Report</h4>
+              <a href="./assets/Projects/RBE3001/Lab3_InverseKinematice_TrajectoryGeneration_Report_RBE3001A24_Team17_Graham_Jain_Prendergast.pdf.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Velocity Kinematics Report</h4>
+              <a href="./assets/Projects/RBE3001/Lab4_VelocityKinematics_Report_RBE3001A24_Team17_Graham_Jain_Prendergast.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Final Project Video</h4>
+              <video controls>
+                <source src="./assets/Projects/RBE3001/Video_RBE 3001 Final Project.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-item">
+              <h4>Live Plotting</h4>
+              <video controls>
+                <source src="./assets/Projects/RBE3001/LivePlotting.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-item">
+              <h4>Camera Color Detection</h4>
+              <video controls>
+                <source src="./assets/Projects/RBE3001/Camera_Color_Detection.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-item">
+              <h4>Ball Following</h4>
+              <video controls>
+                <source src="./assets/Projects/RBE3001/BallFollowing.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-item">
+              <h4>Ball Sorting</h4>
+              <video controls>
+                <source src="./assets/Projects/RBE3001/SortingBalls.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -390,6 +519,62 @@
           <span>Path Memorization</span>
         </div>
       </div>
+      <div id="modal-rbe2002" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-rbe2002')">&times;</span>
+          <h1>RBE 2002: Sensing and Perception</h1>
+          <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+          <ul>
+            <li>Designed a sensor-driven robot capable of line-following, wall detection, AprilTag-based navigation, and path memorization.</li>
+            <li>Integrated ambient light sensors, distance sensors, and AprilTag orientation for autonomous decision-making.</li>
+            <li>Enabled the robot to return to a home position and trigger gates using infrared communication.</li>
+            <li>Implemented inter-robot communication using MQTT and remote buttons to coordinate actions with three other robots.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Robot with Team</h4>
+              <img src="./assets/Projects/RBE2002/RobotWithTeam.jpeg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>All Robots</h4>
+              <img src="./assets/Projects/RBE2002/AllRobots.jpg" alt="Fish prototype 2" />
+            </div>
+            <div class="media-item">
+              <h4>Wall Following</h4>
+              <video controls>
+                <source src="./assets/Projects/RBE2002/WallFollowing.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-item">
+              <h4>MQTT</h4>
+              <video controls>
+                <source src="./assets/Projects/RBE2002/MQTT.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-item">
+              <h4>Escape ROMI</h4>
+              <video controls>
+                <source src="./assets/Projects/RBE2002/EscapeRomi.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-item">
+              <h4>April Tag Navigation, Trajectory Saving, Escape ROMI</h4>
+              <video controls>
+                <source src="./assets/Projects/RBE2002/April Tags_PathSaving.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
       <!-- Project 4 -->
       <div class="card" onclick="openModal('modal-rbe2001')">
@@ -405,6 +590,80 @@
           <span>Gear Trains</span>
         </div>
       </div>
+      <div id="modal-rbe2001" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-rbe2001')">&times;</span>
+          <h1>RBE 2001: Mechanical Applications</h1>
+          <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+          <ul>
+            <li>Designed and built two robots featuring four-bar linkage and bottom-out linear gripper mechanisms for precise pick-and-place tasks.</li>
+            <li>Programmed robots to position plates at specific angles (0°, 25°, 45°) with mechanical accuracy.</li>
+            <li>Engineered a custom gear train to increase payload capacity of the four-bar mechanism.</li>
+            <li>Created detailed CAD models in SolidWorks and 3D printed gripper components.</li>
+            <li>Integrated an emergency stop function triggered via remote button for safety compliance.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>All Robots</h4>
+              <img src="./assets/Projects/RBE2001/2Robots.jpeg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Lead Screw Gripper</h4>
+              <video controls>
+                <source src="./assets/Projects/RBE2001/LeadScrewGripper.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-item">
+              <h4>Maximum Torque Analysis</h4>
+              <video controls>
+                <source src="./assets/Projects/RBE2001/MaxTorqueAnalysis.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-item">
+              <h4>Robot 1 Assembly</h4>
+              <video controls>
+                <source src="./assets/Projects/RBE2001/Robot1_Assembly.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-item">
+              <h4>Robot 1 - 25° Roof (Plastic Plate)</h4>
+              <video controls>
+                <source src="./assets/Projects/RBE2001/Robot1_25DegRoof.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-item">
+              <h4>Robot 1 - 25° Roof (Aluminum Plate)</h4>
+              <video controls>
+                <source src="./assets/Projects/RBE2001/Robot1_25DegRoof_AluminumPlate.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-item">
+              <h4>Robot 1 - 25° Roof (Aluminum Plate with Extra Weight)</h4>
+              <video controls>
+                <source src="./assets/Projects/RBE2001/Robot1_AluminumPlateWithExtraWeight.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-item">
+              <h4>Robot 2 - 45° Roof (Aluminum Plate)</h4>
+              <video controls>
+                <source src="./assets/Projects/RBE2001/Robot2_45DegRoof_AluminumPlate_HandOff.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
       <!-- Project 5 -->
       <div class="card" onclick="openModal('modal-rbe1001')">
@@ -416,6 +675,64 @@
           <span>VEX</span>
           <span>Java</span>
           <span>GitHub</span>
+        </div>
+      </div>
+      <div id="modal-rbe1001" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-rbe1001')">&times;</span>
+          <h1>RBE 1001: Introduction to Robotics</h1>
+          <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+          <ul>
+            <li>Designed and built a mobile robot using VEX components to detect, grab, and sort blue and red balls into designated wall slots.</li>
+            <li>Implemented a low center of mass design enabling the robot to climb and maintain position on slopes, even when powered off.</li>
+            <li>Used a camera for ball detection and ambient light sensors for line following navigation.</li>
+            <li>Developed a linear cascading slide mechanism from scratch initially, then redesigned to a four-bar linkage to optimize weight and stability.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Robot</h4>
+              <img src="./assets/Projects/RBE1001/FinalRobot.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Final Report</h4>
+              <a href="./assets/Projects/RBE1001/WPI RBE1001 Report.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Linear Cascading Slide Mechanism</h4>
+              <video controls>
+                <source src="./assets/Projects/RBE1001/CascadingSlideMechanism.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-item">
+              <h4>Robot with Linear Cascading Slide Mechanism</h4>
+              <video controls>
+                <source src="./assets/Projects/RBE1001/RobotWithCascadingSlideMechanism.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-item">
+              <h4>Robot in Autonomous Period</h4>
+              <video controls>
+                <source src="./assets/Projects/RBE1001/AutonomousPeriod.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-item">
+              <h4>Robot in Tele-operation Period</h4>
+              <video controls>
+                <source src="./assets/Projects/RBE1001/Tele-operatedPeriod.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -430,6 +747,59 @@
           <span>Soft Robotics</span>
           <span>Continuum Robot</span>
           <span>In-pipe locomotion</span>
+        </div>
+      </div>
+      <div id="modal-rbe530" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-rbe530')">&times;</span>
+          <h1>RBE 530: Soft Robotics</h1>
+          <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+          <ul>
+            <li>Wrote and presented a research paper on underwater soft robots, exploring bioinspired locomotion strategies and their real-world applications.</li>
+            <li>Designed and developed a proof-of-concept semi-rigid continuum robot inspired by octopus arms and elephant trunks for navigating confined pipe environments.</li>
+            <li>Applied soft robotics principles including compliant mechanics and elastic actuation to achieve flexible locomotion.</li>
+            <li>Integrated design and fabrication methodologies focused on adaptability and safety in constrained spaces.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Robot</h4>
+              <img src="./assets/Projects/RBE530/Robot.JPG" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Steering Mechanism</h4>
+              <img src="./assets/Projects/RBE530/Steering Mechanism.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Underwater Soft Robotics Presentation</h4>
+              <a href="./assets/Projects/RBE530/Presentation_Underwater Soft Robotics.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Underwater Soft Robotics Report</h4>
+              <a href="./assets/Projects/RBE530/Paper_Underwater_Soft_Robotics.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>In-pipe Locomotion Report</h4>
+              <a href="./assets/Projects/RBE530/RBE530_Competition_Soft_Robot_Report.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>In-Pipe Locomotion Video</h4>
+              <video controls>
+                <source src="./assets/Projects/RBE530/Competition.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -448,6 +818,123 @@
           <span>Underwater</span>
         </div>
       </div>
+      <div id="modal-mqp" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-mqp')">&times;</span>
+          <h1>Major Qualifying Project (MQP): Soft Robotic Eel</h1>
+          <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+          <ul>
+            <li><strong>Team Name: </strong>Electronic Eel Locomotion Soft Water Anguilliform Robotic Device (EELSWARD)</li>
+            <li>Designed and developed a tendon-actuated, cable-driven soft robotic eel featuring modular, 3D-printed accordion segments made of thermoplastic elastomer (NinjaTek Chinchilla).</li>
+            <li>Implemented a pulley-cable actuation system powered by servo motors to replicate anguilliform swimming motion for flexible underwater locomotion.</li>
+            <li>Enhanced mechanical performance and modularity for easy repair, extension, and future sensor/depth control integration.</li>
+            <li>Conducted tank and pool testing to evaluate swim speed and durability in chlorinated water.</li>
+            <li>Project contributes to biological understanding of eel locomotion and potential applications in underwater exploration.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Robot Presentation with Team</h4>
+              <img src="./assets/Projects/MQP/RobotWithTeam.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Robot Presentation</h4>
+              <img src="./assets/Projects/MQP/FinalRobotWithPoster.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Old EEL</h4>
+              <img src="./assets/Projects/MQP/Old_EEL.jpeg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Current EEL</h4>
+              <img src="./assets/Projects/MQP/CurrentEEL.JPG" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>MQP Report</h4>
+              <a href="./assets/Projects/MQP/MQP Paper Final.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>MQP Presentation</h4>
+              <a href="./assets/Projects/MQP/Final MQP Presentation.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>MQP Poster</h4>
+              <a href="./assets/Projects/MQP/MQP Poster.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>B Term Update</h4>
+              <a href="./assets/Projects/MQP/B Term Soft Robotic EELreport.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>EEL Prayer</h4>
+              <a href="./assets/Projects/MQP/A Prayer for the Eel.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Body Segment Testing</h4>
+              <video controls>
+                <source src="./assets/Projects/MQP/BodySegmentTesting.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-item">
+              <h4>Anguilliform Motion</h4>
+              <video controls>
+                <source src="./assets/Projects/MQP/AnguilliformMotion.MOV" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-item">
+              <h4>Fish Tank Testing Without Buoyancy</h4>
+              <video controls>
+                <source src="./assets/Projects/MQP/FishTankTestingBeforeBuoyancy.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-item">
+              <h4>Fish Tank Testing</h4>
+              <video controls>
+                <source src="./assets/Projects/MQP/FishTankTesting.MOV" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-item">
+              <h4>Swimming Pool Testing</h4>
+              <video controls>
+                <source src="./assets/Projects/MQP/Eel Clip.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-item">
+              <h4>MQP Video</h4>
+              <video controls>
+                <source src="./assets/Projects/MQP/MQP Eel Competition Video.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-item">
+              <h4>EEL Prayer</h4>
+              <video controls>
+                <source src="./assets/Projects/MQP/FunWithEEL.MOV" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
       <!-- Project 8 -->
       <div class="card" onclick="openModal('modal-4x4')">
@@ -460,6 +947,57 @@
           <span>Arduino</span>
           <span>Bluetooth</span>
           <span>AppInventor</span>
+        </div>
+      </div>
+      <div id="modal-4x4" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-4x4')">&times;</span>
+          <h1>Adnoc 4x4 in Schools Technology Challenge</h1>
+          <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+          <ul>
+            <li><strong>Team Name: </strong>Cyber Crawlers</li>
+            <li>Designed and built a remote-controlled 4x4 CyberTruck capable of traversing diverse terrains.</li>
+            <li>Developed a custom app to control the vehicle’s navigation and performance.</li>
+            <li>Competed and won a trophy in the Trailer Tow Challenge category.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Trailer Tow Winner</h4>
+              <img src="./assets/Projects/4x4 YasInSchools/RobotWithCertificate.jpeg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Team</h4>
+              <img src="./assets/Projects/4x4 YasInSchools/Team.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Old Design</h4>
+              <img src="./assets/Projects/4x4 YasInSchools/OldDesign.jpeg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Presentation</h4>
+              <a href="./assets/Projects/4x4 YasInSchools/CyberCrawlers Verbal Presentation.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Script</h4>
+              <a href="./assets/Projects/4x4 YasInSchools/Script 4x4.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Other Competition Robots</h4>
+              <video controls>
+                <source src="./assets/Projects/4x4 YasInSchools/OtherCompetitionRobots.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -477,6 +1015,56 @@
           <span>Linear Cascading Slide</span>
         </div>
       </div>
+      <div id="modal-ftc" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-ftc')">&times;</span>
+          <h1>FIRST Tech Challenge (FTC): Skyscraper</h1>
+          <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+          <ul>
+            <li><strong>Team Name: </strong>White Hat Hackers</li>
+            <li>Competed as a core member of the White Hat Hackers team in the FTC robotics competition.</li>
+            <li>Contributed across all sub-teams (engineering notebook, mechanical design, and programming) as a flexible team member with prior experience.</li>
+            <li>Helped design, build, and troubleshoot a cascading slide mechanism using VEX components, optimizing for task efficiency and space.</li>
+            <li>Assisted in logic development and debugging of Java-based autonomous and driver-controlled programs.</li>
+            <li>Overcame language barriers and scheduling challenges through visual communication, collaborative coordination, and team leadership.</li>
+            <li>Led integration efforts across teams, streamlining mechanical, software, and documentation workflows.</li>
+            <li>Team placed 5th overall, receiving recognition from peers for the robot’s design and performance.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Robot With Team</h4>
+              <img src="./assets/Projects/FTC/RobotWithTeam.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Robot With Other UAE Team</h4>
+              <img src="./assets/Projects/FTC/RobotWithOtherTeam.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Robot With Linear Cascading Slide Mechanism</h4>
+              <img src="./assets/Projects/FTC/RobotWithLinearCascadingSlide.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Capstone Design</h4>
+              <img src="./assets/Projects/FTC/Capstone.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>My Script</h4>
+              <img src="./assets/Projects/FTC/MyScript.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Engineering Notebook</h4>
+              <a href="./assets/Projects/FTC/Engineering notebook.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
       <!-- Project 10 -->
       <div class="card" onclick="openModal('modal-wro')">
@@ -489,6 +1077,49 @@
           <span>EV3/ NXT</span>
           <span>littleBits</span>
           <span>Solar Powered</span>
+        </div>
+      </div>
+      <div id="modal-wro" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-wro')">&times;</span>
+          <h1>World Robotics Olympiad (WRO): Garbage Truck</h1>
+          <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+          <ul>
+            <li>Co-developed a smart robotic waste management system for the WRO Open Category, earning a top-4 national ranking and qualifying for the international round in Delhi.</li>
+            <li>Designed and built a functional robot featuring a smart bin (using littleBits) that autonomously summoned a line-following garbage truck for collection and real-time sorting.</li>
+            <li>Integrated a solar-powered system with automated panel deployment based on power and lighting conditions.</li>
+            <li>Led robot design, construction, and programming while iterating on multiple design blueprints to overcome real-world implementation challenges.</li>
+            <li>Gained valuable international exposure through collaboration and competition with global teams tackling the shared problem of sustainable waste management.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Team with Advisor</h4>
+              <img src="./assets/Projects/WRO/TeamWithAdvisor.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Team</h4>
+              <img src="./assets/Projects/WRO/Team.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Robot and Stall Setup</h4>
+              <img src="./assets/Projects/WRO/RobotAndStall.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Top 4 Teams</h4>
+              <img src="./assets/Projects/WRO/Top4Teams.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Robot Report</h4>
+              <a href="./assets/Projects/WRO/Robotic Trash Management System.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -515,6 +1146,44 @@
           <span>ChatGPT</span>
         </div>
       </div>
+      <div id="modal-iqp" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-iqp')">&times;</span>
+          <h1>Inter-Qualifying Project (IQP): The Impact of AI on the Workforce</h1>
+          <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+          <ul>
+            <li>Conducted archival research and expert interviews to analyze current and near-future effects of AI on employment, ethics, legality, and cybersecurity.</li>
+            <li>Collaborated with ANSI and WorkCred to explore policy responses and public sentiment surrounding AI integration in the workforce.</li>
+            <li>Developed actionable recommendations and a detailed implefmentation roadmap to guide organizations, like ANSI and WorkCred, in adopting AI responsibly and effectively.</li>
+            <li><strong>Guest Speaker at WPI (April 2024): </strong>Presented insights from the IQP at a WPI-hosted seminar on AI and ChatGPT, discussing AI’s challenges, advancements, and its impact on homes and workplaces.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Team with ANSI and WorkCred Sponsors</h4>
+              <img src="./assets/Projects/IQP/TeamWithSponsors.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Team</h4>
+              <img src="./assets/Projects/IQP/Team.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>All WPI Teams</h4>
+              <img src="./assets/Projects/IQP/TeamWithOtherTeams.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>IQP Report</h4>
+              <a href="./assets/Projects/IQP/IQPB23 - ANSI - Final Report.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
       <!-- Other Project 2 -->
       <div class="card" onclick="openModal('modal-ai-stanford-workshop')">
@@ -533,6 +1202,87 @@
           <span>Python</span>
           <span>Emotion Detection</span>
           <span>Ethics</span>
+        </div>
+      </div>
+      <div id="modal-ai-stanford-workshop" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-ai-stanford-workshop')">&times;</span>
+          <h1>Artificial Intelligence (AI) & Machine Learning Workshop</h1>
+          <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+          <ul>
+            <li>Participated in a 10-day AI workshop led by Stanford University alumni.</li>
+            <li>Gained hands-on experience with AI models including Logistic/Linear Regression, CNNs, KNN, and MLP.</li>
+            <li>Developed an emotion detection application using Python.</li>
+            <li>Explored ethical issues in AI such as data bias and its real-world consequences.</li>
+            <li>Presented project findings to peers and parents, showcasing practical applications of emotion-aware systems.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Project With Stanford Alumni</h4>
+              <img src="./assets/Projects/AI Stanford/EmotionDetectionCompetedWithStanfordAlumni.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Project With Stanford Alumni And Other Classmates</h4>
+              <img src="./assets/Projects/AI Stanford/MeWithOtherClassmates.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Project Introduction</h4>
+              <img src="./assets/Projects/AI Stanford/ExplainingProject.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Project Prototype</h4>
+              <img src="./assets/Projects/AI Stanford/DisplayingProject.jpg" alt="Fish prototype 1" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Other Project 2 -->
+      <div class="card" onclick="openModal('modal-cs3043')">
+        <div class="article-container">
+          <img src="./assets/Projects/CS3043/TitlePage.png" alt="cs2049" class="project-img" />
+        </div>
+        <h3>Forensics AI</h3>
+        <div class="tags">
+          <span>Artificial Intelligence (AI)</span>
+          <span>Forensics</span>
+          <span>Ethics</span>
+        </div>
+      </div>
+      <div id="modal-cs3043" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-cs3043')">&times;</span>
+          <h1>Forensics AI</h1>
+          <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+          <ul>
+            <li>Delivered a research-based presentation on the intersection of Artificial Intelligence and forensic science.</li>
+            <li>Covered key topics such as AI-assisted criminal investigations, predictive policing, and facial recognition in surveillance.</li>
+            <li>Explored both the technological advancements and ethical concerns around AI use in law enforcement.</li>
+            <li>Analyzed real-world case studies highlighting how AI is transforming forensic data analysis and crime prediction.</li>
+            <li>Discussed the implications of bias, privacy, and accountability in AI-driven forensic tools.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Title Page</h4>
+              <img src="./assets/Projects/CS3043/TitlePage.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Presentation With Notes</h4>
+              <a href="./assets/Projects/CS3043/Forensic AI.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -556,6 +1306,42 @@
           <span>Velocity Control</span>
         </div>
       </div>
+      <div id="modal-es3011" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-es3011')">&times;</span>
+          <h1>ES 3011: Controls</h1>
+          <!-- <p>5-DOF pick-and-place robotic arm powered by ROS and camera-based object detection.</p> -->
+          <ul>
+            <li>Programmed an Arduino-controlled car to travel a specified distance while balancing blocks, applying core control theory concepts.</li>
+            <li>Implemented various control strategies including PID control and velocity control to optimize accuracy and stability.</li>
+            <li>Gained hands-on experience with system modeling, transient response tuning, and real-world application of control engineering principles.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Robot</h4>
+              <img src="./assets/Projects/ES3011/Robot.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Final Project Report</h4>
+              <a href="./assets/Projects/ES3011/Controls Final Project Report.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Velocity Control</h4>
+              <video controls>
+                <source src="./assets/Projects/ES3011/RobotMovingCertainDistance.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+        </div>
+      </div>
 
       <!-- Other Project 3 -->
       <div class="card" onclick="openModal('modal-ece2049')">
@@ -568,6 +1354,53 @@
           <span>Waveform Generator</span>
           <span>Simon Says memory game</span>
           <span>Low-Level Hardware Control</span>
+        </div>
+      </div>
+      <div id="modal-ece2049" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-ece2049')">&times;</span>
+          <h1>ECE 2049: Embedded Systems</h1>
+          <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+          <ul>
+            <li>Designed and programmed multiple interactive applications on WPI’s custom expansion board using C, including a waveform generator, Simon Says memory game, real-time clock with temperature display, and a piano note game.</li>
+            <li>Utilized embedded systems concepts such as state machines, peripheral interfacing (LCDs, sensors), and low-level hardware control.</li>
+            <li>Gained hands-on experience with constrained computing environments and real-time system design.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Custom MSP430F5529 lab board</h4>
+              <img src="./assets/Projects/ECE2049/Board.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Simon Game Report</h4>
+              <a href="./assets/Projects/ECE2049/Simon Game.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>MSP430 Hero Report</h4>
+              <a href="./assets/Projects/ECE2049/MSP430 Hero.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Time and Temperature Display Report</h4>
+              <a href="./assets/Projects/ECE2049/Time and Temperature Display.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Waveform Generator Report</h4>
+              <a href="./assets/Projects/ECE2049/Waveform Generator.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -590,6 +1423,60 @@
           <span>OAuth</span>
         </div>
       </div>
+      <div id="modal-cs3733-wizard" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-cs3733-wizard')">&times;</span>
+          <h1>CS 3733: Software Engineering (Research Wizard)</h1>
+          <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+          <ul>
+            <li>Developed <strong>Research Wizard</strong>, a full-stack web portal connecting WPI undergraduates with faculty-led research opportunities.</li>
+            <li>Built a Python Flask-based API with OAuth integration for WPI’s login system.</li>
+            <li>Implemented sorting features, SQL database integration, and object-oriented design for modular backend logic.</li>
+            <li>Designed a user-friendly interface to streamline research discovery and matching.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Web Application Login Page</h4>
+              <img src="./assets/Projects/CS3733/ResearchWizardLoginPage.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Web Application</h4>
+              <a href="https://pranavsjain13.pythonanywhere.com/" target="_blank" class="pdf-link">
+                Website Link
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Project Requirements</h4>
+              <a href="https://github.com/pranavsjain13/WPI_CS3733_team-infiniteloopers/blob/main/documents/RequirementsDocument/RequirementsDocument.md" target="_blank" class="pdf-link">
+                Website Link
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Project Design Document</h4>
+              <a href="https://github.com/pranavsjain13/WPI_CS3733_team-infiniteloopers/blob/main/documents/Design%20Document/DesignDocument_final.md" target="_blank" class="pdf-link">
+                Website Link
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Project Iteration 1</h4>
+              <a href="https://github.com/pranavsjain13/WPI_CS3733_team-infiniteloopers/blob/main/documents/ProjectGroupReport_1.md" target="_blank" class="pdf-link">
+                Website Link
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Project Iteration 2</h4>
+              <a href="https://github.com/pranavsjain13/WPI_CS3733_team-infiniteloopers/blob/main/documents/ProjectGroupReport_2.md" target="_blank" class="pdf-link">
+                Website Link
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
 
       <!-- Other Project 7 -->
       <div class="card" onclick="openModal('modal-cs3733-smile')">
@@ -605,6 +1492,36 @@
           <span>HTML</span>
           <span>CSS</span>
           <span>Javascript</span>
+        </div>
+      </div>
+      <div id="modal-cs3733-smile" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-cs3733-smile')">&times;</span>
+          <h1>CS 3733: Software Engineering (Smile App)</h1>
+          <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+          <ul>
+            <li>Developed <strong>SmileApp</strong>, a gratitude-based message portal inspired by positive psychology to promote user well-being.</li>
+            <li>Implemented core features including post creation, display, liking, and responsive layout using HTML, CSS, and JavaScript.</li>
+            <li>Added tagging, sorting, and full user authentication (signup, login, logout) in later milestones.</li>
+            <li>Built personalized post views and post deletion; re-implemented "likes" using JavaScript and enhanced the UI with Bootstrap.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Web Application Login Page</h4>
+              <img src="./assets/Projects/CS3733/SmileAppLoginPage.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Web Application</h4>
+              <a href="https://deepranav12.pythonanywhere.com/" target="_blank" class="pdf-link">
+                Website Link
+              </a>
+            </div>
+          </div>
+          
         </div>
       </div>
 
@@ -624,7 +1541,36 @@
           <span>Javascript</span>
         </div>
       </div>
+      <div id="modal-cs3733-student" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-cs3733-student')">&times;</span>
+          <h1>CS 3733: Software Engineering (Student App)</h1>
+          <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+          <ul>
+            <li>Built a responsive student management app using Flask and Bootstrap, allowing users to enroll/unenroll in classes, create new courses, and edit their profiles.</li>
+            <li>Implemented user authentication system with custom username creation, signup, login, and logout features.</li>
+            <li>Designed a mobile-friendly interface with responsive layout and styled UI components using Bootstrap.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
 
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Web Application Login Page</h4>
+              <img src="./assets/Projects/CS3733/StudentAppLoginPage.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Web Application</h4>
+              <a href="https://facebook1312004.pythonanywhere.com/" target="_blank" class="pdf-link">
+                Website Link
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+      
       <!-- Other Project 7 -->
       <div class="card" onclick="openModal('modal-dis-cs-ia')">
         <div class="article-container">
@@ -637,6 +1583,73 @@
           <span>SQLite3</span>
           <span>Object-Oriented Programming (OOP)</span>
           <span>GUI</span>
+        </div>
+      </div>
+      <div id="modal-dis-cs-ia" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-dis-cs-ia')">&times;</span>
+          <h1>Restuarant Management System</h1>
+          <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+          <ul>
+            <li>Developed a comprehensive restaurant management system using Python and Tkinter with a focus on modularity, usability, and scalability.</li>
+            <li>Created role-based login functionality for admins, managers, waiters, cooks, and customers, each with unique privileges and screen layouts.</li>
+            <li>Built fully functional GUI panels for user sign-up, menu management, order placement, billing, and user account control.</li>
+            <li>Implemented extensive form validation (e.g., input types, field completeness, unique credentials, format checks) to minimize user error.</li>
+            <li>Designed and managed a SQLite3 database with four main tables: Users, Menu, Orders, and Ingredients.</li>
+            <li>Integrated OOP (Object-Oriented Programming) principles for better structure and reusability across modules.</li>
+            <li>Created features for dynamic screen updating: interface elements update in real-time as users, menu items, or orders change.</li>
+            <li>Designed GUI with clear layouts, labels, and functional screens, ensuring consistent UX across user roles.</li>
+            <li>Used threading and modular programming to keep the application responsive and maintainable.</li>
+            <li>Built for future extensibility with potential for web or mobile integration using frameworks like Flask or Django.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Login Page</h4>
+              <img src="./assets/Projects/CS AI/LoginPage.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Criterion A - Problem Introduction</h4>
+              <a href="./assets/Projects/CS AI/Task A - Problem Introduction.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Criterion B - Solution Overview</h4>
+              <a href="./assets/Projects/CS AI/Task B - Solution Overview.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Criterion C - Development</h4>
+              <a href="./assets/Projects/CS AI/Task C - Development.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Criterion D - Program Video</h4>
+              <video controls>
+                <source src="./assets/Projects/CS AI/Task D - Program.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-item">
+              <h4>Criterion E - Reflection</h4>
+              <a href="./assets/Projects/CS AI/Task E - Reflection.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Github</h4>
+              <a href="https://github.com/pranavsjain13/DIS_CS_AI_Restuarant_Management_Application" target="_blank" class="pdf-link">
+                Website Link
+              </a>
+            </div>
+          </div>
+          
         </div>
       </div>
 
@@ -652,6 +1665,49 @@
           <span>Email Verification</span>
           <span>AppInventor</span>
           <span>PHP</span>
+        </div>
+      </div>
+      <div id="modal-aus-fixit" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-aus-fixit')">&times;</span>
+          <h1>American University of Sharjah (AUS) Competition</h1>
+          <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+          <ul>
+            <li><strong>Team Name: </strong>FixIt</li>
+            <li>Competed against top high school teams across the UAE in an inter-school software development challenge.</li>
+            <li>Developed <strong>FixIt</strong>, a two-part mobile application enabling users to report issues directly to relevant authorities and receive real-time email updates on resolution status.</li>
+            <li>Designed with a clean user interface and a practical case management system for both users and officials.</li>
+            <li>Secured 2nd Place in the competition, earning a winning certificate and a cash prize of AED 1,500.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Team with Professor</h4>
+              <img src="./assets/Projects/AUS FixIt/TeamWithProfessor.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Project Presentation with Judge</h4>
+              <img src="./assets/Projects/AUS FixIt/Explaining.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Product Testing by Judge</h4>
+              <img src="./assets/Projects/AUS FixIt/JudgeTesting.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>All Deira International School (DIS) Teams</h4>
+              <img src="./assets/Projects/AUS FixIt/OtherDISTeams.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>FixIt Example</h4>
+              <a href="./assets/Projects/AUS FixIt/FixIt_Example.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -688,7 +1744,70 @@
           <span>Optimization</span>
         </div>
       </div>
-      
+      <div id="modal-ar3101-hulk" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-ar3101-hulk')">&times;</span>
+          <h1>AR 3101: 3D Modelling (Hulk)</h1>
+          <!-- <p>Modular biomimetic fish with tendon-driven fins, integrated real-time control and vision.</p> -->
+          <ul>
+            <li>Sculpted a high-resolution 3D model of the Hulk using ZBrush, referencing an A-pose for anatomical and structural accuracy.</li>
+            <li>Imported the model into Unreal Engine and added basic facial animations for expressiveness and real-time interaction.</li>
+            <li>Textured the character using Adobe Substance, focusing on realistic skin, muscle, and clothing materials.</li>
+            <li>Explored organic modeling and anatomy for game-ready character design.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>3D Modelled Hulk Character</h4>
+              <video controls>
+                <source src="./assets/Projects/AR3101/3D-Modelled Character_ Hulk.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="media-item">
+              <h4>Hulk CAD</h4>
+              <img src="./assets/Projects/AR3101/Hulk_CAD.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Closed Eyes Morph</h4>
+              <img src="./assets/Projects/AR3101/Hulk_Closed_Eyes.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Closed Mouth Morph</h4>
+              <img src="./assets/Projects/AR3101/Hulk_Closed_Mouth.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Angry Morph</h4>
+              <img src="./assets/Projects/AR3101/Hulk_Angry.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>3D Printed Hulk Character</h4>
+              <img src="./assets/Projects/AR3101/Hulk3DPrinted.jpeg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>UV Map - Body</h4>
+              <img src="./assets/Projects/AR3101/H1_PM3D_Pranav_HULK - UVwrap7-TM_u0_v0.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>UV Map - Pants</h4>
+              <img src="./assets/Projects/AR3101/H2_Pants1-TM_u0_v0.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>UV Map - Inner Eyes</h4>
+              <img src="./assets/Projects/AR3101/H_Inner_Eyes-TM_u0_v0.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>UV Map - Inner Mouth</h4>
+              <img src="./assets/Projects/AR3101/H_Inner_Mouth1-TM_u0_v0.jpg" alt="Fish prototype 1" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <!-- Other Project 1 -->
       <div class="card" onclick="openModal('modal-ar3101-room')">
         <div class="article-container">
@@ -702,7 +1821,41 @@
           <span>Unreal Engine</span>
         </div>
       </div>
-      
+      <div id="modal-ar3101-room" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-ar3101-room')">&times;</span>
+          <h1>AR 3101: 3D Modelling (Room)</h1>
+          <!-- <p>Modular biomimetic fish with tendon-driven fins, integrated real-time control and vision.</p> -->
+          <ul>
+            <li>Modeled a 3D replica of a personal room using 3Ds Max, complete with scaled furniture and interior details.</li>
+            <li>Imported the environment into Unreal Engine, enabling first-person exploration and interactive walkthroughs.</li>
+            <li>Enhanced realism through lighting setup and applied detailed textures to materials like wood flooring, textiles, and glass.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Room</h4>
+              <img src="./assets/Projects/AR3101/Room.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>UV Wrapped</h4>
+              <img src="./assets/Projects/AR3101/Room_UV_Wrapped.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Room Video</h4>
+              <video controls>
+                <source src="./assets/Projects/AR3101/My WPI Room 1.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <!-- Other Project 1 -->
       <div class="card" onclick="openModal('modal-ar3101-chest')">
         <div class="article-container">
@@ -714,7 +1867,46 @@
           <span>Adobe Substance</span>
         </div>
       </div>
-      
+      <div id="modal-ar3101-chest" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-ar3101-chest')">&times;</span>
+          <h1>AR 3101: 3D Modelling (Treasure Chest)</h1>
+          <!-- <p>Modular biomimetic fish with tendon-driven fins, integrated real-time control and vision.</p> -->
+          <ul>
+            <li>Textured a pre-modeled treasure chest using Adobe Substance, with a focus on underwater aesthetics—applying weathered wood, corroded metal, and mossy surfaces.</li>
+            <li>Developed custom texture maps to reflect realistic environmental aging and moisture effects.</li>
+            <li>Practiced UV unwrapping and surface detailing for efficient material application.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Treasure Chest 1 - Front</h4>
+              <img src="./assets/Projects/AR3101/TreasureChest1_Front.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Treasure Chest 1 - Back</h4>
+              <img src="./assets/Projects/AR3101/TreasureChest1_Back.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Treasure Chest 2 - Left</h4>
+              <img src="./assets/Projects/AR3101/TreasureChest2_Left.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Treasure Chest 2 - Right</h4>
+              <img src="./assets/Projects/AR3101/TreasureChest2_Right.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Treasure Chest 2 - Back</h4>
+              <img src="./assets/Projects/AR3101/TreasureChest2_Back.png" alt="Fish prototype 1" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <!-- Other Project 1 -->
       <div class="card" onclick="openModal('modal-sanjay')">
         <div class="article-container">
@@ -745,7 +1937,32 @@
           <span>Woodworking</span>
         </div>
       </div>
-      
+      <div id="modal-dt-tsquare" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-dt-tsquare')">&times;</span>
+          <h1>T-Square</h1>
+          <!-- <p>Modular biomimetic fish with tendon-driven fins, integrated real-time control and vision.</p> -->
+          <ul>
+            <li>Designed and built a T-square with a changeable length for increased versatility in technical drawing and drafting.</li>
+            <li>Constructed using MDF wood for durability and precision.</li>
+            <li>Cut components using a scroll saw and smoothed edges and joints with sandpaper for clean finish and user comfort.</li>
+            <li>Developed a modular sliding mechanism to allow adjustable ruler extension.</li>
+            <li>Focused on functionality and adjustability while maintaining alignment and structural integrity.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>T-Square</h4>
+              <img src="./assets/no-image.png" alt="Fish prototype 1" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <!-- Other Project 1 -->
       <div class="card" onclick="openModal('modal-dt-racket')">
         <div class="article-container">
@@ -761,7 +1978,32 @@
           <span>Woodworking</span>
         </div>
       </div>
-      
+      <div id="modal-dt-racket" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-dt-racket')">&times;</span>
+          <h1>Table Tennis Racket</h1>
+          <!-- <p>Modular biomimetic fish with tendon-driven fins, integrated real-time control and vision.</p> -->
+          <ul>
+            <li>Designed and built a rectangular-shaped table tennis racket using layered materials for improved feel and aesthetics.</li>
+            <li>Constructed the paddle using MDF wood, acrylic plastic, and a MDF-wood handle sandwich structure.</li>
+            <li>Added finger dents to the handle for enhanced grip and ergonomic comfort during play.</li>
+            <li>Used coping saw for precise cutting and sandpaper for smoothing edges and refining contours.</li>
+            <li>Explored unconventional racket shape and multi-material construction for both functionality and design appeal.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Table Tennis Racket</h4>
+              <img src="./assets/no-image.png" alt="Fish prototype 1" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <!-- Other Project 1 -->
       <div class="card" onclick="openModal('modal-dt-gwagon')">
         <div class="article-container">
@@ -779,7 +2021,31 @@
           <span>Woodworking</span>
         </div>
       </div>
-      
+      <div id="modal-dt-gwagon" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-dt-gwagon')">&times;</span>
+          <h1>G-Wagon Car</h1>
+          <!-- <p>Modular biomimetic fish with tendon-driven fins, integrated real-time control and vision.</p> -->
+          <ul>
+            <li>Designed and built a scale model of a G-Wagon car featuring a vacuum-formed HIPS body for lightweight durability.</li>
+            <li>Constructed the chassis using plywood and MDF, with precisely cut wheel slots made using a band saw.</li>
+            <li>Added freely rotating MDF wheels to simulate real car movement.</li>
+            <li>Attached the car body to the chassis using Velcro, allowing for easy separation and attachment.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>G-Wagon Car</h4>
+              <img src="./assets/no-image.png" alt="Fish prototype 1" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <!-- Other Project 1 -->
       <div class="card" onclick="openModal('modal-dt-organiser')">
         <div class="article-container">
@@ -801,7 +2067,77 @@
           <span>Woodworking</span>
         </div>
       </div>
-      
+      <div id="modal-dt-organiser" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-dt-organiser')">&times;</span>
+          <h1>Bed-side Organiser</h1>
+          <!-- <p>Modular biomimetic fish with tendon-driven fins, integrated real-time control and vision.</p> -->
+          <ul>
+            <li>Designed and built a multifunctional bedside organiser combining traditional woodworking, CAD, 3D printing, and electronics.</li>
+            <li>Used teak wood, MDF, and HIPS plastic, cut and shaped with band saw, scroll saw, coping saw, and finished with various grit sandpapers.</li>
+            <li>Integrated finger joints, dowel fittings, a laser-cut compartment, and 3D-printed parts for modularity and aesthetics.</li>
+            <li>Installed LED lighting in a translucent compartment controlled via mobile app; enhanced diffusion using frosted HIPS.</li>
+            <li>Designed parts in Fusion 360 and CorelDRAW, combining manual craftsmanship with digital fabrication.</li>
+            <li>Engraved initials “PSJ” on a custom-cut aluminum plate using metal stamping and aviation snips for a personalized touch.</li>
+            <li>Finished the product with multiple coats of clear spray and applied non-slip pads to the base for stability.</li>
+            <li>Added a book stand with velcro, storage compartments, and a custom paper holder with spring-loaded copper rod.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Project</h4>
+              <a href="./assets/Projects/DT/BedSideOrganiser/DT Project 2019 - Pranav.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Empty Organiser</h4>
+              <img src="./assets/Projects/DT/BedSideOrganiser/EmptyOrganiser.JPG" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Organiser with things</h4>
+              <img src="./assets/Projects/DT/BedSideOrganiser/OrganiserWithThings.JPG" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Red light</h4>
+              <img src="./assets/Projects/DT/BedSideOrganiser/RedLight.JPG" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Blue Light</h4>
+              <img src="./assets/Projects/DT/BedSideOrganiser/BlueLight.JPG" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Yellow Light</h4>
+              <img src="./assets/Projects/DT/BedSideOrganiser/YellowLight.JPG" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Green Light</h4>
+              <img src="./assets/Projects/DT/BedSideOrganiser/GreenLight.JPG" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>CAD Organiser With Surrounding 1</h4>
+              <img src="./assets/Projects/DT/BedSideOrganiser/REMaking Project Idea 1 with surroundings v4.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>CAD Organiser With Surrounding 2</h4>
+              <img src="./assets/Projects/DT/BedSideOrganiser/REMaking Project Idea 1 with surroundings v2.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Improved CAD Organiser</h4>
+              <img src="./assets/Projects/DT/BedSideOrganiser/Improved Project Idea 1 v5.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Improved CAD Organiser With Surrounding</h4>
+              <img src="./assets/Projects/DT/BedSideOrganiser/REMaking Improved Project Idea 1 with surroundings v4.png" alt="Fish prototype 1" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <!-- Other Project 1 -->
       <div class="card" onclick="openModal('modal-dt-amplifier')">
         <div class="article-container">
@@ -816,7 +2152,31 @@
           <span>Woodworking</span>
         </div>
       </div>
-      
+      <div id="modal-dt-amplifier" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-dt-amplifier')">&times;</span>
+          <h1>Passive Sound Amplifier</h1>
+          <!-- <p>Modular biomimetic fish with tendon-driven fins, integrated real-time control and vision.</p> -->
+          <ul>
+            <li>Designed and built a passive sound amplifier inspired by the ‘M’ shape from the Monsters Inc. logo.</li>
+            <li>Constructed using MDF and plywood, optimizing acoustic reflection and resonance.</li>
+            <li>Used a band saw for shaping and sandpaper for surface finishing and edge smoothing.</li>
+            <li>Focused on form and function by blending aesthetic design with acoustic enhancement—no electronics required.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Passive Sound Amplifier</h4>
+              <img src="./assets/no-image.png" alt="Fish prototype 1" />
+            </div>
+          </div>
+
+        </div>
+      </div>
+
       <!-- Other Project 1 -->
       <div class="card" onclick="openModal('modal-dt-stool')">
         <div class="article-container">
@@ -830,6 +2190,31 @@
           <span>Ergonomic Design</span>
           <span>Hand Tools</span>
           <span>Woodworking</span>
+        </div>
+      </div>
+      <div id="modal-dt-stool" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-dt-stool')">&times;</span>
+          <h1>Stool</h1>
+          <!-- <p>Modular biomimetic fish with tendon-driven fins, integrated real-time control and vision.</p> -->
+          <ul>
+            <li>Designed and built a rectangular-shaped table tennis racket using layered materials for improved feel and aesthetics.</li>
+            <li>Constructed the paddle using MDF wood, acrylic plastic, and a MDF-wood handle sandwich structure.</li>
+            <li>Added finger dents to the handle for enhanced grip and ergonomic comfort during play.</li>
+            <li>Used coping saw for precise cutting and sandpaper for smoothing edges and refining contours.</li>
+            <li>Explored unconventional racket shape and multi-material construction for both functionality and design appeal.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Table Tennis Racket</h4>
+              <img src="./assets/no-image.png" alt="Fish prototype 1" />
+            </div>
+          </div>
+
         </div>
       </div>
 
@@ -852,6 +2237,83 @@
           <span>Urban Planning</span>
         </div>
       </div>
+      <div id="modal-gps" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-gps')">&times;</span>
+          <h1>Great Problems Seminar (GPS): A More Walkable Worcester</h1>
+          <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+          <ul>
+            <li><strong>Team Name: </strong>Tri State Urban</li>
+            <li>Conducted in-depth research and data analysis to identify barriers preventing Worcester residents from adopting walking or biking as primary modes of transportation.</li>
+            <li>Identified key challenges such as safety concerns, inadequate city infrastructure, and convenience-related limitations.</li>
+            <li>Proposed actionable solutions including redesigning intersections for pedestrian and cyclist safety, and increasing public access to E-bikes.</li>
+            <li>Highlighted potential large-scale sustainability impacts, such as reducing greenhouse gas emissions and urban air pollution, through improved pedestrian infrastructure.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Poster Presentation</h4>
+              <img src="./assets/Projects/GPS/PosterPresentation.jpeg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Poster</h4>
+              <img src="./assets/Projects/GPS/Poster.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Website</h4>
+              <a href="https://sites.google.com/view/sustainability-bikeworcester/final-projects/tri-state-urban?authuser=0" target="_blank" class="pdf-link">
+                Website Link
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Project Presentation</h4>
+              <a href="./assets/Projects/GPS/Project Presentation.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Project Presentation Script</h4>
+              <a href="./assets/Projects/GPS/Project Script.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Research Notebook 1</h4>
+              <a href="./assets/Projects/GPS/Research Notebook #1 - Pranav Jain.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Research Notebook 2</h4>
+              <a href="./assets/Projects/GPS/Research Notebook #2 - Pranav Jain.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Research Notebook 3</h4>
+              <a href="./assets/Projects/GPS/Research Notebook #3 - Pranav Jain.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Research Summary</h4>
+              <a href="./assets/Projects/GPS/Shared Research Summary - Intro + Background.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Solutions and Recommendations</h4>
+              <a href="./assets/Projects/GPS/Preliminary Solution and Recommendations .pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
 
       <!-- Other Project 5 -->
       <div class="card" onclick="openModal('modal-hex')">
@@ -865,1511 +2327,59 @@
           <span>Literary Magazine</span>
         </div>
       </div>
+      <div id="modal-hex" class="modal">
+        <div class="modal-content fullscreen-modal">
+          <span class="close" onclick="closeModal('modal-hex')">&times;</span>
+          <h1>HEX Literary Magazine: Hex Mix</h1>
+          <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
+          <ul>
+            <li>Curated and selected literary submissions for publication, ensuring quality and diversity of content.</li>
+            <li>Collaborated on finalizing the “Hex Mix” machine—a modified gumball vending machine dispensing literature and candy to boost magazine engagement.</li>
+            <li>Managed printing and stocking of literature pieces for distribution via the Hex Mix machine.</li>
+            <li>Designed promotional materials, including posters and email campaigns, to increase visibility and website traffic.</li>
+          </ul>
+          <br />
+          <br />
+          <h2>Media:</h2>
+
+          <div class="media-grid">
+            <div class="media-item">
+              <h4>Hex Mix Machine</h4>
+              <img src="./assets/Projects/Hex/Hex_Mix_Machine.jpg" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Poster</h4>
+              <img src="./assets/Projects/Hex/Poster.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Information Page</h4>
+              <img src="./assets/Projects/Hex/InfoPage.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Capsule Recycling Poster</h4>
+              <img src="./assets/Projects/Hex/CapsuleRecyclingPoster.png" alt="Fish prototype 1" />
+            </div>
+            <div class="media-item">
+              <h4>Website</h4>
+              <a href="https://hexliterary.com/" target="_blank" class="pdf-link">
+                Website Link
+              </a>
+            </div>
+            <div class="media-item">
+              <h4>Hex Mix Stories with QR Codes</h4>
+              <a href="./assets/Projects/Hex/Hex Mix Stories + QR Codes.pdf" target="_blank" class="pdf-link">
+                View PDF Report
+              </a>
+            </div>
+          </div>
+          
+        </div>
+      </div>
 
     </div>
   </div>
   
 </section>
-
-
-
-<!-- Modals (Hidden initially) -->
-
-<div id="modal-rbe3002" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-rbe3002')">&times;</span>
-    <h1>RBE 3002: Navigation</h1>
-    <!-- <p>Modular biomimetic fish with tendon-driven fins, integrated real-time control and vision.</p> -->
-    <ul>
-        <li>Developed a ROS-based autonomous navigation system using a TurtleBot platform.</li>
-        <li>Implemented SLAM using GMapping, AMCL for localization, A* for global path planning, and Pure Pursuit for local control.</li>
-        <li>Enabled the robot to autonomously explore, map, and navigate a maze environment.</li>
-        <li>Utilized Gazebo for simulation and RViz for real-time visualization of occupancy grids and path planning.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>A* Path Planning</h4>
-        <img src="./assets/Projects/RBE3002/RViz_AStar.png" alt="RViz A* Path Planning" />
-      </div>
-      <div class="media-item">
-        <h4>Final Project Report</h4>
-        <a href="./assets/Projects/RBE3002/RBE3002 - Lab 4.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>A* Path Planning Report</h4>
-        <a href="./assets/Projects/RBE3002/RBE3002 - Lab 3.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Preliminary Design Review (PDR)</h4>
-        <a href="./assets/Projects/RBE3002/RBE3002 PDR.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Critical Design Review (CDR)</h4>
-        <a href="./assets/Projects/RBE3002/RBE3002 CDR.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-    </div>
-    
-  </div>
-</div>
-
-<div id="modal-rbe3001" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-rbe3001')">&times;</span>
-    <h1>RBE 3001: Manipulation</h1>
-    <!-- <p>5-DOF pick-and-place robotic arm powered by ROS and camera-based object detection.</p> -->
-    <ul>
-        <li>Developed a ROS-based control system for a 4-DOF robotic arm to autonomously sort colored balls.</li>
-        <li>Computed forward and inverse kinematics using Denavit-Hartenberg parameters for precise motion planning.</li>
-        <li>Integrated an external camera and OpenCV to detect ball color and position for real-time pick-and-place tasks.</li>
-        <li>Implemented basic ROS nodes to coordinate vision processing, kinematics, and actuator control.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>Robot with Team</h4>
-        <img src="./assets/Projects/RBE3001/RobotWithTeam.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>DH Table</h4>
-        <img src="./assets/Projects/RBE3001/DH_Table.jpg" alt="Fish prototype 2" />
-      </div>
-      <div class="media-item">
-        <h4>Forward Kinematics Report</h4>
-        <a href="./assets/Projects/RBE3001/Lab2_ForwardKinematics_Report_RBE3001A24_Team17_Graham_Jain_Prendergast.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Inverse Kinematics and Trajectory Generation Report</h4>
-        <a href="./assets/Projects/RBE3001/Lab3_InverseKinematice_TrajectoryGeneration_Report_RBE3001A24_Team17_Graham_Jain_Prendergast.pdf.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Velocity Kinematics Report</h4>
-        <a href="./assets/Projects/RBE3001/Lab4_VelocityKinematics_Report_RBE3001A24_Team17_Graham_Jain_Prendergast.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Final Project Video</h4>
-        <video controls>
-          <source src="./assets/Projects/RBE3001/Video_RBE 3001 Final Project.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="media-item">
-        <h4>Live Plotting</h4>
-        <video controls>
-          <source src="./assets/Projects/RBE3001/LivePlotting.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="media-item">
-        <h4>Camera Color Detection</h4>
-        <video controls>
-          <source src="./assets/Projects/RBE3001/Camera_Color_Detection.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="media-item">
-        <h4>Ball Following</h4>
-        <video controls>
-          <source src="./assets/Projects/RBE3001/BallFollowing.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="media-item">
-        <h4>Ball Sorting</h4>
-        <video controls>
-          <source src="./assets/Projects/RBE3001/SortingBalls.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="modal-rbe2002" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-rbe2002')">&times;</span>
-    <h1>RBE 2002: Sensing and Perception</h1>
-    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
-    <ul>
-      <li>Designed a sensor-driven robot capable of line-following, wall detection, AprilTag-based navigation, and path memorization.</li>
-      <li>Integrated ambient light sensors, distance sensors, and AprilTag orientation for autonomous decision-making.</li>
-      <li>Enabled the robot to return to a home position and trigger gates using infrared communication.</li>
-      <li>Implemented inter-robot communication using MQTT and remote buttons to coordinate actions with three other robots.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-     <div class="media-grid">
-      <div class="media-item">
-        <h4>Robot with Team</h4>
-        <img src="./assets/Projects/RBE2002/RobotWithTeam.jpeg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>All Robots</h4>
-        <img src="./assets/Projects/RBE2002/AllRobots.jpg" alt="Fish prototype 2" />
-      </div>
-      <div class="media-item">
-        <h4>Wall Following</h4>
-        <video controls>
-          <source src="./assets/Projects/RBE2002/WallFollowing.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="media-item">
-        <h4>MQTT</h4>
-        <video controls>
-          <source src="./assets/Projects/RBE2002/MQTT.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="media-item">
-        <h4>Escape ROMI</h4>
-        <video controls>
-          <source src="./assets/Projects/RBE2002/EscapeRomi.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="media-item">
-        <h4>April Tag Navigation, Trajectory Saving, Escape ROMI</h4>
-        <video controls>
-          <source src="./assets/Projects/RBE2002/April Tags_PathSaving.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="modal-rbe2001" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-rbe2001')">&times;</span>
-    <h1>RBE 2001: Mechanical Applications</h1>
-    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
-    <ul>
-      <li>Designed and built two robots featuring four-bar linkage and bottom-out linear gripper mechanisms for precise pick-and-place tasks.</li>
-      <li>Programmed robots to position plates at specific angles (0°, 25°, 45°) with mechanical accuracy.</li>
-      <li>Engineered a custom gear train to increase payload capacity of the four-bar mechanism.</li>
-      <li>Created detailed CAD models in SolidWorks and 3D printed gripper components.</li>
-      <li>Integrated an emergency stop function triggered via remote button for safety compliance.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-     <div class="media-grid">
-      <div class="media-item">
-        <h4>All Robots</h4>
-        <img src="./assets/Projects/RBE2001/2Robots.jpeg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Lead Screw Gripper</h4>
-        <video controls>
-          <source src="./assets/Projects/RBE2001/LeadScrewGripper.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="media-item">
-        <h4>Maximum Torque Analysis</h4>
-        <video controls>
-          <source src="./assets/Projects/RBE2001/MaxTorqueAnalysis.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="media-item">
-        <h4>Robot 1 Assembly</h4>
-        <video controls>
-          <source src="./assets/Projects/RBE2001/Robot1_Assembly.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="media-item">
-        <h4>Robot 1 - 25° Roof (Plastic Plate)</h4>
-        <video controls>
-          <source src="./assets/Projects/RBE2001/Robot1_25DegRoof.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="media-item">
-        <h4>Robot 1 - 25° Roof (Aluminum Plate)</h4>
-        <video controls>
-          <source src="./assets/Projects/RBE2001/Robot1_25DegRoof_AluminumPlate.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="media-item">
-        <h4>Robot 1 - 25° Roof (Aluminum Plate with Extra Weight)</h4>
-        <video controls>
-          <source src="./assets/Projects/RBE2001/Robot1_AluminumPlateWithExtraWeight.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="media-item">
-        <h4>Robot 2 - 45° Roof (Aluminum Plate)</h4>
-        <video controls>
-          <source src="./assets/Projects/RBE2001/Robot2_45DegRoof_AluminumPlate_HandOff.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="modal-rbe1001" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-rbe1001')">&times;</span>
-    <h1>RBE 1001: Introduction to Robotics</h1>
-    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
-    <ul>
-      <li>Designed and built a mobile robot using VEX components to detect, grab, and sort blue and red balls into designated wall slots.</li>
-      <li>Implemented a low center of mass design enabling the robot to climb and maintain position on slopes, even when powered off.</li>
-      <li>Used a camera for ball detection and ambient light sensors for line following navigation.</li>
-      <li>Developed a linear cascading slide mechanism from scratch initially, then redesigned to a four-bar linkage to optimize weight and stability.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>Robot</h4>
-        <img src="./assets/Projects/RBE1001/FinalRobot.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Final Report</h4>
-        <a href="./assets/Projects/RBE1001/WPI RBE1001 Report.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Linear Cascading Slide Mechanism</h4>
-        <video controls>
-          <source src="./assets/Projects/RBE1001/CascadingSlideMechanism.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="media-item">
-        <h4>Robot with Linear Cascading Slide Mechanism</h4>
-        <video controls>
-          <source src="./assets/Projects/RBE1001/RobotWithCascadingSlideMechanism.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="media-item">
-        <h4>Robot in Autonomous Period</h4>
-        <video controls>
-          <source src="./assets/Projects/RBE1001/AutonomousPeriod.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="media-item">
-        <h4>Robot in Tele-operation Period</h4>
-        <video controls>
-          <source src="./assets/Projects/RBE1001/Tele-operatedPeriod.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="modal-rbe530" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-rbe530')">&times;</span>
-    <h1>RBE 530: Soft Robotics</h1>
-    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
-    <ul>
-      <li>Wrote and presented a research paper on underwater soft robots, exploring bioinspired locomotion strategies and their real-world applications.</li>
-      <li>Designed and developed a proof-of-concept semi-rigid continuum robot inspired by octopus arms and elephant trunks for navigating confined pipe environments.</li>
-      <li>Applied soft robotics principles including compliant mechanics and elastic actuation to achieve flexible locomotion.</li>
-      <li>Integrated design and fabrication methodologies focused on adaptability and safety in constrained spaces.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>Robot</h4>
-        <img src="./assets/Projects/RBE530/Robot.JPG" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Steering Mechanism</h4>
-        <img src="./assets/Projects/RBE530/Steering Mechanism.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Underwater Soft Robotics Presentation</h4>
-        <a href="./assets/Projects/RBE530/Presentation_Underwater Soft Robotics.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Underwater Soft Robotics Report</h4>
-        <a href="./assets/Projects/RBE530/Paper_Underwater_Soft_Robotics.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>In-pipe Locomotion Report</h4>
-        <a href="./assets/Projects/RBE530/RBE530_Competition_Soft_Robot_Report.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>In-Pipe Locomotion Video</h4>
-        <video controls>
-          <source src="./assets/Projects/RBE530/Competition.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="modal-mqp" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-mqp')">&times;</span>
-    <h1>Major Qualifying Project (MQP): Soft Robotic Eel</h1>
-    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
-    <ul>
-      <li><strong>Team Name: </strong>Electronic Eel Locomotion Soft Water Anguilliform Robotic Device (EELSWARD)</li>
-      <li>Designed and developed a tendon-actuated, cable-driven soft robotic eel featuring modular, 3D-printed accordion segments made of thermoplastic elastomer (NinjaTek Chinchilla).</li>
-      <li>Implemented a pulley-cable actuation system powered by servo motors to replicate anguilliform swimming motion for flexible underwater locomotion.</li>
-      <li>Enhanced mechanical performance and modularity for easy repair, extension, and future sensor/depth control integration.</li>
-      <li>Conducted tank and pool testing to evaluate swim speed and durability in chlorinated water.</li>
-      <li>Project contributes to biological understanding of eel locomotion and potential applications in underwater exploration.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>Robot Presentation with Team</h4>
-        <img src="./assets/Projects/MQP/RobotWithTeam.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Robot Presentation</h4>
-        <img src="./assets/Projects/MQP/FinalRobotWithPoster.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Old EEL</h4>
-        <img src="./assets/Projects/MQP/Old_EEL.jpeg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Current EEL</h4>
-        <img src="./assets/Projects/MQP/CurrentEEL.JPG" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>MQP Report</h4>
-        <a href="./assets/Projects/MQP/MQP Paper Final.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>MQP Presentation</h4>
-        <a href="./assets/Projects/MQP/Final MQP Presentation.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>MQP Poster</h4>
-        <a href="./assets/Projects/MQP/MQP Poster.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>B Term Update</h4>
-        <a href="./assets/Projects/MQP/B Term Soft Robotic EELreport.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>EEL Prayer</h4>
-        <a href="./assets/Projects/MQP/A Prayer for the Eel.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Body Segment Testing</h4>
-        <video controls>
-          <source src="./assets/Projects/MQP/BodySegmentTesting.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="media-item">
-        <h4>Anguilliform Motion</h4>
-        <video controls>
-          <source src="./assets/Projects/MQP/AnguilliformMotion.MOV" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="media-item">
-        <h4>Fish Tank Testing Without Buoyancy</h4>
-        <video controls>
-          <source src="./assets/Projects/MQP/FishTankTestingBeforeBuoyancy.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="media-item">
-        <h4>Fish Tank Testing</h4>
-        <video controls>
-          <source src="./assets/Projects/MQP/FishTankTesting.MOV" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="media-item">
-        <h4>Swimming Pool Testing</h4>
-        <video controls>
-          <source src="./assets/Projects/MQP/Eel Clip.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="media-item">
-        <h4>MQP Video</h4>
-        <video controls>
-          <source src="./assets/Projects/MQP/MQP Eel Competition Video.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="media-item">
-        <h4>EEL Prayer</h4>
-        <video controls>
-          <source src="./assets/Projects/MQP/FunWithEEL.MOV" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="modal-4x4" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-4x4')">&times;</span>
-    <h1>Adnoc 4x4 in Schools Technology Challenge</h1>
-    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
-    <ul>
-      <li><strong>Team Name: </strong>Cyber Crawlers</li>
-      <li>Designed and built a remote-controlled 4x4 CyberTruck capable of traversing diverse terrains.</li>
-      <li>Developed a custom app to control the vehicle’s navigation and performance.</li>
-      <li>Competed and won a trophy in the Trailer Tow Challenge category.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>Trailer Tow Winner</h4>
-        <img src="./assets/Projects/4x4 YasInSchools/RobotWithCertificate.jpeg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Team</h4>
-        <img src="./assets/Projects/4x4 YasInSchools/Team.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Old Design</h4>
-        <img src="./assets/Projects/4x4 YasInSchools/OldDesign.jpeg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Presentation</h4>
-        <a href="./assets/Projects/4x4 YasInSchools/CyberCrawlers Verbal Presentation.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Script</h4>
-        <a href="./assets/Projects/4x4 YasInSchools/Script 4x4.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Other Competition Robots</h4>
-        <video controls>
-          <source src="./assets/Projects/4x4 YasInSchools/OtherCompetitionRobots.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="modal-ftc" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-ftc')">&times;</span>
-    <h1>FIRST Tech Challenge (FTC): Skyscraper</h1>
-    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
-    <ul>
-      <li><strong>Team Name: </strong>White Hat Hackers</li>
-      <li>Competed as a core member of the White Hat Hackers team in the FTC robotics competition.</li>
-      <li>Contributed across all sub-teams (engineering notebook, mechanical design, and programming) as a flexible team member with prior experience.</li>
-      <li>Helped design, build, and troubleshoot a cascading slide mechanism using VEX components, optimizing for task efficiency and space.</li>
-      <li>Assisted in logic development and debugging of Java-based autonomous and driver-controlled programs.</li>
-      <li>Overcame language barriers and scheduling challenges through visual communication, collaborative coordination, and team leadership.</li>
-      <li>Led integration efforts across teams, streamlining mechanical, software, and documentation workflows.</li>
-      <li>Team placed 5th overall, receiving recognition from peers for the robot’s design and performance.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>Robot With Team</h4>
-        <img src="./assets/Projects/FTC/RobotWithTeam.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Robot With Other UAE Team</h4>
-        <img src="./assets/Projects/FTC/RobotWithOtherTeam.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Robot With Linear Cascading Slide Mechanism</h4>
-        <img src="./assets/Projects/FTC/RobotWithLinearCascadingSlide.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Capstone Design</h4>
-        <img src="./assets/Projects/FTC/Capstone.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>My Script</h4>
-        <img src="./assets/Projects/FTC/MyScript.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Engineering Notebook</h4>
-        <a href="./assets/Projects/FTC/Engineering notebook.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="modal-wro" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-wro')">&times;</span>
-    <h1>World Robotics Olympiad (WRO): Garbage Truck</h1>
-    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
-    <ul>
-      <li>Co-developed a smart robotic waste management system for the WRO Open Category, earning a top-4 national ranking and qualifying for the international round in Delhi.</li>
-      <li>Designed and built a functional robot featuring a smart bin (using littleBits) that autonomously summoned a line-following garbage truck for collection and real-time sorting.</li>
-      <li>Integrated a solar-powered system with automated panel deployment based on power and lighting conditions.</li>
-      <li>Led robot design, construction, and programming while iterating on multiple design blueprints to overcome real-world implementation challenges.</li>
-      <li>Gained valuable international exposure through collaboration and competition with global teams tackling the shared problem of sustainable waste management.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>Team with Advisor</h4>
-        <img src="./assets/Projects/WRO/TeamWithAdvisor.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Team</h4>
-        <img src="./assets/Projects/WRO/Team.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Robot and Stall Setup</h4>
-        <img src="./assets/Projects/WRO/RobotAndStall.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Top 4 Teams</h4>
-        <img src="./assets/Projects/WRO/Top4Teams.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Robot Report</h4>
-        <a href="./assets/Projects/WRO/Robotic Trash Management System.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="modal-ar3101-hulk" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-ar3101-hulk')">&times;</span>
-    <h1>AR 3101: 3D Modelling (Hulk)</h1>
-    <!-- <p>Modular biomimetic fish with tendon-driven fins, integrated real-time control and vision.</p> -->
-    <ul>
-      <li>Sculpted a high-resolution 3D model of the Hulk using ZBrush, referencing an A-pose for anatomical and structural accuracy.</li>
-      <li>Imported the model into Unreal Engine and added basic facial animations for expressiveness and real-time interaction.</li>
-      <li>Textured the character using Adobe Substance, focusing on realistic skin, muscle, and clothing materials.</li>
-      <li>Explored organic modeling and anatomy for game-ready character design.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>3D Modelled Hulk Character</h4>
-        <video controls>
-          <source src="./assets/Projects/AR3101/3D-Modelled Character_ Hulk.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="media-item">
-        <h4>Hulk CAD</h4>
-        <img src="./assets/Projects/AR3101/Hulk_CAD.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Closed Eyes Morph</h4>
-        <img src="./assets/Projects/AR3101/Hulk_Closed_Eyes.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Closed Mouth Morph</h4>
-        <img src="./assets/Projects/AR3101/Hulk_Closed_Mouth.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Angry Morph</h4>
-        <img src="./assets/Projects/AR3101/Hulk_Angry.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>3D Printed Hulk Character</h4>
-        <img src="./assets/Projects/AR3101/Hulk3DPrinted.jpeg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>UV Map - Body</h4>
-        <img src="./assets/Projects/AR3101/H1_PM3D_Pranav_HULK - UVwrap7-TM_u0_v0.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>UV Map - Pants</h4>
-        <img src="./assets/Projects/AR3101/H2_Pants1-TM_u0_v0.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>UV Map - Inner Eyes</h4>
-        <img src="./assets/Projects/AR3101/H_Inner_Eyes-TM_u0_v0.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>UV Map - Inner Mouth</h4>
-        <img src="./assets/Projects/AR3101/H_Inner_Mouth1-TM_u0_v0.jpg" alt="Fish prototype 1" />
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="modal-ar3101-room" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-ar3101-room')">&times;</span>
-    <h1>AR 3101: 3D Modelling (Room)</h1>
-    <!-- <p>Modular biomimetic fish with tendon-driven fins, integrated real-time control and vision.</p> -->
-    <ul>
-      <li>Modeled a 3D replica of a personal room using 3Ds Max, complete with scaled furniture and interior details.</li>
-      <li>Imported the environment into Unreal Engine, enabling first-person exploration and interactive walkthroughs.</li>
-      <li>Enhanced realism through lighting setup and applied detailed textures to materials like wood flooring, textiles, and glass.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>Room</h4>
-        <img src="./assets/Projects/AR3101/Room.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>UV Wrapped</h4>
-        <img src="./assets/Projects/AR3101/Room_UV_Wrapped.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Room Video</h4>
-        <video controls>
-          <source src="./assets/Projects/AR3101/My WPI Room 1.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="modal-ar3101-chest" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-ar3101-chest')">&times;</span>
-    <h1>AR 3101: 3D Modelling (Treasure Chest)</h1>
-    <!-- <p>Modular biomimetic fish with tendon-driven fins, integrated real-time control and vision.</p> -->
-    <ul>
-      <li>Textured a pre-modeled treasure chest using Adobe Substance, with a focus on underwater aesthetics—applying weathered wood, corroded metal, and mossy surfaces.</li>
-      <li>Developed custom texture maps to reflect realistic environmental aging and moisture effects.</li>
-      <li>Practiced UV unwrapping and surface detailing for efficient material application.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>Treasure Chest 1 - Front</h4>
-        <img src="./assets/Projects/AR3101/TreasureChest1_Front.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Treasure Chest 1 - Back</h4>
-        <img src="./assets/Projects/AR3101/TreasureChest1_Back.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Treasure Chest 2 - Left</h4>
-        <img src="./assets/Projects/AR3101/TreasureChest2_Left.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Treasure Chest 2 - Right</h4>
-        <img src="./assets/Projects/AR3101/TreasureChest2_Right.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Treasure Chest 2 - Back</h4>
-        <img src="./assets/Projects/AR3101/TreasureChest2_Back.png" alt="Fish prototype 1" />
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="modal-dt-tsquare" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-dt-tsquare')">&times;</span>
-    <h1>T-Square</h1>
-    <!-- <p>Modular biomimetic fish with tendon-driven fins, integrated real-time control and vision.</p> -->
-    <ul>
-      <li>Designed and built a T-square with a changeable length for increased versatility in technical drawing and drafting.</li>
-      <li>Constructed using MDF wood for durability and precision.</li>
-      <li>Cut components using a scroll saw and smoothed edges and joints with sandpaper for clean finish and user comfort.</li>
-      <li>Developed a modular sliding mechanism to allow adjustable ruler extension.</li>
-      <li>Focused on functionality and adjustability while maintaining alignment and structural integrity.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>T-Square</h4>
-        <img src="./assets/no-image.png" alt="Fish prototype 1" />
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="modal-dt-racket" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-dt-racket')">&times;</span>
-    <h1>Table Tennis Racket</h1>
-    <!-- <p>Modular biomimetic fish with tendon-driven fins, integrated real-time control and vision.</p> -->
-    <ul>
-      <li>Designed and built a rectangular-shaped table tennis racket using layered materials for improved feel and aesthetics.</li>
-      <li>Constructed the paddle using MDF wood, acrylic plastic, and a MDF-wood handle sandwich structure.</li>
-      <li>Added finger dents to the handle for enhanced grip and ergonomic comfort during play.</li>
-      <li>Used coping saw for precise cutting and sandpaper for smoothing edges and refining contours.</li>
-      <li>Explored unconventional racket shape and multi-material construction for both functionality and design appeal.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>Table Tennis Racket</h4>
-        <img src="./assets/no-image.png" alt="Fish prototype 1" />
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="modal-dt-gwagon" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-dt-gwagon')">&times;</span>
-    <h1>G-Wagon Car</h1>
-    <!-- <p>Modular biomimetic fish with tendon-driven fins, integrated real-time control and vision.</p> -->
-    <ul>
-      <li>Designed and built a scale model of a G-Wagon car featuring a vacuum-formed HIPS body for lightweight durability.</li>
-      <li>Constructed the chassis using plywood and MDF, with precisely cut wheel slots made using a band saw.</li>
-      <li>Added freely rotating MDF wheels to simulate real car movement.</li>
-      <li>Attached the car body to the chassis using Velcro, allowing for easy separation and attachment.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>G-Wagon Car</h4>
-        <img src="./assets/no-image.png" alt="Fish prototype 1" />
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="modal-dt-organiser" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-dt-organiser')">&times;</span>
-    <h1>Bed-side Organiser</h1>
-    <!-- <p>Modular biomimetic fish with tendon-driven fins, integrated real-time control and vision.</p> -->
-    <ul>
-      <li>Designed and built a multifunctional bedside organiser combining traditional woodworking, CAD, 3D printing, and electronics.</li>
-      <li>Used teak wood, MDF, and HIPS plastic, cut and shaped with band saw, scroll saw, coping saw, and finished with various grit sandpapers.</li>
-      <li>Integrated finger joints, dowel fittings, a laser-cut compartment, and 3D-printed parts for modularity and aesthetics.</li>
-      <li>Installed LED lighting in a translucent compartment controlled via mobile app; enhanced diffusion using frosted HIPS.</li>
-      <li>Designed parts in Fusion 360 and CorelDRAW, combining manual craftsmanship with digital fabrication.</li>
-      <li>Engraved initials “PSJ” on a custom-cut aluminum plate using metal stamping and aviation snips for a personalized touch.</li>
-      <li>Finished the product with multiple coats of clear spray and applied non-slip pads to the base for stability.</li>
-      <li>Added a book stand with velcro, storage compartments, and a custom paper holder with spring-loaded copper rod.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>Project</h4>
-        <a href="./assets/Projects/DT/BedSideOrganiser/DT Project 2019 - Pranav.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Empty Organiser</h4>
-        <img src="./assets/Projects/DT/BedSideOrganiser/EmptyOrganiser.JPG" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Organiser with things</h4>
-        <img src="./assets/Projects/DT/BedSideOrganiser/OrganiserWithThings.JPG" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Red light</h4>
-        <img src="./assets/Projects/DT/BedSideOrganiser/RedLight.JPG" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Blue Light</h4>
-        <img src="./assets/Projects/DT/BedSideOrganiser/BlueLight.JPG" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Yellow Light</h4>
-        <img src="./assets/Projects/DT/BedSideOrganiser/YellowLight.JPG" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Green Light</h4>
-        <img src="./assets/Projects/DT/BedSideOrganiser/GreenLight.JPG" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>CAD Organiser With Surrounding 1</h4>
-        <img src="./assets/Projects/DT/BedSideOrganiser/REMaking Project Idea 1 with surroundings v4.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>CAD Organiser With Surrounding 2</h4>
-        <img src="./assets/Projects/DT/BedSideOrganiser/REMaking Project Idea 1 with surroundings v2.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Improved CAD Organiser</h4>
-        <img src="./assets/Projects/DT/BedSideOrganiser/Improved Project Idea 1 v5.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Improved CAD Organiser With Surrounding</h4>
-        <img src="./assets/Projects/DT/BedSideOrganiser/REMaking Improved Project Idea 1 with surroundings v4.png" alt="Fish prototype 1" />
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="modal-dt-amplifier" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-dt-amplifier')">&times;</span>
-    <h1>Passive Sound Amplifier</h1>
-    <!-- <p>Modular biomimetic fish with tendon-driven fins, integrated real-time control and vision.</p> -->
-    <ul>
-      <li>Designed and built a passive sound amplifier inspired by the ‘M’ shape from the Monsters Inc. logo.</li>
-      <li>Constructed using MDF and plywood, optimizing acoustic reflection and resonance.</li>
-      <li>Used a band saw for shaping and sandpaper for surface finishing and edge smoothing.</li>
-      <li>Focused on form and function by blending aesthetic design with acoustic enhancement—no electronics required.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>Passive Sound Amplifier</h4>
-        <img src="./assets/no-image.png" alt="Fish prototype 1" />
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="modal-dt-stool" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-dt-stool')">&times;</span>
-    <h1>Stool</h1>
-    <!-- <p>Modular biomimetic fish with tendon-driven fins, integrated real-time control and vision.</p> -->
-    <ul>
-      <li>Designed and built a rectangular-shaped table tennis racket using layered materials for improved feel and aesthetics.</li>
-      <li>Constructed the paddle using MDF wood, acrylic plastic, and a MDF-wood handle sandwich structure.</li>
-      <li>Added finger dents to the handle for enhanced grip and ergonomic comfort during play.</li>
-      <li>Used coping saw for precise cutting and sandpaper for smoothing edges and refining contours.</li>
-      <li>Explored unconventional racket shape and multi-material construction for both functionality and design appeal.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>Table Tennis Racket</h4>
-        <img src="./assets/no-image.png" alt="Fish prototype 1" />
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="modal-es3011" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-es3011')">&times;</span>
-    <h1>ES 3011: Controls</h1>
-    <!-- <p>5-DOF pick-and-place robotic arm powered by ROS and camera-based object detection.</p> -->
-    <ul>
-      <li>Programmed an Arduino-controlled car to travel a specified distance while balancing blocks, applying core control theory concepts.</li>
-      <li>Implemented various control strategies including PID control and velocity control to optimize accuracy and stability.</li>
-      <li>Gained hands-on experience with system modeling, transient response tuning, and real-world application of control engineering principles.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>Robot</h4>
-        <img src="./assets/Projects/ES3011/Robot.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Final Project Report</h4>
-        <a href="./assets/Projects/ES3011/Controls Final Project Report.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Velocity Control</h4>
-        <video controls>
-          <source src="./assets/Projects/ES3011/RobotMovingCertainDistance.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="modal-ece2049" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-ece2049')">&times;</span>
-    <h1>ECE 2049: Embedded Systems</h1>
-    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
-    <ul>
-      <li>Designed and programmed multiple interactive applications on WPI’s custom expansion board using C, including a waveform generator, Simon Says memory game, real-time clock with temperature display, and a piano note game.</li>
-      <li>Utilized embedded systems concepts such as state machines, peripheral interfacing (LCDs, sensors), and low-level hardware control.</li>
-      <li>Gained hands-on experience with constrained computing environments and real-time system design.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>Custom MSP430F5529 lab board</h4>
-        <img src="./assets/Projects/ECE2049/Board.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Simon Game Report</h4>
-        <a href="./assets/Projects/ECE2049/Simon Game.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>MSP430 Hero Report</h4>
-        <a href="./assets/Projects/ECE2049/MSP430 Hero.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Time and Temperature Display Report</h4>
-        <a href="./assets/Projects/ECE2049/Time and Temperature Display.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Waveform Generator Report</h4>
-        <a href="./assets/Projects/ECE2049/Waveform Generator.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="modal-gps" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-gps')">&times;</span>
-    <h1>Great Problems Seminar (GPS): A More Walkable Worcester</h1>
-    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
-    <ul>
-      <li><strong>Team Name: </strong>Tri State Urban</li>
-      <li>Conducted in-depth research and data analysis to identify barriers preventing Worcester residents from adopting walking or biking as primary modes of transportation.</li>
-      <li>Identified key challenges such as safety concerns, inadequate city infrastructure, and convenience-related limitations.</li>
-      <li>Proposed actionable solutions including redesigning intersections for pedestrian and cyclist safety, and increasing public access to E-bikes.</li>
-      <li>Highlighted potential large-scale sustainability impacts, such as reducing greenhouse gas emissions and urban air pollution, through improved pedestrian infrastructure.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>Poster Presentation</h4>
-        <img src="./assets/Projects/GPS/PosterPresentation.jpeg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Poster</h4>
-        <img src="./assets/Projects/GPS/Poster.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Website</h4>
-        <a href="https://sites.google.com/view/sustainability-bikeworcester/final-projects/tri-state-urban?authuser=0" target="_blank" class="pdf-link">
-          Website Link
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Project Presentation</h4>
-        <a href="./assets/Projects/GPS/Project Presentation.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Project Presentation Script</h4>
-        <a href="./assets/Projects/GPS/Project Script.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Research Notebook 1</h4>
-        <a href="./assets/Projects/GPS/Research Notebook #1 - Pranav Jain.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Research Notebook 2</h4>
-        <a href="./assets/Projects/GPS/Research Notebook #2 - Pranav Jain.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Research Notebook 3</h4>
-        <a href="./assets/Projects/GPS/Research Notebook #3 - Pranav Jain.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Research Summary</h4>
-        <a href="./assets/Projects/GPS/Shared Research Summary - Intro + Background.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Solutions and Recommendations</h4>
-        <a href="./assets/Projects/GPS/Preliminary Solution and Recommendations .pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-    </div>
-    
-  </div>
-</div>
-
-<div id="modal-hex" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-hex')">&times;</span>
-    <h1>HEX Literary Magazine: Hex Mix</h1>
-    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
-    <ul>
-      <li>Curated and selected literary submissions for publication, ensuring quality and diversity of content.</li>
-      <li>Collaborated on finalizing the “Hex Mix” machine—a modified gumball vending machine dispensing literature and candy to boost magazine engagement.</li>
-      <li>Managed printing and stocking of literature pieces for distribution via the Hex Mix machine.</li>
-      <li>Designed promotional materials, including posters and email campaigns, to increase visibility and website traffic.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>Hex Mix Machine</h4>
-        <img src="./assets/Projects/Hex/Hex_Mix_Machine.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Poster</h4>
-        <img src="./assets/Projects/Hex/Poster.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Information Page</h4>
-        <img src="./assets/Projects/Hex/InfoPage.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Capsule Recycling Poster</h4>
-        <img src="./assets/Projects/Hex/CapsuleRecyclingPoster.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Website</h4>
-        <a href="https://hexliterary.com/" target="_blank" class="pdf-link">
-          Website Link
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Hex Mix Stories with QR Codes</h4>
-        <a href="./assets/Projects/Hex/Hex Mix Stories + QR Codes.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-    </div>
-    
-  </div>
-</div>
-
-<div id="modal-iqp" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-iqp')">&times;</span>
-    <h1>Inter-Qualifying Project (IQP): The Impact of AI on the Workforce</h1>
-    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
-    <ul>
-      <li>Conducted archival research and expert interviews to analyze current and near-future effects of AI on employment, ethics, legality, and cybersecurity.</li>
-      <li>Collaborated with ANSI and WorkCred to explore policy responses and public sentiment surrounding AI integration in the workforce.</li>
-      <li>Developed actionable recommendations and a detailed implefmentation roadmap to guide organizations, like ANSI and WorkCred, in adopting AI responsibly and effectively.</li>
-      <li><strong>Guest Speaker at WPI (April 2024): </strong>Presented insights from the IQP at a WPI-hosted seminar on AI and ChatGPT, discussing AI’s challenges, advancements, and its impact on homes and workplaces.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>Team with ANSI and WorkCred Sponsors</h4>
-        <img src="./assets/Projects/IQP/TeamWithSponsors.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Team</h4>
-        <img src="./assets/Projects/IQP/Team.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>All WPI Teams</h4>
-        <img src="./assets/Projects/IQP/TeamWithOtherTeams.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>IQP Report</h4>
-        <a href="./assets/Projects/IQP/IQPB23 - ANSI - Final Report.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="modal-cs3733-wizard" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-cs3733-wizard')">&times;</span>
-    <h1>CS 3733: Software Engineering (Research Wizard)</h1>
-    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
-    <ul>
-      <li>Developed <strong>Research Wizard</strong>, a full-stack web portal connecting WPI undergraduates with faculty-led research opportunities.</li>
-      <li>Built a Python Flask-based API with OAuth integration for WPI’s login system.</li>
-      <li>Implemented sorting features, SQL database integration, and object-oriented design for modular backend logic.</li>
-      <li>Designed a user-friendly interface to streamline research discovery and matching.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>Web Application Login Page</h4>
-        <img src="./assets/Projects/CS3733/ResearchWizardLoginPage.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Web Application</h4>
-        <a href="https://pranavsjain13.pythonanywhere.com/" target="_blank" class="pdf-link">
-          Website Link
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Project Requirements</h4>
-        <a href="https://github.com/pranavsjain13/WPI_CS3733_team-infiniteloopers/blob/main/documents/RequirementsDocument/RequirementsDocument.md" target="_blank" class="pdf-link">
-          Website Link
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Project Design Document</h4>
-        <a href="https://github.com/pranavsjain13/WPI_CS3733_team-infiniteloopers/blob/main/documents/Design%20Document/DesignDocument_final.md" target="_blank" class="pdf-link">
-          Website Link
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Project Iteration 1</h4>
-        <a href="https://github.com/pranavsjain13/WPI_CS3733_team-infiniteloopers/blob/main/documents/ProjectGroupReport_1.md" target="_blank" class="pdf-link">
-          Website Link
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Project Iteration 2</h4>
-        <a href="https://github.com/pranavsjain13/WPI_CS3733_team-infiniteloopers/blob/main/documents/ProjectGroupReport_2.md" target="_blank" class="pdf-link">
-          Website Link
-        </a>
-      </div>
-    </div>
-    
-  </div>
-</div>
-
-<div id="modal-cs3733-smile" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-cs3733-smile')">&times;</span>
-    <h1>CS 3733: Software Engineering (Smile App)</h1>
-    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
-    <ul>
-      <li>Developed <strong>SmileApp</strong>, a gratitude-based message portal inspired by positive psychology to promote user well-being.</li>
-      <li>Implemented core features including post creation, display, liking, and responsive layout using HTML, CSS, and JavaScript.</li>
-      <li>Added tagging, sorting, and full user authentication (signup, login, logout) in later milestones.</li>
-      <li>Built personalized post views and post deletion; re-implemented "likes" using JavaScript and enhanced the UI with Bootstrap.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>Web Application Login Page</h4>
-        <img src="./assets/Projects/CS3733/SmileAppLoginPage.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Web Application</h4>
-        <a href="https://deepranav12.pythonanywhere.com/" target="_blank" class="pdf-link">
-          Website Link
-        </a>
-      </div>
-    </div>
-    
-  </div>
-</div>
-
-<div id="modal-cs3733-student" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-cs3733-student')">&times;</span>
-    <h1>CS 3733: Software Engineering (Student App)</h1>
-    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
-    <ul>
-      <li>Built a responsive student management app using Flask and Bootstrap, allowing users to enroll/unenroll in classes, create new courses, and edit their profiles.</li>
-      <li>Implemented user authentication system with custom username creation, signup, login, and logout features.</li>
-      <li>Designed a mobile-friendly interface with responsive layout and styled UI components using Bootstrap.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>Web Application Login Page</h4>
-        <img src="./assets/Projects/CS3733/StudentAppLoginPage.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Web Application</h4>
-        <a href="https://facebook1312004.pythonanywhere.com/" target="_blank" class="pdf-link">
-          Website Link
-        </a>
-      </div>
-    </div>
-    
-  </div>
-</div>
-
-<div id="modal-dis-cs-ia" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-dis-cs-ia')">&times;</span>
-    <h1>Restuarant Management System</h1>
-    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
-    <ul>
-      <li>Developed a comprehensive restaurant management system using Python and Tkinter with a focus on modularity, usability, and scalability.</li>
-      <li>Created role-based login functionality for admins, managers, waiters, cooks, and customers, each with unique privileges and screen layouts.</li>
-      <li>Built fully functional GUI panels for user sign-up, menu management, order placement, billing, and user account control.</li>
-      <li>Implemented extensive form validation (e.g., input types, field completeness, unique credentials, format checks) to minimize user error.</li>
-      <li>Designed and managed a SQLite3 database with four main tables: Users, Menu, Orders, and Ingredients.</li>
-      <li>Integrated OOP (Object-Oriented Programming) principles for better structure and reusability across modules.</li>
-      <li>Created features for dynamic screen updating: interface elements update in real-time as users, menu items, or orders change.</li>
-      <li>Designed GUI with clear layouts, labels, and functional screens, ensuring consistent UX across user roles.</li>
-      <li>Used threading and modular programming to keep the application responsive and maintainable.</li>
-      <li>Built for future extensibility with potential for web or mobile integration using frameworks like Flask or Django.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>Login Page</h4>
-        <img src="./assets/Projects/CS AI/LoginPage.png" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Criterion A - Problem Introduction</h4>
-        <a href="./assets/Projects/CS AI/Task A - Problem Introduction.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Criterion B - Solution Overview</h4>
-        <a href="./assets/Projects/CS AI/Task B - Solution Overview.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Criterion C - Development</h4>
-        <a href="./assets/Projects/CS AI/Task C - Development.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Criterion D - Program Video</h4>
-        <video controls>
-          <source src="./assets/Projects/CS AI/Task D - Program.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-      </div>
-      <div class="media-item">
-        <h4>Criterion E - Reflection</h4>
-        <a href="./assets/Projects/CS AI/Task E - Reflection.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-      <div class="media-item">
-        <h4>Github</h4>
-        <a href="https://github.com/pranavsjain13/DIS_CS_AI_Restuarant_Management_Application" target="_blank" class="pdf-link">
-          Website Link
-        </a>
-      </div>
-    </div>
-    
-  </div>
-</div>
-
-<div id="modal-ai-stanford-workshop" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-ai-stanford-workshop')">&times;</span>
-    <h1>Artificial Intelligence (AI) & Machine Learning Workshop</h1>
-    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
-    <ul>
-      <li>Participated in a 10-day AI workshop led by Stanford University alumni.</li>
-      <li>Gained hands-on experience with AI models including Logistic/Linear Regression, CNNs, KNN, and MLP.</li>
-      <li>Developed an emotion detection application using Python.</li>
-      <li>Explored ethical issues in AI such as data bias and its real-world consequences.</li>
-      <li>Presented project findings to peers and parents, showcasing practical applications of emotion-aware systems.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>Project With Stanford Alumni</h4>
-        <img src="./assets/Projects/AI Stanford/EmotionDetectionCompetedWithStanfordAlumni.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Project With Stanford Alumni And Other Classmates</h4>
-        <img src="./assets/Projects/AI Stanford/MeWithOtherClassmates.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Project Introduction</h4>
-        <img src="./assets/Projects/AI Stanford/ExplainingProject.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Project Prototype</h4>
-        <img src="./assets/Projects/AI Stanford/DisplayingProject.jpg" alt="Fish prototype 1" />
-      </div>
-    </div>
-
-  </div>
-</div>
-
-<div id="modal-aus-fixit" class="modal">
-  <div class="modal-content fullscreen-modal">
-    <span class="close" onclick="closeModal('modal-aus-fixit')">&times;</span>
-    <h1>American University of Sharjah (AUS) Competition</h1>
-    <!-- <p>Autonomous drone platform with obstacle avoidance, localization, and object tracking.</p> -->
-    <ul>
-      <li><strong>Team Name: </strong>FixIt</li>
-      <li>Competed against top high school teams across the UAE in an inter-school software development challenge.</li>
-      <li>Developed <strong>FixIt</strong>, a two-part mobile application enabling users to report issues directly to relevant authorities and receive real-time email updates on resolution status.</li>
-      <li>Designed with a clean user interface and a practical case management system for both users and officials.</li>
-      <li>Secured 2nd Place in the competition, earning a winning certificate and a cash prize of AED 1,500.</li>
-    </ul>
-    <br />
-    <br />
-    <h2>Media:</h2>
-
-    <div class="media-grid">
-      <div class="media-item">
-        <h4>Team with Professor</h4>
-        <img src="./assets/Projects/AUS FixIt/TeamWithProfessor.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Project Presentation with Judge</h4>
-        <img src="./assets/Projects/AUS FixIt/Explaining.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>Product Testing by Judge</h4>
-        <img src="./assets/Projects/AUS FixIt/JudgeTesting.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>All Deira International School (DIS) Teams</h4>
-        <img src="./assets/Projects/AUS FixIt/OtherDISTeams.jpg" alt="Fish prototype 1" />
-      </div>
-      <div class="media-item">
-        <h4>FixIt Example</h4>
-        <a href="./assets/Projects/AUS FixIt/FixIt_Example.pdf" target="_blank" class="pdf-link">
-          View PDF Report
-        </a>
-      </div>
-    </div>
-
-  </div>
-</div>
 
 
 
